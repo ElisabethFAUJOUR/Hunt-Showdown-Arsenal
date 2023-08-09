@@ -1,0 +1,12 @@
+{
+  "name": "hunt-showdown-loadout-generator",
+  "version": "1.0.0",
+  "description": "Loadout Generator For Hunt Showdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
