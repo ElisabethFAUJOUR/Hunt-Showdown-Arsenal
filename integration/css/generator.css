@@ -1,8 +1,12 @@
 body {
-    background-image: url("../img/bg/dark-smoke2.png");
+    background-image: url("../img/bg/dark-smoke.png");
     background-position: center;
     background-size: cover;
     height: 100vh;
+}
+
+.header {
+    background-color: rgba(9, 9, 11, 1);
 }
 
 .main-container {
@@ -15,7 +19,7 @@ body {
     margin: 0 auto; 
 }
 
-/****Settings****/
+/****Filters****/
 
 .filters {
     position: fixed;
@@ -53,7 +57,7 @@ body {
 
 .filter-group.row {
     display: flex;
-    gap:8px;
+    gap: 0.8rem;
     padding:1rem 1rem;
 }
 
@@ -114,7 +118,7 @@ input:checked + .slider:before {
     background-color: var(--red);
 }
 
-/****Generator****/
+/****Generator Template****/
 
 .generator-container {
     padding-top:4rem;
@@ -177,10 +181,19 @@ input:checked + .slider:before {
 }
 
 .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     border: 1px solid rgba(146, 145, 145, 0.5);
     background-color: rgba(9, 9, 11, 0.8);
     color: var(--text);
     width: fit-content;
     padding: 0.5rem 1rem;
     margin-top: 0.8rem;
+}
+
+.price img {
+    width: 30px;
 }

@@ -1,13 +1,17 @@
 body {
-    background-image: url("../img/bg/dark-smoke2.png");
+    background-image: url("../img/bg/dark-smoke.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
 }
 
+.header {
+    background-color: rgba(9, 9, 11, 1);
+}
+
 .main-container {
-    padding-top: 4rem;
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,3 +19,30 @@ body {
     font-size: 1.2rem;
     margin: 0 auto; 
 }
+
+.main-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.sort-weapons {
+    display: flex;
+    gap:2rem;
+}
+
+.sort-weapons-link {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgba(9, 9, 11, 0.5);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    color:var(--text);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-weapons-link:hover {
+    background-color: var(--red-dark);
+}
+
+
