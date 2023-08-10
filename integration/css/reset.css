@@ -68,3 +68,12 @@ html {
 input, button {
   outline: 0;
 }
+
+button {
+    border: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
