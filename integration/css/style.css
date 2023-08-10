@@ -13,7 +13,7 @@
 :root {
     --text:rgb(171, 172, 174);
     --gold:rgb(226, 194, 125);
-    --red:rgb(144, 2, 23);
+    --red:rgb(100, 26, 26);
     --red-dark:rgb(77, 15, 16);
     --grey-dark:rgb(9, 9, 11);
     --grey:rgb(146, 145, 145);
@@ -75,7 +75,7 @@ body {
 }
 
 /****Footer****/
- .footer {
+.footer {
     text-align: center;
     width: 100%;
     padding: 1rem 0;

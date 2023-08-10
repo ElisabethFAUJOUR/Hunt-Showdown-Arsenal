@@ -32,13 +32,13 @@ body {
     margin-top: 3rem;
     padding: 0.5rem 1rem;
     border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(9, 9, 11, 0.8);
+    background-color: rgba(77, 15, 16, 1);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
     color:var(--text);
     text-transform: uppercase;
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);
     transition: all 0.3s ease-in-out;
 }
 
 .main-btn:hover {
-background-color: var(--red-dark);
+    background-color: var(--red);
 }

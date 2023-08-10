@@ -15,17 +15,115 @@ body {
     margin: 0 auto; 
 }
 
+/****Settings****/
+
+.filters {
+    position: fixed;
+    top:6rem;
+    left:2rem;
+    bottom:6rem;
+    width: 300px;
+    background-color: rgba(9, 9, 11, 0.6);
+    border: 1px solid rgb(171, 172, 174, 0.3);
+}
+
+.filters-title {
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+}
+
+.filter-group.col {
+    display: flex;
+    flex-direction: column;
+    padding:1rem 1rem;
+}
+
+.filter-group.col label {
+    padding-bottom: 0.5rem;
+}
+
+.filter-group.col input {
+    padding:0.5rem;
+    width: 160px;
+    border: none;
+    font-family: "Crimson Text", sans-serif;
+    font-size:1.2rem;
+}
+
+.filter-group.row {
+    display: flex;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--grey);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked + .slider {
+    background-color: var(--red-dark);
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.generator-btn {
+    position: fixed;
+    top:22rem;
+    right:15rem;
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgba(77, 15, 16, 1);
+    box-shadow: 5px 5px 6px rgba(43, 44, 48, 0.8);
+    color:var(--text);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.generator-btn:hover {
+    background-color: var(--red);
+}
+
+/****Generator****/
+
 .generator-container {
     padding-top:4rem;
 }
 
-/****Label****/
-
 .label {
     padding-bottom: 1rem;
 }
-
-/****Large & Small Slot****/
 
 .large, .small {
     display: flex;
@@ -57,8 +155,6 @@ body {
     height: 60px;
 }
 
-/****Tools****/
-
 .tools {
     display: flex;
     flex-direction: row;
@@ -73,8 +169,6 @@ body {
     width: 101px;
     height: 101px;
 }
-
-/****Consummables****/
 
 .consummables {
     display: flex;
@@ -91,13 +185,11 @@ body {
     height: 101px;
 }
 
-/****Price****/
-
 .price {
-    border: 1px solid var(--grey);
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgba(9, 9, 11, 0.8);
     color: var(--text);
     width: fit-content;
     padding: 0.5rem 1rem;
     margin-top: 0.8rem;
 }
-
