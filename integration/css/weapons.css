@@ -1,0 +1,17 @@
+body {
+    background-image: url("../img/bg/dark-smoke2.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.main-container {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 auto; 
+}
