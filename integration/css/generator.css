@@ -1,0 +1,103 @@
+body {
+    background-image: url("../img/bg/dark-smoke2.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-container {
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 auto; 
+}
+
+.generator-container {
+    padding-top:4rem;
+}
+
+/****Label****/
+
+.label {
+    padding-bottom: 1rem;
+}
+
+/****Large & Small Slot****/
+
+.large, .small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.large-slot {
+    background-color: rgba(146, 145, 145, 0.4);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);
+    width: 386px;
+    height: 101px;
+}
+
+.small-slot {
+    background-color: rgba(146, 145, 145, 0.4);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);
+    width: 386px;
+    height: 101px;
+}
+
+.ammo {
+    background-color: rgba(146, 145, 145, 0.4);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);
+    width: 30px;
+    height: 60px;
+}
+
+/****Tools****/
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.tool-slot {
+    background-color: rgba(146, 145, 145, 0.4);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);
+    width: 101px;
+    height: 101px;
+}
+
+/****Consummables****/
+
+.consummables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.consummable-slot {
+    background-color: rgba(146, 145, 145, 0.4);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);
+    width: 101px;
+    height: 101px;
+}
+
+/****Price****/
+
+.price {
+    border: 1px solid var(--grey);
+    color: var(--text);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-top: 0.8rem;
+}
+
