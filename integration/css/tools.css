@@ -26,31 +26,11 @@ body {
     margin-bottom: 3rem;
 }
 
-.sort-weapons {
-    display: flex;
-    gap:2rem;
-}
-
-.sort-weapons-link {
-    padding: 0.5rem 1rem;
-    margin-bottom:3rem;
-    border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(9, 9, 11, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
-    color:var(--text);
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-}
-
-.sort-weapons-link:hover {
-    background-color: var(--red-dark);
-}
-
 /*******************/
-/****Weapon Card****/
+/****Tool Card****/
 /*******************/
 
-.weapon-card {
+.tool-card {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(146, 145, 145, 0.3);
@@ -64,19 +44,11 @@ body {
 
 /****Card-Header****/
 
-.weapon-header {
+.tool-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-}
-
-.weapon-header .type {
-    font-style: italic;
-    font-weight: 100;
-    font-size: 1rem;
-    color: var(--grey);
-    padding-top: 0.2rem;
 }
 
 .header-cost {
@@ -90,60 +62,30 @@ body {
     width: 30px;
 }
 
-/****Card-Body****/
+/****Tool-Body****/
 
-.weapon-body {
+.tool-body {
     display: flex;
 }
 
 /****INFOS****/
 
-.weapon-info {
+.tool-info {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
-.img-weapon {
-    width: 397px;
+.img-tool {
+    width: 100px;
     height: auto;
     margin-top: 0.5rem;
 }
 
-.weapon-ammo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:5px;
-    margin-right: 2rem;
-}
-
-.ammo-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:0.5rem;
-}
-
-.ammo-type img {
-    width:40px;
-}
-
-.special_ammo {
-    display: flex;
-    
-}
-
-.special_ammo img {
-    width: 30px;
-}
-
 /****STATS****/
 
-.weapon-stats {
+.tool-stats {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     justify-content: space-between;
