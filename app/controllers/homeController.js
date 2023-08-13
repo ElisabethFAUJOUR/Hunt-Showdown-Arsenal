@@ -12,6 +12,7 @@ const mainController = {
     },
 
     renderToolsPage(req, res) {
+      console.log(tools);
       res.render("tools-list", { pageTitle: "Hunt Loadout - Tools", tools });
     },
     

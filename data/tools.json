@@ -4,7 +4,7 @@
         "name": "Alert Trip Mines",
         "cost": 30,
         "description": "This portable tripwire mine releases firecrackers and a small flare, alerting others to its location. Comes in a pack of four.",
-        "image": "assets/tools/alert_trip_mine.png",
+        "image": "img/tools/alert_trip_mine.png",
         "stats": {
             "damage": 10,
             "melee_damage": 13,
@@ -16,10 +16,10 @@
         "name": "Concertina Trip Mines",
         "cost": 90,
         "description": "This portable tripwire mine deploys a small concertina bundle perfect for blocking doors and windows. Comes in a pack of two.",
-        "image": "assets/tools/concertina_trip_mine.png",
+        "image": "img/tools/concertina_trip_mine.png",
         "stats": {
             "damage": 32,
-            "effet_radius": 2,
+            "effect_radius": 2,
             "melee_damage": 13,
             "heavy_melee_damage": 27
         }
@@ -29,10 +29,10 @@
         "name": "Poison Trip Mines",
         "cost": 30,
         "description": "This portable tripwire mine releases a cloud of poison when triggered, disorienting enemies. Comes in a pack of two.",
-        "image": "assets/tools/poison_trip_mine.png",
+        "image": "img/tools/poison_trip_mine.png",
         "stats": {
             "damage_per_tick": 32,
-            "effet_radius": 2,
+            "effect_radius": 2,
             "effect_duration": 30,
             "melee_damage": 13,
             "heavy_melee_damage": 27
@@ -43,10 +43,10 @@
         "name": "Choke Bomb",
         "cost": 25,
         "description": "The Choke Bomb exudes a gas that extinguishes any flames within its radius while active- as well as preventing new fires from being lit- and induces heavy coughing. Comes in a pack of two.",
-        "image": "assets/tools/choke_bomb.png",
+        "image": "img/tools/choke_bomb.png",
         "stats": {
             "damage_thrown": 1,
-            "effet_radius": 3.5,
+            "effect_radius": 3.5,
             "throw_range": 22,
             "effect_duration": 120,
             "melee_damage": 13,
@@ -58,7 +58,7 @@
         "name": "Decoy Fuses",
         "cost": 30,
         "description": "A pack of decoy fuses that imitate the behavior of a lit bomb - and can fool your enemies into clearing a space. Can ignite flammable materials.",
-        "image": "assets/tools/decoy_fuses.png",
+        "image": "img/tools/decoy_fuses.png",
         "stats": {
             "damage": 5,
             "throw_range": 22,
@@ -72,7 +72,7 @@
         "name": "Decoys",
         "cost": 6,
         "description": "A bag of scrap metal and glass. When thrown the noise can be effectively used to distract or divert enemies.",
-        "image": "assets/tools/decoys.png",
+        "image": "img/tools/decoys.png",
         "stats": {
             "damage": 20,
             "throw_range": 22,
@@ -85,7 +85,7 @@
         "name": "Blank Fire Decoys",
         "cost": 45,
         "description": "A decoy that imitates the sound of a gunshot impact. Useful to distract and confuse enemies.",
-        "image": "assets/tools/blankfire_decoys.png",
+        "image": "img/tools/blankfire_decoys.png",
         "stats": {
             "damage": 20,
             "throw_range": 22,
@@ -98,7 +98,7 @@
         "name": "Dusters",
         "cost": 15,
         "description": "A row of metal rings worn on the hand in order to increase the damage caused in hand-to-hand combat.",
-        "image": "assets/tools/dusters.png",
+        "image": "img/tools/dusters.png",
         "stats": {
             "melee_damage": 31,
             "heavy_melee_damage": 72,
@@ -111,7 +111,7 @@
         "name": "Knuckle Knife",
         "cost": 15,
         "description": "The savage knuckle knife is a roughshod specialization for close quarters combat, suited for both bludgeoning and brutal thrusting deathblows.",
-        "image": "assets/tools/knuckle_knife.png",
+        "image": "img/tools/knuckle_knife.png",
         "stats": {
             "melee_damage": 58,
             "heavy_melee_damage": 92,
@@ -124,7 +124,7 @@
         "name": "Knife",
         "cost": 30,
         "description": "An all-purpose tool and melee weapon that has saved many lives - and taken just as many.",
-        "image": "assets/tools/knife.png",
+        "image": "img/tools/knife.png",
         "stats": {
             "melee_damage": 52,
             "heavy_melee_damage": 105,
@@ -137,7 +137,7 @@
         "name": "Heavy Knife",
         "cost": 20,
         "description": "The heavy knife is honed for close quarters combat, its iconic silhouette carves out its home in the American pantheon of armaments.",
-        "image": "assets/tools/heavy_knife.png",
+        "image": "img/tools/heavy_knife.png",
         "stats": {
             "melee_damage": 72,
             "heavy_melee_damage": 120,
@@ -150,7 +150,7 @@
         "name": "Throwing Knives",
         "cost": 40,
         "description": "Silent, but short-ranged projectile weapon. Thrown knives can be retrieved and re-used.",
-        "image": "assets/tools/throwing_knives.png",
+        "image": "img/tools/throwing_knives.png",
         "stats": {
             "damage": 130,
             "throw_range": 115,
@@ -170,7 +170,7 @@
         "name": "Throwing Axes",
         "cost": 30,
         "description": "Silent and deadly short-ranged projectile weapon. Can be retrieved and reused.",
-        "image": "assets/tools/throwing_axes.png",
+        "image": "img/tools/throwing_axes.png",
         "stats": {
             "damage": 162,
             "throw_range": 85,
@@ -190,14 +190,14 @@
         "name": "Electric Lamp",
         "cost": 5,
         "description": "A battery-powered light worn on the shoulder. Increases visibility and can be used to blind nearby enemies during night.",
-        "image": "assets/tools/eletric_lamp.png"
+        "image": "img/tools/electric_lamp.png"
     },
     {
         "id": 15,
         "name": "Fusees",
         "cost": 10,
         "description": "A pack of three handheld railroad flares used for illuminating dark areas and for signalling. Can ignite flammable materials.",
-        "image": "assets/tools/fusees.png",
+        "image": "img/tools/fusees.png",
         "stats": {
             "damage": 11,
             "throw_range": 22,
@@ -211,7 +211,7 @@
         "name": "Flare Pistol",
         "cost": 36,
         "description": "A small pistol for firing flares into the air, illuminating the area. Can ignite flammable materials.",
-        "image": "assets/tools/flare_pistol.png",
+        "image": "img/tools/flare_pistol.png",
         "stats": {
             "damage": 26,
             "sighted_range": 18, 
@@ -230,7 +230,7 @@
         "name": "First Aid Kit",
         "cost": 30,
         "description": "A bag of medical supplies that heal 50 health and stop bleeding. Can be used three times.",
-        "image": "assets/tools/first_aid_kit.png",
+        "image": "img/tools/first_aid_kit.png",
         "stats": {
             "melee_damage": 13,
             "heavy_melee_damage": 27
@@ -241,7 +241,7 @@
         "name": "Quad Derringer",
         "cost": 30,
         "description": "A small, light pistol that is easy to carry and conceal. Holds four shots. Twelve additional rounds carried.",
-        "image": "assets/tools/quad_derringer.png",
+        "image": "img/tools/quad_derringer.png",
         "stats": {
             "damage": 74,
             "effective_range": 60, 
@@ -260,7 +260,7 @@
         "name": "Spyglass",
         "cost": 8,
         "description": "A monocular optical instrument for seeing things far away as if they were nearby.",
-        "image": "assets/tools/spyglass.png",
+        "image": "img/tools/spyglass.png",
         "stats": {
             "sway": 69,
             "melee_damage": 13,

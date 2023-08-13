@@ -17,13 +17,29 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    width: 1500px;
     margin: 0 auto; 
 }
 
 .main-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin: 1rem 0;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom:3rem;
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgba(24, 24, 27, 0.5);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-tools input:focus {
+    border: 1px solid var(--red-dark);
 }
 
 /*******************/
@@ -38,7 +54,6 @@ body {
     box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);  
     backdrop-filter: blur(10px);
     padding: 1rem;
-    width: 80%;
     margin-bottom: 2rem;
 }
 
@@ -65,17 +80,12 @@ body {
 /****Tool-Body****/
 
 .tool-body {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap:5rem;
 }
 
 /****INFOS****/
-
-.tool-info {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-right: 3rem;
-}
 
 .img-tool {
     width: 100px;
@@ -91,7 +101,6 @@ body {
     justify-content: space-between;
     font-weight: 600;
     gap: 1rem;
-    width: 70%;
 }
 
 .stat-info {

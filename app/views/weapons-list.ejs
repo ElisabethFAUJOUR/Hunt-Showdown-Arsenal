@@ -2,7 +2,7 @@
 
     <main class="main">
         <div class="main-container">
-            <h1 class="main-title">Weapons Arsenal</h1>
+            <h1 class="main-title">Filter</h1>
             <div class="sort-container">
                 <h3 class="sort-title">Weapon Slot</h3>
                 <div class="sort-weapons">
@@ -31,17 +31,11 @@
                 <div class="weapon-card" id="<%= weapon.id %>">
                     <div class="weapon-header">
                         <div class="header-title">
-                            <h1 class="name">
-                                <%= weapon.name %>
-                            </h1>
-                            <h3 class="type">
-                                <%= weapon.type %>
-                            </h3>
+                            <h1 class="name"><%= weapon.name %></h1>
+                            <h3 class="type"><%= weapon.type %></h3>
                         </div>
                         <div class="header-cost">
-                            <h2 class="cost">
-                                <%= weapon.cost %>
-                            </h2>
+                            <h2 class="cost"><%= weapon.cost %></h2>
                             <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                         </div>
                     </div>
@@ -245,7 +239,7 @@
                             <% } %>
 
                             <% if (weapon.stats.stamina_consumption_light) { %>
-                            <div class="stat-row hidden">
+                            <div class="stat-row">
                                 <div class="stat-info">
                                     <p>Light Stamina</p>
                                     <p><%= weapon.stats.stamina_consumption_light %></p>
