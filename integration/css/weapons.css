@@ -59,6 +59,7 @@ body {
     backdrop-filter: blur(10px);
     padding: 1rem;
     width: 80%;
+    margin-bottom: 2rem;
 }
 
 /****Card-Header****/
@@ -107,6 +108,7 @@ body {
 .img-weapon {
     width: 95%;
     height: auto;
+    margin-top: 0.5rem;
 }
 
 .weapon-ammo {
