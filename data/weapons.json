@@ -10,7 +10,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "3/6"
         },
         "special_ammo": [
             { 
@@ -27,7 +27,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "3/6",
             "damage": 130,
             "effective_range": 305,
             "rate_of_fire": 27,
@@ -53,7 +52,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "3/6"
         },
         "special_ammo": [
             { 
@@ -70,7 +69,7 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "3/6",
+
             "damage": 130,
             "effective_range": 305,
             "rate_of_fire": 27,
@@ -96,7 +95,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "3/6"
         },
         "special_ammo": [
             { 
@@ -113,7 +112,7 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "3/6",
+
             "damage": 130,
             "effective_range": 305,
             "rate_of_fire": 27,
@@ -138,7 +137,8 @@
         "image": "img/weapons/large/bomb_lance.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_bolt_arrow.png"
+            "icon": "img/ammo/ammo_icon_bolt_arrow.png",
+            "capacity_ammo": "1/3"
         },
         "special_ammo": [
             { 
@@ -161,7 +161,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/3",
             "damage": 150,
             "sighted_range": 10,
             "rate_of_fire": 9,
@@ -186,7 +185,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "5+1/10"
         },
         "special_ammo": [
             { 
@@ -203,7 +202,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/10",
             "damage": 74,
             "effective_range": 62,
             "rate_of_fire": 65,
@@ -229,7 +227,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "5+1/10"
         },
         "special_ammo": [
             { 
@@ -246,7 +244,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/10",
             "damage": 80,
             "effective_range": 67,
             "rate_of_fire": 65,
@@ -268,11 +265,11 @@
         "description": "This early German semi-automatic pistol can realease a hail of accurate fire by virtue of its low recoil. Modified to increase capacity by removing the option to reload via magazine. Can be used for dual wielding.",
         "category": "Small",
         "type" : "Pistol",
-        "image": "img/weapons/small/bornheim_no_3_extended.png",
+        "image": "img/weapons/medium/bornheim_no_3_extended.png",
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "5+1/10"
         },
         "special_ammo": [
             { 
@@ -289,7 +286,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/10",
             "damage": 74,
             "effective_range": 62,
             "rate_of_fire": 44,
@@ -315,7 +311,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -332,7 +328,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 97,
             "effective_range": 80,
             "rate_of_fire": 30,
@@ -358,7 +353,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -375,7 +370,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 97,
             "effective_range": 80,
             "rate_of_fire": 40,
@@ -401,7 +395,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6/18"
         },
         "special_ammo": [
             { 
@@ -418,7 +412,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/18",
             "damage": 104,
             "effective_range": 85,
             "rate_of_fire": 40,
@@ -444,7 +437,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "17/18"
         },
         "special_ammo": [
             { 
@@ -461,7 +454,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "17/18",
             "damage": 104,
             "effective_range": 85,
             "rate_of_fire": 24,
@@ -487,7 +479,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "6/9"
         },
         "special_ammo": [
             { 
@@ -504,7 +496,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/9",
             "damage": 126,
             "effective_range": 112,
             "rate_of_fire": 18,
@@ -530,7 +521,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -559,7 +550,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 110,
             "effective_range": 87,
             "rate_of_fire": 22,
@@ -578,14 +568,14 @@
         "id": 14,
         "name": "Caldwell Pax Claw",
         "cost": 105,
-        "description": "Iconic single-action six round revolver. Robust, powerful, and accurate, a blade affixed to the grip gives this an edge up close. Can be used for dual wielding.Iconic single-action six round revolver. Robust, powerful, and accurate, a blade affixed to the grip gives this an edge up close. Can be used for dual wielding.",
+        "description": "Iconic single-action six round revolver. Robust, powerful, and accurate, a blade affixed to the grip gives this an edge up close. Can be used for dual wielding.",
         "category": "Small",
         "type" : "Pistol",
         "image": "img/weapons/small/caldwell_pax_claw.png",
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -614,7 +604,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 110,
             "effective_range": 87,
             "rate_of_fire": 22,
@@ -640,7 +629,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -663,7 +652,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 190,
             "effective_range": 13,
             "rate_of_fire": 24,
@@ -682,14 +670,14 @@
         "id": 16,
         "name": "Caldwell Rival 78 Handcannon",
         "cost": 125,
-        "description": "Sawn-off break-action side-by-side shotgun. Its wider spread but shorter range make this a great backup weapon.Sawn-off break-action side-by-side shotgun. Its wider spread but shorter range make this a great backup weapon.",
+        "description": "Sawn-off break-action side-by-side shotgun. Its wider spread but shorter range make this a great backup weapon.",
         "category": "Medium",
         "type" : "Shotgun",
         "image": "img/weapons/medium/caldwell_rival_78_handcannon.png",
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -712,7 +700,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 105,
             "effective_range": 10,
             "rate_of_fire": 24,
@@ -731,7 +718,7 @@
         "id": 17,
         "name": "Cavalry Saber",
         "cost": 60,
-        "description": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
+        "description": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/cavalry_saber.png",
@@ -768,7 +755,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "4+1/6"
         },
         "special_ammo": [
             { 
@@ -785,7 +772,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "4+1/6",
             "damage": 194,
             "effective_range": 13,
             "rate_of_fire": 24,
@@ -810,10 +796,10 @@
         "image": "img/weapons/small/dolch_96.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_special_dolch.png"
+            "icon": "img/ammo/ammo_icon_special_dolch.png",
+            "capacity_ammo": "10/10"
         },
         "stats": {
-            "capacity_ammo": "10/10",
             "damage": 97,
             "effective_range": 78,
             "rate_of_fire": 64,
@@ -838,10 +824,10 @@
         "image": "img/weapons/medium/dolch_96_precision.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_special_dolch.png"
+            "icon": "img/ammo/ammo_icon_special_dolch.png",
+            "capacity_ammo": "10/10"
         },
         "stats": {
-            "capacity_ammo": "10/10",
             "damage": 97,
             "effective_range": 78,
             "rate_of_fire": 64,
@@ -868,7 +854,7 @@
             {
                 "name": "Medium",
                 "icon": "img/ammo/ammo_icon_medium.png",
-                "ammo_box_icon": "img/ammo/ammo_box_medium.png",
+                "capacity_ammo": "2/20",
                 "special_ammo": [
                     { 
                         "name": "Full Metal Jacket",
@@ -887,7 +873,7 @@
             {
                 "name": "Shell",
                 "icon": "img/ammo/ammo_icon_shell.png",
-                "ammo_box_icon": "img/ammo/ammo_box_shell.png",
+                "capacity_ammo": "1/5",
                 "special_ammo": [
                     { 
                         "name": "Penny Shot",
@@ -911,10 +897,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": [
-                "1/5",
-                "2/20"
-            ],
             "damage": 120,
             "effective_range": 170,
             "rate_of_fire": 22,
@@ -939,7 +921,8 @@
         "image": "img/weapons/small/hand_crossbow.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_bolt_arrow_small.png"
+            "icon": "img/ammo/ammo_icon_bolt_arrow_small.png",
+            "capacity_ammo": "1/8"
         },
         "special_ammo": [
             { 
@@ -968,7 +951,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/8",
             "damage": 195,
             "sighted_range": 12,
             "rate_of_fire": 14,
@@ -993,7 +975,8 @@
         "image": "img/weapons/large/crossbow.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_bolt_arrow.png"
+            "icon": "img/ammo/ammo_icon_bolt_arrow.png",
+            "capacity_ammo": "1/9"
         },
         "special_ammo": [
             { 
@@ -1010,7 +993,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/9",
             "damage": 247,
             "sighted_range": 12,
             "rate_of_fire": 13,
@@ -1035,7 +1017,8 @@
         "image": "img/weapons/medium/hunting_bow.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_bolt_arrow.png"
+            "icon": "img/ammo/ammo_icon_bolt_arrow.png",
+            "capacity_ammo": "1/8"
         },
         "special_ammo": [
             { 
@@ -1058,7 +1041,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/8",
             "damage": 227,
             "sighted_range": 20,
             "rate_of_fire": 51,
@@ -1085,12 +1067,12 @@
             {
                 "name": "Compact",
                 "icon": "img/ammo/ammo_icon_compact.png",
-                "ammo_box_icon": "img/ammo/ammo_box_compact.png",
+                "capacity_ammo": "9/18",
                 "special_ammo": [
                     { 
                         "name": "Incendiary",
                         "cost": 40,
-                        "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.Incendiary', 'This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
+                        "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                         "icon":"img/specials_ammo/compact_incendiary.png"
                     },
                     { 
@@ -1104,7 +1086,7 @@
             {
                 "name": "Shell",
                 "icon": "img/ammo/ammo_icon_shell.png",
-                "ammo_box_icon": "img/ammo/ammo_box_shell.png",
+                "capacity_ammo": "1/3",
                 "special_ammo": [
                     { 
                         "name": "Starshell",
@@ -1128,10 +1110,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": [
-                "1/3",
-                "9/18"
-            ],
             "damage": 97,
             "effective_range": 80,
             "rate_of_fire": 25,
@@ -1158,12 +1136,12 @@
             {
                 "name": "Compact",
                 "icon": "img/ammo/ammo_icon_compact.png",
-                "ammo_box_icon": "img/ammo/ammo_box_compact.png",
+                "capacity_ammo": "9/18",
                 "special_ammo": [
                     { 
                         "name": "Incendiary",
                         "cost": 40,
-                        "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.Incendiary', 'This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
+                        "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                         "icon":"img/specials_ammo/compact_incendiary.png"
                     },
                     { 
@@ -1177,7 +1155,7 @@
             {
                 "name": "Shell",
                 "icon": "img/ammo/ammo_icon_shell.png",
-                "ammo_box_icon": "img/ammo/ammo_box_shell.png",
+                "capacity_ammo": "1/5",
                 "special_ammo": [
                     { 
                         "name": "Starshell",
@@ -1201,10 +1179,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": [
-                "1/5",
-                "9/18"
-            ],
             "damage": 107,
             "effective_range": 141,
             "rate_of_fire": 21,
@@ -1231,7 +1205,7 @@
             {
                 "name": "Long",
                 "icon": "img/ammo/ammo_icon_long.png",
-                "ammo_box_icon": "img/ammo/ammo_box_long.png",
+                "capacity_ammo": "9/3",
                 "special_ammo": [
                     { 
                         "name": "Poison",
@@ -1250,7 +1224,7 @@
             {
                 "name": "Shell",
                 "icon": "img/ammo/ammo_icon_shell.png",
-                "ammo_box_icon": "img/ammo/ammo_box_shell.png",
+                "capacity_ammo": "1/3",
                 "special_ammo": [
                     { 
                         "name": "Starshell",
@@ -1274,10 +1248,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": [
-                "1/3",
-                "9/3"
-            ],
             "damage": 120,
             "effective_range": 112,
             "rate_of_fire": 18,
@@ -1303,7 +1273,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "10/5"
         },
         "special_ammo": [
             { 
@@ -1320,7 +1290,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "10/5",
             "damage": 132,
             "effective_range": 311,
             "rate_of_fire": 20,
@@ -1346,7 +1315,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "10/5"
         },
         "special_ammo": [
             { 
@@ -1363,7 +1332,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "10/5",
             "damage": 132,
             "effective_range": 311,
             "rate_of_fire": 20,
@@ -1389,7 +1357,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "10/5"
         },
         "special_ammo": [
             { 
@@ -1406,7 +1374,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "10/5",
             "damage": 132,
             "effective_range": 311,
             "rate_of_fire": 20,
@@ -1432,7 +1399,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "10/5"
         },
         "special_ammo": [
             { 
@@ -1449,7 +1416,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "10/5",
             "damage": 132,
             "effective_range": 311,
             "rate_of_fire": 20,
@@ -1483,14 +1449,14 @@
         "id": 34,
         "name": "Martini-Henry IC1",
         "cost": 122,
-        "description": "The workhorse rifle of the British Empire, the Martini-Henry Carbine is a single-shot breech-loading rifle that values simplicity and power.The workhorse rifle of the British Empire, the Martini-Henry Carbine is a single-shot breech-loading rifle that values simplicity and power.",
+        "description": "The workhorse rifle of the British Empire, the Martini-Henry Carbine is a single-shot breech-loading rifle that values simplicity and power.",
         "category": "Large",
         "type" : "Rifle",
         "image": "img/weapons/large/martini_henry.png",
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/10"
         },
         "special_ammo": [
             { 
@@ -1513,7 +1479,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/10",
             "damage": 143,
             "effective_range": 334,
             "rate_of_fire": 18,
@@ -1532,14 +1497,14 @@
         "id": 35,
         "name": "Martini-Henry IC1 Deadeye",
         "cost": 140,
-        "description": "This single-shot breech-loading rifle is furnished with a Deadeye scope that complements its competent range and power.This single-shot breech-loading rifle is furnished with a Deadeye scope that complements its competent range and power.",
+        "description": "This single-shot breech-loading rifle is furnished with a Deadeye scope that complements its competent range and power.",
         "category": "Large",
         "type" : "Deadeye variant",
         "image": "img/weapons/large/martini_henry_deadeye.png",
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/10"
         },
         "special_ammo": [
             { 
@@ -1562,7 +1527,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/10",
             "damage": 143,
             "effective_range": 334,
             "rate_of_fire": 18,
@@ -1584,11 +1548,11 @@
         "description": "This single-shot breech-loading rifle is equipped with a long-bladed saber bayonet that is deadly in close quarters.",
         "category": "Large",
         "type" : "Rifle",
-        "image": "img/weapons/large/martini_henry_riposte.png",
+        "image": "img/weapons/large/martini_henry_bayonet.png",
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/10"
         },
         "special_ammo": [
             { 
@@ -1611,7 +1575,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/10",
             "damage": 143,
             "effective_range": 334,
             "rate_of_fire": 18,
@@ -1637,7 +1600,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/10"
         },
         "special_ammo": [
             { 
@@ -1660,7 +1623,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/10",
             "damage": 143,
             "effective_range": 334,
             "rate_of_fire": 18,
@@ -1679,14 +1641,14 @@
         "id": 38,
         "name": "Martini-Henry IC1 Ironside",
         "cost": 159,
-        "description": "This Martini-Henry IC1 features a mechanism carrying five extra cartridges in addition to the one in the rifle's chamber which allows the wielder to replace the spent cartridge in quick succession, transforming the weapon into a makeshift repeating rifle.This Martini-Henry IC1 features a mechanism carrying five extra cartridges in addition to the one in the rifle's chamber which allows the wielder to replace the spent cartridge in quick succession, transforming the weapon into a makeshift repeating rifle.",
+        "description": "This Martini-Henry IC1 features a mechanism carrying five extra cartridges in addition to the one in the rifle's chamber which allows the wielder to replace the spent cartridge in quick succession, transforming the weapon into a makeshift repeating rifle.",
         "category": "Large",
         "type" : "Rifle",
-        "image": "img/weapons/large/martini_henry_ironside.png",
+        "image": "img/weapons/large/martini_henry_ic1_ironside.png",
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5+1/10"
         },
         "special_ammo": [
             { 
@@ -1709,7 +1671,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/10",
             "damage": 173,
             "effective_range": 334,
             "rate_of_fire": 18,
@@ -1735,7 +1696,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5/10"
         },
         "special_ammo": [
             { 
@@ -1752,7 +1713,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5/10",
             "damage": 136,
             "effective_range": 320,
             "rate_of_fire": 26,
@@ -1778,7 +1738,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5/10"
         },
         "special_ammo": [
             { 
@@ -1795,7 +1755,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5/10",
             "damage": 133,
             "effective_range": 314,
             "rate_of_fire": 26,
@@ -1821,7 +1780,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5/10"
         },
         "special_ammo": [
             { 
@@ -1838,7 +1797,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5/10",
             "damage": 136,
             "effective_range": 320,
             "rate_of_fire": 26,
@@ -1863,8 +1821,8 @@
         "image": "img/weapons/medium/mosin_nagant_m1891_obrez_mace.png",
         "ammo": {
             "name": "Long",
-            "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "icon": "img/ammo/ammo_icon_long.png", 
+            "capacity_ammo": "5/10"
         },
         "special_ammo": [
             { 
@@ -1881,7 +1839,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5/10",
             "damage": 133,
             "effective_range": 314,
             "rate_of_fire": 26,
@@ -1900,14 +1857,14 @@
         "id": 43,
         "name": "Mosin-Nagant M1891 Sniper",
         "cost": 730,
-        "description": "Modern Imperial Russian bolt-action service rifle. The attached long scope provides accuracy at range, but prevents the use of stripper clips for fast reloading.Modern Imperial Russian bolt-action service rifle. The attached long scope provides accuracy at range, but prevents the use of stripper clips for fast reloading.",
+        "description": "Modern Imperial Russian bolt-action service rifle. The attached long scope provides accuracy at range, but prevents the use of stripper clips for fast reloading.",
         "category": "Large",
         "type" : "Sniper",
         "image": "img/weapons/large/mosin_nagant_m1891_sniper.png",
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5/10"
         },
         "special_ammo": [
             { 
@@ -1924,7 +1881,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5/10",
             "damage": 136,
             "effective_range": 320,
             "rate_of_fire": 24,
@@ -1950,7 +1906,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "15/0"
         },
         "special_ammo": [
             { 
@@ -1967,7 +1923,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "15/00",
             "damage": 133,
             "effective_range": 314,
             "rate_of_fire": 29,
@@ -1993,7 +1948,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "15/0"
         },
         "special_ammo": [
             { 
@@ -2010,7 +1965,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "15/0",
             "damage": 136,
             "effective_range": 320,
             "rate_of_fire": 75,
@@ -2036,7 +1990,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/21"
         },
         "special_ammo": [
             { 
@@ -2053,7 +2007,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/21",
             "damage": 91,
             "effective_range": 74,
             "rate_of_fire": 21,
@@ -2079,7 +2032,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/21"
         },
         "special_ammo": [
             { 
@@ -2096,7 +2049,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/21",
             "damage": 91,
             "effective_range": 74,
             "rate_of_fire": 21,
@@ -2122,7 +2074,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/21"
         },
         "special_ammo": [
             { 
@@ -2139,7 +2091,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/21",
             "damage": 91,
             "effective_range": 57,
             "rate_of_fire": 21,
@@ -2165,7 +2116,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/21"
         },
         "special_ammo": [
             { 
@@ -2182,7 +2133,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/21",
             "damage": 91,
             "effective_range": 74,
             "rate_of_fire": 21,
@@ -2208,7 +2158,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/14"
         },
         "special_ammo": [
             { 
@@ -2225,7 +2175,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/14",
             "damage": 91,
             "effective_range": 74,
             "rate_of_fire": 28,
@@ -2251,7 +2200,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/14"
         },
         "special_ammo": [
             { 
@@ -2268,7 +2217,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/14",
             "damage": 91,
             "effective_range": 74,
             "rate_of_fire": 28,
@@ -2294,7 +2242,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/14"
         },
         "special_ammo": [
             { 
@@ -2311,7 +2259,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/14",
             "damage": 104,
             "effective_range": 126,
             "rate_of_fire": 28,
@@ -2337,7 +2284,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7/14"
         },
         "special_ammo": [
             { 
@@ -2354,7 +2301,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/14",
             "damage": 104,
             "effective_range": 126,
             "rate_of_fire": 28,
@@ -2373,13 +2319,14 @@
         "id": 54,
         "name": "Nitro Express Rifle",
         "cost": 1015,
-        "description": "Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.",
+        "description": "Powerful, side-by-side, big game hunting rifle that can bring down the largest targets at mid-range. Carries limited ammunition.",
         "category": "Large",
         "type" : "Rifle",
-        "image": "img/weapons/large/.png",
+        "image": "img/weapons/large/nitro_express.png",
         "ammo": {
             "name": "Special",
-            "icon": "img/ammo/ammo_icon_special_nitro.png"
+            "icon": "img/ammo/ammo_icon_special_nitro.png",
+            "capacity_ammo": "7/14"
         },
         "special_ammo": [
             { 
@@ -2396,7 +2343,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7/14",
             "damage": 364,
             "effective_range": 252,
             "rate_of_fire": 21,
@@ -2415,7 +2361,7 @@
         "id": 55,
         "name": "Railroad Hammer",
         "cost": 15,
-        "description": "Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
+        "description": "Large mallet designed to hammer railroad spikes into their tracks, repurposed to hammer heads into the dirt.",
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/railroad_hammer.png",
@@ -2430,14 +2376,14 @@
         "id": 56,
         "name": "Romero 77",
         "cost": 66,
-        "description": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
+        "description": "Classic break-action shotgun with a long barrel. Good range and power for a shotgun. Has to reload after every shot.",
         "category": "Large",
         "type" : "Shotgun",
         "image": "img/weapons/large/romero_77.png",
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "1/6"
         },
         "special_ammo": [
             { 
@@ -2466,7 +2412,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/6",
             "damage": 218,
             "effective_range": 14,
             "rate_of_fire": 16,
@@ -2492,7 +2437,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "1/5"
         },
         "special_ammo": [
             { 
@@ -2521,7 +2466,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/5",
             "damage": 145,
             "effective_range": 11,
             "rate_of_fire": 16,
@@ -2547,7 +2491,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "1/6"
         },
         "special_ammo": [
             { 
@@ -2576,7 +2520,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/6",
             "damage": 218,
             "effective_range": 14,
             "rate_of_fire": 16,
@@ -2602,7 +2545,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "1/5"
         },
         "special_ammo": [
             { 
@@ -2631,7 +2574,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/5",
             "damage": 145,
             "effective_range": 11,
             "rate_of_fire": 16,
@@ -2650,14 +2592,14 @@
         "id": 60,
         "name": "Romero 77 Alamo",
         "cost": 98,
-        "description": "A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.'A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.",
+        "description": "A Romero 77 shotgun with an external magazine and reloading device. Holds up to five shells at a time, including the one in the chamber, and allows for a seamless reload, making this a suitable repeating shotgun.",
         "category": "Large",
         "type" : "Shotgun",
         "image": "img/weapons/large/romero_77_alamo.png",
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "1/6"
         },
         "special_ammo": [
             { 
@@ -2686,7 +2628,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/6",
             "damage": 218,
             "effective_range": 14,
             "rate_of_fire": 13,
@@ -2712,7 +2653,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -2729,7 +2670,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 107,
             "effective_range": 85,
             "rate_of_fire": 24,
@@ -2755,7 +2695,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -2772,7 +2712,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 107,
             "effective_range": 85,
             "rate_of_fire": 24,
@@ -2798,7 +2737,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -2815,7 +2754,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 107,
             "effective_range": 85,
             "rate_of_fire": 30,
@@ -2841,7 +2779,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -2858,7 +2796,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 107,
             "effective_range": 85,
             "rate_of_fire": 24,
@@ -2884,7 +2821,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6/12"
         },
         "special_ammo": [
             { 
@@ -2901,7 +2838,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6/12",
             "damage": 107,
             "effective_range": 85,
             "rate_of_fire": 30,
@@ -2927,7 +2863,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/8"
         },
         "special_ammo": [
             { 
@@ -2950,7 +2886,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/8",
             "damage": 149,
             "effective_range": 347,
             "rate_of_fire": 13,
@@ -2976,7 +2911,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/7"
         },
         "special_ammo": [
             { 
@@ -2999,7 +2934,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/7",
             "damage": 149,
             "effective_range": 150,
             "rate_of_fire": 11,
@@ -3025,7 +2959,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/8"
         },
         "special_ammo": [
             { 
@@ -3048,7 +2982,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/8",
             "damage": 149,
             "effective_range": 169,
             "rate_of_fire": 13,
@@ -3067,14 +3000,14 @@
         "id": 69,
         "name": "Sparks LRR Sniper",
         "cost": 199,
-        "description": "Renowned, large-bore, single-shot rifle mounted with a long scope for even greater effectiveness over distance.Renowned, large-bore, single-shot rifle mounted with a long scope for even greater effectiveness over distance.",
+        "description": "Renowned, large-bore, single-shot rifle mounted with a long scope for even greater effectiveness over distance.",
         "category": "Large",
         "type" : "Sniper",
         "image": "img/weapons/large/sparks_lrr_sniper.png",
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "1/8"
         },
         "special_ammo": [
             { 
@@ -3097,7 +3030,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/8",
             "damage": 149,
             "effective_range": 347,
             "rate_of_fire": 13,
@@ -3123,7 +3055,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "4+1/10"
         },
         "special_ammo": [
             { 
@@ -3152,7 +3084,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "4+1/10",
             "damage": 210,
             "effective_range": 14,
             "rate_of_fire": 20,
@@ -3178,7 +3109,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "3+1/8"
         },
         "special_ammo": [
             { 
@@ -3208,7 +3139,6 @@
  
         ],
         "stats": {
-            "capacity_ammo": "3+1/8",
             "damage": 113,
             "effective_range": 10,
             "rate_of_fire": 19,
@@ -3234,7 +3164,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "4+1/10"
         },
         "special_ammo": [
             { 
@@ -3263,7 +3193,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "4+1/10",
             "damage": 190,
             "effective_range": 14,
             "rate_of_fire": 20,
@@ -3289,7 +3218,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "1/12"
         },
         "special_ammo": [
             { 
@@ -3312,7 +3241,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/12",
             "damage": 132,
             "effective_range": 212,
             "rate_of_fire": 19,
@@ -3338,7 +3266,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "1/12"
         },
         "special_ammo": [
             { 
@@ -3361,7 +3289,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/12",
             "damage": 132,
             "effective_range": 212,
             "rate_of_fire": 19,
@@ -3387,7 +3314,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "1/12"
         },
         "special_ammo": [
             { 
@@ -3410,7 +3337,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/12",
             "damage": 132,
             "effective_range": 212,
             "rate_of_fire": 19,
@@ -3436,7 +3362,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "1/12"
         },
         "special_ammo": [
             { 
@@ -3459,7 +3385,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/12",
             "damage": 130,
             "effective_range": 204,
             "rate_of_fire": 19,
@@ -3478,14 +3403,14 @@
         "id": 76,
         "name": "Springfield 1866 Compact Striker",
         "cost": 56,
-        "description": "A shorter, close-combat version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. The knife attached to its barrel can be used for both heavy and light melee attacks.A shorter, close-combat version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. The knife attached to its barrel can be used for both heavy and light melee attacks.",
+        "description": "A shorter, close-combat version of the classic breech-loading rifle with .50-70 caliber centerfire cartridges and a quick fire rate. The knife attached to its barrel can be used for both heavy and light melee attacks.",
         "category": "Medium",
         "type" : "Rifle",
         "image": "img/weapons/medium/springfield_1866_compact_striker.png",
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "1/12"
         },
         "special_ammo": [
             { 
@@ -3508,7 +3433,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/12",
             "damage": 130,
             "effective_range": 204,
             "rate_of_fire": 19,
@@ -3534,7 +3458,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "1/12"
         },
         "special_ammo": [
             { 
@@ -3557,7 +3481,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "1/12",
             "damage": 130,
             "effective_range": 204,
             "rate_of_fire": 19,
@@ -3583,7 +3506,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5+1/8"
         },
         "special_ammo": [
             { 
@@ -3600,7 +3523,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/8",
             "damage": 124,
             "effective_range": 291,
             "rate_of_fire": 23,
@@ -3626,7 +3548,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5+1/8"
         },
         "special_ammo": [
             { 
@@ -3643,7 +3565,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/8",
             "damage": 124,
             "effective_range": 291,
             "rate_of_fire": 23,
@@ -3669,7 +3590,7 @@
         "ammo": {
             "name": "Long",
             "icon": "img/ammo/ammo_icon_long.png",
-            "ammo_box_icon": "img/ammo/ammo_box_long.png"
+            "capacity_ammo": "5+1/8"
         },
         "special_ammo": [
             { 
@@ -3686,7 +3607,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/8",
             "damage": 124,
             "effective_range": 291,
             "rate_of_fire": 23,
@@ -3712,7 +3632,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6+1/20"
         },
         "special_ammo": [
             { 
@@ -3735,7 +3655,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/20",
             "damage": 130,
             "effective_range": 204,
             "rate_of_fire": 24,
@@ -3761,7 +3680,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6+1/20"
         },
         "special_ammo": [
             { 
@@ -3784,7 +3703,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/20",
             "damage": 130,
             "effective_range": 204,
             "rate_of_fire": 24,
@@ -3810,7 +3728,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6+1/20"
         },
         "special_ammo": [
             { 
@@ -3833,7 +3751,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/20",
             "damage": 130,
             "effective_range": 204,
             "rate_of_fire": 24,
@@ -3859,7 +3776,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "6+1/20"
         },
         "special_ammo": [
             { 
@@ -3882,7 +3799,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/20",
             "damage": 130,
             "effective_range": 162,
             "rate_of_fire": 24,
@@ -3911,7 +3827,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "6+1/8"
         },
         "special_ammo": [
             { 
@@ -3940,7 +3856,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/8",
             "damage": 190,
             "effective_range": 14,
             "rate_of_fire": 21,
@@ -3969,7 +3884,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "6+1/8"
         },
         "special_ammo": [
             { 
@@ -3998,7 +3913,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/8",
             "damage": 105,
             "effective_range": 10,
             "rate_of_fire": 19,
@@ -4024,7 +3938,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "5+1/6"
         },
         "special_ammo": [
             { 
@@ -4041,7 +3955,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/6",
             "damage": 203,
             "effective_range": 13,
             "rate_of_fire": 23,
@@ -4067,7 +3980,7 @@
         "ammo": {
             "name": "Shell",
             "icon": "img/ammo/ammo_icon_shell.png",
-            "ammo_box_icon": "img/ammo/ammo_box_shell.png"
+            "capacity_ammo": "5+1/6"
         },
         "special_ammo": [
             { 
@@ -4084,7 +3997,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/6",
             "damage": 203,
             "effective_range": 13,
             "rate_of_fire": 23,
@@ -4110,7 +4022,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "15+1/20"
         },
         "special_ammo": [
             { 
@@ -4133,7 +4045,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "15+1/20",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 31,
@@ -4159,7 +4070,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "15+1/20"
         },
         "special_ammo": [
             { 
@@ -4182,7 +4093,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "15+1/20",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 31,
@@ -4208,7 +4118,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "15+1/20"
         },
         "special_ammo": [
             { 
@@ -4231,7 +4141,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "15+1/20",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 31,
@@ -4250,14 +4159,14 @@
         "id": 92,
         "name": "Winfield M1873 Swift",
         "cost": 128,
-        "description": "Modified iconic repeating rifle with very large internal magazine. Reloading is quickened with a speed loader machanism.Modified iconic repeating rifle with very large internal magazine. Reloading is quickened with a speed loader machanism.",
+        "description": "Modified iconic repeating rifle with very large internal magazine. Reloading is quickened with a speed loader machanism.",
         "category": "Large",
         "type" : "Lever-action rifle",
         "image": "img/weapons/large/winfield_m1873_swift.png",
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "15+1/20"
         },
         "special_ammo": [
             { 
@@ -4280,7 +4189,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "15+1/20",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 41,
@@ -4306,7 +4214,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "17+1/20"
         },
         "special_ammo": [
             { 
@@ -4329,7 +4237,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "17+1/20",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 35,
@@ -4355,7 +4262,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7+1/28"
         },
         "special_ammo": [
             { 
@@ -4378,7 +4285,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7+1/28",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 29,
@@ -4404,7 +4310,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7+1/28"
         },
         "special_ammo": [
             { 
@@ -4427,7 +4333,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7+1/28",
             "damage": 110,
             "effective_range": 136,
             "rate_of_fire": 29,
@@ -4453,7 +4358,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "7+1/28"
         },
         "special_ammo": [
             { 
@@ -4476,7 +4381,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "7+1/28",
             "damage": 110,
             "effective_range": 151,
             "rate_of_fire": 29,
@@ -4502,7 +4406,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6+1/28"
         },
         "special_ammo": [
             { 
@@ -4525,7 +4429,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/28",
             "damage": 107,
             "effective_range": 141,
             "rate_of_fire": 28,
@@ -4551,7 +4454,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6+1/28"
         },
         "special_ammo": [
             { 
@@ -4574,7 +4477,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/28",
             "damage": 107,
             "effective_range": 141,
             "rate_of_fire": 28,
@@ -4600,7 +4502,7 @@
         "ammo": {
             "name": "Compact",
             "icon": "img/ammo/ammo_icon_compact.png",
-            "ammo_box_icon": "img/ammo/ammo_box_compact.png"
+            "capacity_ammo": "6+1/28"
         },
         "special_ammo": [
             { 
@@ -4623,7 +4525,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "6+1/28",
             "damage": 107,
             "effective_range": 141,
             "rate_of_fire": 28,
@@ -4649,7 +4550,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "9+1/12"
         },
         "special_ammo": [
             { 
@@ -4666,7 +4567,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "9+1/12",
             "damage": 123,
             "effective_range": 180,
             "rate_of_fire": 23,
@@ -4692,7 +4592,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "5+1/12"
         },
         "special_ammo": [
             { 
@@ -4709,7 +4609,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/12",
             "damage": 120,
             "effective_range": 170,
             "rate_of_fire": 24,
@@ -4735,7 +4634,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "9+1/12"
         },
         "special_ammo": [
             { 
@@ -4752,7 +4651,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "9+1/12",
             "damage": 123,
             "effective_range": 180,
             "rate_of_fire": 23,
@@ -4778,7 +4676,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "5+1/12"
         },
         "special_ammo": [
             { 
@@ -4795,7 +4693,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "5+1/12",
             "damage": 120,
             "effective_range": 145,
             "rate_of_fire": 24,
@@ -4821,7 +4718,7 @@
         "ammo": {
             "name": "Medium",
             "icon": "img/ammo/ammo_icon_medium.png",
-            "ammo_box_icon": "img/ammo/ammo_box_medium.png"
+            "capacity_ammo": "9+1/12"
         },
         "special_ammo": [
             { 
@@ -4838,7 +4735,6 @@
             }
         ],
         "stats": {
-            "capacity_ammo": "9+1/12",
             "damage": 123,
             "effective_range": 180,
             "rate_of_fire": 23,
