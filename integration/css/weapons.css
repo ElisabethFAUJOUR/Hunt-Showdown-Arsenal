@@ -33,6 +33,7 @@ body {
 
 .sort-weapons-link {
     padding: 0.5rem 1rem;
+    margin-bottom:3rem;
     border: 1px solid rgba(146, 145, 145, 0.5);
     background-color: rgba(9, 9, 11, 0.5);
     box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
@@ -45,4 +46,145 @@ body {
     background-color: var(--red-dark);
 }
 
+/*******************/
+/****Weapon Card****/
+/*******************/
 
+.weapon-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(146, 145, 145, 0.3);
+    background-color: rgba(9, 9, 11, 0.5);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);  
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    width: 80%;
+}
+
+/****Card-Header****/
+
+.weapon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weapon-header .type {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1rem;
+    color: var(--grey);
+    padding-top: 0.2rem;
+}
+
+.header-cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-cost img {
+    width: 30px;
+}
+
+/****Card-Body****/
+
+.weapon-body {
+    display: flex;
+}
+
+/****INFOS****/
+
+.weapon-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 1rem;
+}
+
+.img-weapon {
+    width: 95%;
+    height: auto;
+}
+
+.weapon-ammo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-right: 2rem;
+}
+
+.ammo-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.ammo-type img {
+    width:40px;
+}
+
+.special_ammo {
+    display: flex;
+    
+}
+
+.special_ammo img {
+    width: 30px;
+}
+
+
+
+/****STATS****/
+
+.weapon-stats {
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    font-weight: 600;
+    width: 70%;
+}
+
+.stat-col {
+    width: 40%;
+}
+
+.stat-row {
+    padding-bottom: 1rem;
+}
+
+.stat-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-bar {
+    position: relative;
+}
+
+.grey-line {
+    position: absolute;
+    z-index: 0;
+    height: 4px;
+    width: 100%;
+    background: var(--grey);
+    display: block;
+}
+
+.red-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 4px;
+    background: var(--red-dark);
+    display: block;
+    width: 72%;
+}

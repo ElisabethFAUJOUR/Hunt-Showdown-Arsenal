@@ -20,7 +20,7 @@ app.use(express.static("public")); // Ca revient à déclarer une route par fich
 app.use(router);
 
 // ---- Middleware 404 ----
-app.use(handleError);
+// app.use(handleError);
 
 // ---- LISTEN server ----
 const port = process.env.PORT || 3000;

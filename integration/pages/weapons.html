@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="../css/weapons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <title>Hunt Loadout - Random Loadout Generator</title>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -22,9 +25,9 @@
             </div>
             <nav class="nav">
                 <a class="nav-link focus" href="">Loadout Generator</a>
-                <a class="nav-link"href="">Weapons Arsenal</a>
-                <a class="nav-link"href="">Tools</a>
-                <a class="nav-link"href="">Consummables</a>
+                <a class="nav-link" href="">Weapons Arsenal</a>
+                <a class="nav-link" href="">Tools</a>
+                <a class="nav-link" href="">Consummables</a>
             </nav>
         </header>
         <main class="main">
@@ -37,88 +40,166 @@
                     <a class="sort-weapons-link" href="">Small</a>
                 </nav>
                 <div class="weapon-card">
-                    <div class="weapon-info">
-                        <div class="info-header">
+                    <div class="weapon-header">
+                        <div class="header-title">
                             <h1 class="name">Berthier Mle 1892</h1>
-                            <h2 class="cost">356<img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars"></h2>
+                            <h3 class="type">Bolt-action Rifle</h3>
                         </div>
-                        <h3 class="type">Bolt-action Rifle</h3>
-                        <p class="description">The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a bolt-action mousqueton that doesn't lose power for the sake of its convenience.</p>    
-                        <div class="img">
-                            <img src="../img/weapons/large/berthier_mle_1892.png" alt="Berthier Mle 1892">
-                            <div class="ammo">
-                                <img class="ammo-type" src="../img/ammo/ammo_icon_long.png" alt="Long Ammo">
-                                <p class="ammo-capacity">3/6</p>
-                            </div>
+                        <div class="header-cost">
+                            <h2 class="cost">356</h2>
+                            <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                         </div>
                     </div>
-                    <div class="weapon-stats">
-                        <div class="col">
-                            <div class="stat row">
-                                <p>Damage</p>
-                                <p>130</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
-                            <div class="stat row">
-                                <p>Cycle Time</p>
-                                <p>1.7s</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
-                            <div class="stat row">
-                                <p>Vertical Recoil</p>
-                                <p>14</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
-                            <div class="stat row">
-                                <p>Melee Damage</p>
-                                <p>27</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
+
+                    <div class="weapon-body">
+                        <div class="weapon-info">
+                            <p>The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a
+                                bolt-action mousqueton that doesn't lose power for the sake of its convenience.</p>
+                            <img class="img-weapon" src="../img/weapons/large/berthier_mle_1892.png"
+                                    alt="Berthier Mle 1892">
                         </div>
            
-                        <div class="col">
-                            <div class="stat row">
-                                <p>Effective Range</p>
-                                <p>305m</p>
-                                <div class="stat-bar"><span></span></div>
+                        <div class="weapon-ammo">
+                            <div class="ammo-type">
+                                <img src="../img/ammo/ammo_icon_long.png" alt="Long Ammo">
+                                <p class="ammo-capacity">3/6</p>
                             </div>
-                            <div class="stat row">
-                                <p>Spred</p>
-                                <p>47.5</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
-                            <div class="stat row">
-                                <p>Reload Speed</p>
-                                <p>2.7s</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
-                            <div class="stat row">
-                                <p>Heavy Melee Damage</p>
-                                <p>54</p>
-                                <div class="stat-bar"><span></span></div>
+                            <div class="special_ammo">
+                                <img src="../img/specials_ammo/long_incendiary.png"
+                                alt="This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.">
+                                <img src="../img/specials_ammo/long_spitzer.png"
+                                alt="Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.">
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div class="stat row">
-                                <p>Rate of Fire</p>
-                                <p>27rpm</p>
-                                <div class="stat-bar"><span></span></div>
+                        <div class="weapon-stats">
+                            <div class="stat-col">
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Damage</p>
+                                        <p>130</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Cycle Time</p>
+                                        <p>1.7s</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Vertical Recoil</p>
+                                        <p>14</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Melee Damage</p>
+                                        <p>27</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="stat row">
-                                <p>Sway</p>
-                                <p>77</p>
-                                <div class="stat-bar"><span></span></div>
+
+                            <div class="stat-col">
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Effective Range</p>
+                                        <p>305m</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Spred</p>
+                                        <p>47.5</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Reload Speed</p>
+                                        <p>2.7s</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Heavy Melee Damage</p>
+                                        <p>54</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="stat row">
-                                <p>Muzzle Velocity</p>
-                                <p>590m/s</p>
-                                <div class="stat-bar"><span></span></div>
-                            </div>
-                            <div class="stat row">
-                                <p>Heavy Stamina</p>
-                                <p>25</p>
-                                <div class="stat-bar"><span></span></div>
+
+                            <div class="stat-col">
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Rate of Fire</p>
+                                        <p>27rpm</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Sway</p>
+                                        <p>77</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Muzzle Velocity</p>
+                                        <p>590m/s</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Heavy Stamina</p>
+                                        <p>25</p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -130,4 +211,5 @@
             <p>Made with ❤️ by Elisabeth, French developer and Hunter.</p>
         </footer>
 </body>
+
 </html>
