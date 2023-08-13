@@ -1,14 +1,14 @@
 const { Router } = require("express");
-const homeController = require("./controllers/homeController.js");
-const weaponController = require("./controllers/weaponController.js");
+const mainController = require("./controllers/homeController.js");
+
 const generatorController = require("./controllers/generatorController.js");
 
 const router = new Router();
 
-router.get("/", homeController.renderHomePage); // "/" : **Home page**
-router.get("/weapons", weaponController.renderWeaponsPage);
-// router.get("/tools", mainController.renderToolsPage);
-// router.get("/consummables", mainController.renderConsummablesPage);
+router.get("/", mainController.renderHomePage); // "/" : **Home page**
+router.get("/weapons", mainController.renderWeaponsPage);
+router.get("/tools", mainController.renderToolsPage);
+router.get("/consummables", mainController.renderConsummablesPage);
 router.get("/generator", generatorController.renderGeneratorPage);
 
 module.exports = router;
