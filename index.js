@@ -6,21 +6,22 @@ dotenv.config();
 const express = require("express");
 const app = express();
 
-// ---- IMPORT router ----
+// ---- IMPORTS  ----
 const router = require("./app/router");
+const handleError = require('./app/middlewares/error404')
 
 // ---- SETTING view Engine EJS ----
 app.set("view engine", "ejs");
 app.set("views", "./app/views");
 
 // ---- SETTING static folder ----
-app.use(express.static("public")); // Ca revient à déclarer une route par fichier en quelque sorte
+app.use(express.static("public")); 
 
 // ---- SETTING routes ----
 app.use(router);
 
 // ---- Middleware 404 ----
-// app.use(handleError);
+app.use(handleError);
 
 // ---- LISTEN server ----
 const port = process.env.PORT || 3000;
