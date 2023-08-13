@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/header') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loadout Generator for Hunt Showdown">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Hunt Loadout</title>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <a href="#">Hunt Loadout</a>
-            </div>
-            <nav class="nav">
-                <a class="nav-link focus" href="">Loadout Generator</a>
-                <a class="nav-link"href="">Weapons Arsenal</a>
-                <a class="nav-link"href="">Tools</a>
-                <a class="nav-link"href="">Consummables</a>
-            </nav>
-        </header>
         <main class="main">
             <div class="main-container">
                 <img class="main-logo" src="../img/logo/logo_hunt.png" alt="Hunt Showdown">
@@ -37,10 +10,8 @@
                 </button>
             </div> 
         </main>
-        <footer class="footer">
-            <p>All visual elements are protected by <a href="https://www.crytek.com/">Crytek</a>'s copyright.</p>
-            <p>Made with ❤️ by Elisabeth, French developer and Hunter.</p>
-        </footer>
-    </div>
-</body>
-</html>
+
+<%- include('partials/footer') %>
+
+<!-- Specific Css file for page Home -->
+<link rel="stylesheet" href="../css/home.css">

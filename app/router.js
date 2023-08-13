@@ -1,9 +1,12 @@
 const { Router } = require("express");
-const mainController = require("./controllers/mainController");
+const homeController = require("./controllers/homeController.js");
+const weaponController = require("./controllers/weaponController.js");
 
 const router = new Router();
 
-router.get("/", mainController.renderHomePage); // "/" : **Home page**
-
+router.get("/", homeController.renderHomePage); // "/" : **Home page**
+router.get("/weapons", weaponController.renderWeaponsPage);
+// router.get("/tools", mainController.renderToolsPage);
+// router.get("/consummables", mainController.renderConsummablesPage);
 
 module.exports = router;
