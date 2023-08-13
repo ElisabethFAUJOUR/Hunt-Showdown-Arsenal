@@ -1,210 +1,242 @@
 <%- include('partials/header') %>
-        
-        <main class="main">
-            <div class="main-container">
-                <h1 class="main-title">Weapons Arsenal</h1>
-                <nav class="sort-weapons">
-                    <a class="sort-weapons-link" href="">All weapons</a>
-                    <a class="sort-weapons-link" href="">Large</a>
-                    <a class="sort-weapons-link" href="">Medium</a>
-                    <a class="sort-weapons-link" href="">Small</a>
-                </nav>
-                <div class="weapon-card">
+
+    <main class="main">
+        <div class="main-container">
+            <h1 class="main-title">Weapons Arsenal</h1>
+            <div class="sort-container">
+                <h3 class="sort-title">Weapon Slot</h3>
+                <div class="sort-weapons">
+                    <button class="sort-weapons-btn">All</button>
+                    <button class="sort-weapons-btn">Large</button>
+                    <button class="sort-weapons-btn">Medium</button>
+                    <button class="sort-weapons-btn">Small</button>
+                </div>
+                <h3 class="sort-title">Ammo type</h3>
+                <div class="sort-weapons">
+                    <button class="sort-weapons-btn">All</button>
+                    <button class="sort-weapons-btn">Long</button>
+                    <button class="sort-weapons-btn">Medium</button>
+                    <button class="sort-weapons-btn">Compact</button>
+                    <button class="sort-weapons-btn">Shotgun</button>
+                    <button class="sort-weapons-btn">Bolt</button>
+                    <button class="sort-weapons-btn">Arrow</button>
+                    <button class="sort-weapons-btn">Specials</button>
+                </div>
+                <div class="search-weapons">
+                    <input type="text" class="search-bar" placeholder="SEARCH">
+                </div>
+            </div>
+
+            <% weapons.forEach(weapon=> { %>
+                <div class="weapon-card" id="<%= weapon.id %>">
                     <div class="weapon-header">
                         <div class="header-title">
-                            <h1 class="name">Berthier Mle 1892</h1>
-                            <h3 class="type">Bolt-action Rifle</h3>
+                            <h1 class="name">
+                                <%= weapon.name %>
+                            </h1>
+                            <h3 class="type">
+                                <%= weapon.type %>
+                            </h3>
                         </div>
                         <div class="header-cost">
-                            <h2 class="cost">356</h2>
+                            <h2 class="cost">
+                                <%= weapon.cost %>
+                            </h2>
                             <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                         </div>
                     </div>
 
                     <div class="weapon-body">
                         <div class="weapon-info">
-                            <p>The lighter alternative to the Lebel 1886, the Berthier Mle 1892 is a
-                                bolt-action mousqueton that doesn't lose power for the sake of its convenience.</p>
-                            <img class="img-weapon" src="../img/weapons/large/berthier_mle_1892.png"
-                                    alt="Berthier Mle 1892">
+                            <p>
+                                <%= weapon.description %>
+                            </p>
+                            <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
                         </div>
-           
+
                         <div class="weapon-ammo">
-                            <div class="ammo-type">
-                                <img src="../img/ammo/ammo_icon_long.png" alt="Long Ammo">
-                                <p class="ammo-capacity">3/6</p>
-                            </div>
-                            <div class="special_ammo">
-                                <img src="../img/specials_ammo/long_incendiary.png"
-                                alt="This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.">
-                                <img src="../img/specials_ammo/long_spitzer.png"
-                                alt="Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.">
-                            </div>
+                            <% if (weapon.ammo) { %>
+                                <div class="ammo-type">
+                                    <img src="../<%= weapon.ammo.icon %>" alt="<%= weapon.ammo.name %>">
+                                    <p class="ammo-capacity">
+                                        <%= weapon.stats.capacity_ammo %>
+                                    </p>
+                                </div>
+
+                                <% if (weapon.special_ammo) { %>
+                                    <div class="special_ammo">
+                                        <% weapon.special_ammo.forEach(special_ammo=> { %>
+                                            <img src="../<%= special_ammo.icon %>" alt="<%= special_ammo.name %>">
+                                            <% }) %>
+                                    </div>
+                                    <% } %>
+                            <% } %>
                         </div>
 
                         <div class="weapon-stats">
-          
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Damage</p>
-                                        <p>130</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
-                                </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Effective Range</p>
-                                        <p>305m</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Damage</p>
+                                    <p>130</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row hidden">
-                                    <div class="stat-info">
-                                        <p>Sighted Range</p>
-                                        <p></p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Effective Range</p>
+                                    <p>305m</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Rate of Fire</p>
-                                        <p>27rpm</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Sighted Range</p>
+                                    <p></p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Cycle Time</p>
-                                        <p>1.7s</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Rate of Fire</p>
+                                    <p>27rpm</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Spread</p>
-                                        <p>47.5</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Cycle Time</p>
+                                    <p>1.7s</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Sway</p>
-                                        <p>77</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Spread</p>
+                                    <p>47.5</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Vertical Recoil</p>
-                                        <p>14</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Sway</p>
+                                    <p>77</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Reload Speed</p>
-                                        <p>2.7s</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Vertical Recoil</p>
+                                    <p>14</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Muzzle Velocity</p>
-                                        <p>590m/s</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Reload Speed</p>
+                                    <p>2.7s</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Melee Damage</p>
-                                        <p>27</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Muzzle Velocity</p>
+                                    <p>590m/s</p>
                                 </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
 
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Heavy Melee Damage</p>
-                                        <p>54</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Melee Damage</p>
+                                    <p>27</p>
                                 </div>
-                
-                                <div class="stat-row">
-                                    <div class="stat-info">
-                                        <p>Heavy Stamina</p>
-                                        <p>25</p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
                                 </div>
+                            </div>
 
-                                <div class="stat-row hidden">
-                                    <div class="stat-info">
-                                        <p>Light Stamina</p>
-                                        <p></p>
-                                    </div>
-                                    <div class="stat-bar">
-                                        <span class="grey-line"></span>
-                                        <span class="red-line"></span>
-                                    </div>
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Heavy Melee Damage</p>
+                                    <p>54</p>
                                 </div>
-                
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Heavy Stamina</p>
+                                    <p>25</p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Light Stamina</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
+                <% }) %>
 
-<%- include('partials/footer') %>     
+        </div>
+    </main>
 
-<!-- Specific Css file for page Home -->
-<link rel="stylesheet" href="../css/weapons.css">      
+    <%- include('partials/footer') %>
+
+        <!-- Specific Css file for page Home -->
+        <link rel="stylesheet" href="../css/weapons.css">

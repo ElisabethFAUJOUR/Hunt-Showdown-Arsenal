@@ -11,7 +11,7 @@ body {
 }
 
 .main-container {
-    padding-top: 8rem;
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,15 +23,31 @@ body {
 .main-title {
     font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin: 2rem 0;
+}
+
+/*******************/
+/****Sort Weapons****/
+/*******************/
+
+.sort-container {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.sort-title {
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .sort-weapons {
     display: flex;
-    gap:2rem;
+    justify-content: space-between;
+    gap:6px;
 }
 
-.sort-weapons-link {
+.sort-weapons-btn {
+    width: calc(40% - 6px);
     padding: 0.5rem 1rem;
     margin-bottom:3rem;
     border: 1px solid rgba(146, 145, 145, 0.5);
@@ -42,7 +58,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.sort-weapons-link:hover {
+.sort-weapons-btn:hover {
     background-color: var(--red-dark);
 }
 
@@ -106,16 +122,19 @@ body {
 }
 
 .img-weapon {
-    width: 397px;
+    width: 90%;
     height: auto;
     margin-top: 0.5rem;
 }
+
+/****AMMO****/
 
 .weapon-ammo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 8%;
     gap:5px;
     margin-right: 2rem;
 }
