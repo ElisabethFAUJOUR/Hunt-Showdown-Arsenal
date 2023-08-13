@@ -8,12 +8,15 @@
     <meta name="description" content="Loadout Generator for Hunt Showdown">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/weapons.css">
+    <link rel="stylesheet" href="../css/consummables.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <title>Hunt Loadout - Random Loadout Generator</title>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -22,14 +25,232 @@
             </div>
             <nav class="nav">
                 <a class="nav-link focus" href="">Loadout Generator</a>
-                <a class="nav-link"href="">Weapons Arsenal</a>
-                <a class="nav-link"href="">Tools</a>
-                <a class="nav-link"href="">Consummables</a>
+                <a class="nav-link" href="">Weapons Arsenal</a>
+                <a class="nav-link" href="">Tools</a>
+                <a class="nav-link" href="">Consummables</a>
             </nav>
         </header>
         <main class="main">
             <div class="main-container">
+                <h1 class="main-title">Consummables</h1>
 
+                <div class="consummable-card">
+                    <div class="consummable-header">
+                        <h1 class="name">Ammo Box</h1>
+                        <div class="header-cost">
+                            <h2 class="cost">65</h2>
+                            <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
+                        </div>
+                    </div>
+
+                    <div class="consummable-body">
+                        <div class="consummable-info">
+                            <p>This small portable ammo box refills half of your weapon's extra ammunition, including special ammunition types.</p>
+                            <img class="img-consummable" src="../img/consummables/ammo_box.png" alt="Ammo Box">
+                        </div>
+
+                        <div class="consummable-stats">
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Damage</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Damage Thrown</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Damage Per Tick</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Effect Radius</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Effect Duration</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Throw Range</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Fuse Timer</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Sighted Range</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Rate of Fire</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Spred</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Sway</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Vertical Recoil</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Reload Speed</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Muzzle Velocity</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Melee Damage</p>
+                                    <p>31</p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Light Melee Stamina</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-info">
+                                    <p>Heavy Melee Stamina</p>
+                                    <p>90</p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="stat-row hidden">
+                                <div class="stat-info">
+                                    <p>Throw Stamina</p>
+                                    <p></p>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="grey-line"></span>
+                                    <span class="red-line"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -37,4 +258,5 @@
             <p>Made with ❤️ by Elisabeth, French developer and Hunter.</p>
         </footer>
 </body>
+
 </html>
