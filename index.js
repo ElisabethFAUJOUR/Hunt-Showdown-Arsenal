@@ -8,7 +8,7 @@ const app = express();
 
 // ---- IMPORTS  ----
 const router = require("./app/router");
-const handleError = require('./app/middlewares/error404')
+const render404Page = require('./app/middlewares/error404')
 
 // ---- SETTING view Engine EJS ----
 app.set("view engine", "ejs");
@@ -21,7 +21,7 @@ app.use(express.static("public"));
 app.use(router);
 
 // ---- Middleware 404 ----
-app.use(handleError);
+app.use(render404Page);
 
 // ---- LISTEN server ----
 const port = process.env.PORT || 3000;
