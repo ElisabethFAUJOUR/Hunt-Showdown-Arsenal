@@ -2,7 +2,6 @@ const weapon = {
     
     init() {
         weapon.searchWeapons();
-        console.log("Hello");
     },
 
     //---------------------------
