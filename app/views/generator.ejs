@@ -1,7 +1,8 @@
 <%- include('partials/header') %>
         
         <main class="main">
-            <div class="main-container">
+            <div class="main-container fade-in">
+
                 <div class="filters">
                     <h1 class="filters-title">Filters</h1>
                     <form action="">
@@ -27,6 +28,7 @@
                         <button class="generator-btn">Generate Loadout</button>
                     </form>
                 </div>
+
                 <div class="generator-container">
                     <div class="large">
                         <div class="large-slot">
@@ -79,11 +81,12 @@
                         </div>
                     </div>
                     <h1 class="label">Consummables</h1>
-                    <div class="price-content">
-                        <div class="price">
-                            <h2>Prix</h2>
-                            <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
-                        </div>
+                </div>
+
+                <div class="cost-content">
+                    <div class="cost">
+                        <h2>Total Cost</h2>
+                        <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                     </div>
                 </div>
 
@@ -92,5 +95,9 @@
 
 <%- include('partials/footer') %>
 
-<!-- Specific Css file for page Home -->
+<!-- Specific Css file for page Generator -->
 <link rel="stylesheet" href="../css/generator.css">
+<!-- Specific Js file for page Generator -->
+
+</body>
+</html>

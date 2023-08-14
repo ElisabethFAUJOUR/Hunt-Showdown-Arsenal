@@ -26,9 +26,9 @@ body {
     margin: 1rem 0;
 }
 
-/*******************/
+/********************/
 /****Sort Weapons****/
-/*******************/
+/********************/
 
 .sort-container {
     width: 60%;
@@ -67,8 +67,7 @@ body {
     margin-bottom:3rem;
     border: 1px solid rgba(146, 145, 145, 0.5);
     background-color: rgba(24, 24, 27, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
-    text-transform: uppercase;
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8); 
     transition: all 0.3s ease-in-out;
 }
 

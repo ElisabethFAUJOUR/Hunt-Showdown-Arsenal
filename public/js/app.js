@@ -1,28 +1,37 @@
 const app = {
     
     init() {
-        app.filterWeapons();
+        app.observeElements();
+        console.log("Hello");
     },
 
-    filterWeapons() {
-        const searchInput = document.querySelector('.search-bar');
-        const weaponCards = document.querySelectorAll('.weapon-card');
-    
-        searchInput.addEventListener('input', () => {
-            const searchText = searchInput.value.toLowerCase();
-    
-            weaponCards.forEach(card => {
-                const weaponName = card.querySelector('.name').textContent.toLowerCase();
-                if (weaponName.includes(searchText)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
+    //---------------------------
+    //---- FUNCTIONS SCROLL -----
+    //---------------------------
+
+    observeElements() {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.2 
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => { 
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in-visible");
+                observer.unobserve(entry.target);
                 }
             });
+        }, options);
+
+        fadeInElements.forEach(element => {
+            observer.observe(element);
         });
-    },
+    }
 
-
-}
+};
 
 document.addEventListener('DOMContentLoaded', app.init);

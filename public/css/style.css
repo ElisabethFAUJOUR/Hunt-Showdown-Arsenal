@@ -87,3 +87,15 @@ body {
  .footer p {
     padding: 0.2rem;
  }
+
+
+/* Fade-in Animation */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}

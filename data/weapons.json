@@ -16,13 +16,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -58,13 +56,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 220,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -101,13 +97,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 220,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -144,19 +138,16 @@
             { 
                 "name": "Dragon Breath",
                 "cost": 10,
-                "description": "This shell creates a seeral-meter-long jet of flame that ignites anything in its path.",
                 "icon": "img/specials_ammo/arrow_dragonbreath.png"
             }, 
             { 
                 "name": "Steel Ball",
                 "cost": 5,
-                "description": "The spring firing mechanism of the Bomb Lance repurposed to launch a deadly burst of Steel Balls.",
                 "icon":"img/specials_ammo/arrow_steelballs.png"
             },
             { 
                 "name": "Waxed Frag Charge",
                 "cost": 50,
-                "description": "Explosive lance with a projectile wax coating, ideal for hunting creatures submerged in water.",
                 "icon":"img/specials_ammo/arrow_waxed_frag_charge.png"
             }
         ],
@@ -191,13 +182,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -233,13 +222,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -275,13 +262,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -317,13 +302,11 @@
             { 
                 "name": "Dumdum",
                 "cost": 50,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/compact_dumdum.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             }
         ],
@@ -359,13 +342,11 @@
             { 
                 "name": "Dumdum",
                 "cost": 50,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/compact_dumdum.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             }
         ],
@@ -401,13 +382,11 @@
             { 
                 "name": "Dumdum",
                 "cost": 50,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/compact_dumdum.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             }
         ],
@@ -443,13 +422,11 @@
             { 
                 "name": "Dumdum",
                 "cost": 50,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/compact_dumdum.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             }
         ],
@@ -485,13 +462,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 100,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/long_explosive.png"
             }
         ],
@@ -527,25 +502,21 @@
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/compact_poison.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                 "icon":"img/specials_ammo/compact_incendiary.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 50,
-                "description": "These modified bullets expands and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon":"img/specials_ammo/compact_dumdum.png"
             }
         ],
@@ -581,25 +552,21 @@
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/compact_poison.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                 "icon":"img/specials_ammo/compact_incendiary.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 50,
-                "description": "These modified bullets expands and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon":"img/specials_ammo/compact_dumdum.png"
             }
         ],
@@ -635,19 +602,16 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -683,19 +647,16 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -761,13 +722,11 @@
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -859,14 +818,12 @@
                     { 
                         "name": "Full Metal Jacket",
                         "cost": 50,
-                        "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
-                        "icon":"img/specials_ammo/medium_fullmetaljacket.png"
+                                "icon":"img/specials_ammo/medium_fullmetaljacket.png"
                     },
                     { 
                         "name": "Dumdum",
                         "cost": 50,
-                        "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
-                        "icon":"img/specials_ammo/medium_dumdum.png"
+                                "icon":"img/specials_ammo/medium_dumdum.png"
                     }
                 ]
             },
@@ -878,20 +835,17 @@
                     { 
                         "name": "Penny Shot",
                         "cost": 5,
-                        "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
-                        "icon":"img/specials_ammo/shell_pennyshot.png"
+                                "icon":"img/specials_ammo/shell_pennyshot.png"
                     },
                     { 
                         "name": "Flechette",
                         "cost": 20,
-                        "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
-                        "icon": "img/specials_ammo/shell_flechette.png"
+                                "icon": "img/specials_ammo/shell_flechette.png"
                     },
                     { 
                         "name": "Slug",
                         "cost": 65,
-                        "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
-                        "icon":"img/specials_ammo/shell_slug.png"
+                                "icon":"img/specials_ammo/shell_slug.png"
                     }
                 ]
             }
@@ -928,25 +882,21 @@
             { 
                 "name": "Chaos Bolt",
                 "cost": 10,
-                "description": "A bolt that emulates the sound of a gunfight just like a Chaos Bomb, but with a shorter effect.",
                 "icon": "img/specials_ammo/bolt_chaos.png"
             }, 
             { 
                 "name": "Choke Bolt",
                 "cost": 10,
-                "description": "A Choke Bomb in the form of an arrow. Shorter lifespan and smaller range. Can be used offensively or defensively.",
                 "icon":"img/specials_ammo/bolt_choke.png"
             },
             { 
                 "name": "Poison Bolt",
                 "cost": 25,
-                "description": "This bolt releases a highly toxic agent upon impact. Can cause death in seconds in high doses.",
                 "icon":"img/specials_ammo/bolt_poison.png"
             },
             { 
                 "name": "Dragon Bolt",
                 "cost": 40,
-                "description": "A compact Dragon Breath shell attached to a bolt, creating a jet of flame that explodes on impact.",
                 "icon":"img/specials_ammo/bolt_dragon.png"
             }
         ],
@@ -982,13 +932,11 @@
             { 
                 "name": "Shot Bolt",
                 "cost": 40,
-                "description": "Modified, multi-purpose bolts with shotgun shells that detonates on impact.Modified, multi-purpose bolts with shotgun shells that detonates on impact.",
                 "icon": "img/specials_ammo/bolt_shot.png"
             }, 
             { 
                 "name": "Explosive Bolt",
                 "cost": 35,
-                "description": "A highly volatile and explosive bolt.",
                 "icon":"img/specials_ammo/bolt_explosive.png"
             }
         ],
@@ -1024,19 +972,16 @@
             { 
                 "name": "Concertina Arrow",
                 "cost": 30,
-                "description": "An arrow with a small Concertina Bomb attached to the point that explodes on impact.",
                 "icon":"img/specials_ammo/arrow_concertina.png"
             },
             { 
                 "name": "Poison Arrow",
                 "cost": 25,
-                "description": "A poison-coated arrow that can be retrieved and reused.",
                 "icon": "img/specials_ammo/arrow_poison.png"
             }, 
             { 
                 "name": "Frag Arrow",
                 "cost": 70,
-                "description": "An arrow with a smal Frag Bomb attached to the point that will bounce on impact and detonate after a short time.",
                 "icon":"img/specials_ammo/arrow_frag.png"
             }
         ],
@@ -1072,13 +1017,11 @@
                     { 
                         "name": "Incendiary",
                         "cost": 40,
-                        "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
-                        "icon":"img/specials_ammo/compact_incendiary.png"
+                                "icon":"img/specials_ammo/compact_incendiary.png"
                     },
                     { 
                         "name": "Full Metal Jacket",
                         "cost": 50,
-                        "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                         "icon":"img/specials_ammo/compact_fullmetaljacket.png"
                     }
                 ]
@@ -1091,19 +1034,16 @@
                     { 
                         "name": "Starshell",
                         "cost": 5,
-                        "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                         "icon":"img/specials_ammo/shell_starshell.png"
                     },
                     { 
                         "name": "Dragon Breath",
                         "cost": 10,
-                        "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
-                        "icon":"img/specials_ammo/shell_dragonbreath.png"
+                                "icon":"img/specials_ammo/shell_dragonbreath.png"
                     },
                     { 
                         "name": "Slug",
                         "cost": 65,
-                        "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                         "icon":"img/specials_ammo/shell_slug.png"
                     }
                 ]
@@ -1141,13 +1081,11 @@
                     { 
                         "name": "Incendiary",
                         "cost": 40,
-                        "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                         "icon":"img/specials_ammo/compact_incendiary.png"
                     },
                     { 
                         "name": "Full Metal Jacket",
                         "cost": 50,
-                        "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                         "icon":"img/specials_ammo/compact_fullmetaljacket.png"
                     }
                 ]
@@ -1160,19 +1098,16 @@
                     { 
                         "name": "Starshell",
                         "cost": 5,
-                        "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                         "icon":"img/specials_ammo/shell_starshell.png"
                     },
                     { 
                         "name": "Dragon Breath",
                         "cost": 10,
-                        "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                         "icon":"img/specials_ammo/shell_dragonbreath.png"
                     },
                     { 
                         "name": "Slug",
                         "cost": 65,
-                        "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                         "icon":"img/specials_ammo/shell_slug.png"
                     }
                 ]
@@ -1210,13 +1145,11 @@
                     { 
                         "name": "Poison",
                         "cost": 60,
-                        "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                         "icon":"img/specials_ammo/long_poison.png"
                     },
                     { 
                         "name": "Full Metal Jacket",
                         "cost": 60,
-                        "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                         "icon":"img/specials_ammo/long_fullmetaljacket.png"
                     }
                 ]
@@ -1229,19 +1162,16 @@
                     { 
                         "name": "Starshell",
                         "cost": 5,
-                        "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                         "icon":"img/specials_ammo/shell_starshell.png"
                     },
                     { 
                         "name": "Dragon Breath",
                         "cost": 10,
-                        "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                         "icon":"img/specials_ammo/shell_dragonbreath.png"
                     },
                     { 
                         "name": "Slug",
                         "cost": 65,
-                        "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                         "icon":"img/specials_ammo/shell_slug.png"
                     }
                 ]
@@ -1279,13 +1209,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 150,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1321,13 +1249,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 150,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1363,13 +1289,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 150,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1405,13 +1329,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 150,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1461,20 +1383,17 @@
         "special_ammo": [
             { 
                 "name": "Full Metal Jacket",
-                "cost": 30,
-                "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
+                "cost": 30,  
                 "icon": "img/specials_ammo/long_fullmetaljacket.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 50,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives and Hellhounds.",
                 "icon":"img/specials_ammo/long_explosive.png"
             }
         ],
@@ -1510,19 +1429,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon": "img/specials_ammo/long_fullmetaljacket.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 50,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives and Hellhounds.",
                 "icon":"img/specials_ammo/long_explosive.png"
             }
         ],
@@ -1558,19 +1474,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon": "img/specials_ammo/long_fullmetaljacket.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 50,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives and Hellhounds.",
                 "icon":"img/specials_ammo/long_explosive.png"
             }
         ],
@@ -1606,19 +1519,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon": "img/specials_ammo/long_fullmetaljacket.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 50,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives and Hellhounds.",
                 "icon":"img/specials_ammo/long_explosive.png"
             }
         ],
@@ -1654,19 +1564,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardanned casing increases this bullet's penetration power, through additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon": "img/specials_ammo/long_fullmetaljacket.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 50,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives and Hellhounds.",
                 "icon":"img/specials_ammo/long_explosive.png"
             }
         ],
@@ -1702,13 +1609,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1744,13 +1649,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1786,13 +1689,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1828,13 +1729,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1870,13 +1769,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1912,13 +1809,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1954,13 +1849,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Spitzer",
                 "cost": 75,
-                "description": "Spitzer rounds revolutionize rifle ballistics, improving both penetration and muzzle velocity, though adding slightly stronger recoil. They are more stable in flight and can punch clean through multiple targets, but often cause less severe wounds.",
                 "icon":"img/specials_ammo/long_spitzer.png"
             }
         ],
@@ -1996,13 +1889,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2038,13 +1929,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2080,13 +1969,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2122,13 +2009,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2164,13 +2049,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2206,13 +2089,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2248,13 +2129,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2290,13 +2169,11 @@
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon": "img/specials_ammo/compact_highvelocity.png"
             }, 
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon":"img/specials_ammo/compact_poison.png"
             }
         ],
@@ -2332,13 +2209,11 @@
             { 
                 "name": "Explosive",
                 "cost": 200,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives and Hellhounds.",
                 "icon": "img/specials_ammo/specialnitro_explosive.png"
             }, 
             { 
                 "name": "Shredder",
                 "cost": 225,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding. They do not lose all of their penetration power, and do lose some muzzle velocity.",
                 "icon":"img/specials_ammo/specialnitro_shredder.png"
             }
         ],
@@ -2389,25 +2264,21 @@
             { 
                 "name": "Starshell",
                 "cost": 5,
-                "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                 "icon": "img/specials_ammo/shell_starshell.png"
             }, 
             { 
                 "name": "Dragon Breath",
                 "cost": 10,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_dragonbreath.png"
             },
             { 
                 "name": "Slug",
                 "cost": 65,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 5,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -2443,25 +2314,21 @@
             { 
                 "name": "Starshell",
                 "cost": 5,
-                "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                 "icon": "img/specials_ammo/shell_starshell.png"
             }, 
             { 
                 "name": "Dragon Breath",
                 "cost": 10,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_dragonbreath.png"
             },
             { 
                 "name": "Slug",
                 "cost": 65,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 5,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -2497,25 +2364,21 @@
             { 
                 "name": "Starshell",
                 "cost": 5,
-                "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                 "icon": "img/specials_ammo/shell_starshell.png"
             }, 
             { 
                 "name": "Dragon Breath",
                 "cost": 10,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_dragonbreath.png"
             },
             { 
                 "name": "Slug",
                 "cost": 65,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 5,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -2551,25 +2414,21 @@
             { 
                 "name": "Starshell",
                 "cost": 5,
-                "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                 "icon": "img/specials_ammo/shell_starshell.png"
             }, 
             { 
                 "name": "Dragon Breath",
                 "cost": 10,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_dragonbreath.png"
             },
             { 
                 "name": "Slug",
                 "cost": 65,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 5,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -2605,25 +2464,21 @@
             { 
                 "name": "Starshell",
                 "cost": 5,
-                "description": "A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.A shell that launches a flare that descends slowly, illuminating the area. Ignites everything it touches.",
                 "icon": "img/specials_ammo/shell_starshell.png"
             }, 
             { 
                 "name": "Dragon Breath",
                 "cost": 10,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_dragonbreath.png"
             },
             { 
                 "name": "Slug",
                 "cost": 65,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             },
             { 
                 "name": "Penny Shot",
                 "cost": 5,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             }
         ],
@@ -2659,13 +2514,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             }
         ],
@@ -2701,13 +2554,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             }
         ],
@@ -2743,13 +2594,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             }
         ],
@@ -2785,13 +2634,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             }
         ],
@@ -2827,13 +2674,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             }
         ],
@@ -2869,19 +2714,16 @@
             { 
                 "name": "Poison",
                 "cost": 30,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon": "img/specials_ammo/long_poison.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -2917,19 +2759,16 @@
             { 
                 "name": "Poison",
                 "cost": 30,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon": "img/specials_ammo/long_poison.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -2965,19 +2804,16 @@
             { 
                 "name": "Poison",
                 "cost": 30,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon": "img/specials_ammo/long_poison.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -3013,19 +2849,16 @@
             { 
                 "name": "Poison",
                 "cost": 30,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses, but cannot penetrate surfaces.",
                 "icon": "img/specials_ammo/long_poison.png"
             }, 
             { 
                 "name": "Incendiary",
                 "cost": 35,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible tracer can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 30,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -3061,25 +2894,21 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Dragon Breath",
                 "cost": 20,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
         ],
@@ -3115,25 +2944,21 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Dragon Breath",
                 "cost": 20,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
  
@@ -3170,25 +2995,21 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Dragon Breath",
                 "cost": 20,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
         ],
@@ -3224,19 +3045,16 @@
             { 
                 "name": "Poison",
                 "cost": 25,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 45,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/medium_explosive.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 25,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/medium_dumdum.png"
             }
         ],
@@ -3272,19 +3090,16 @@
             { 
                 "name": "Poison",
                 "cost": 25,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 45,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/medium_explosive.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 25,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/medium_dumdum.png"
             }
         ],
@@ -3320,19 +3135,16 @@
             { 
                 "name": "Poison",
                 "cost": 25,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 45,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/medium_explosive.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 25,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/medium_dumdum.png"
             }
         ],
@@ -3368,19 +3180,16 @@
             { 
                 "name": "Poison",
                 "cost": 25,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 45,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/medium_explosive.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 25,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/medium_dumdum.png"
             }
         ],
@@ -3416,19 +3225,16 @@
             { 
                 "name": "Poison",
                 "cost": 25,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 45,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/medium_explosive.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 25,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/medium_dumdum.png"
             }
         ],
@@ -3464,19 +3270,16 @@
             { 
                 "name": "Poison",
                 "cost": 25,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }, 
             { 
                 "name": "Explosive",
                 "cost": 45,
-                "description": "This bullet contains a small charge that bursts on impact, scattering shrapnel over an area--the larger the bullet size, the greater the area. Reduced penetration, velocity, and damage, but a well-aimed shot can tear apart Grunts, Hives, and Hellhounds.",
                 "icon":"img/specials_ammo/medium_explosive.png"
             },
             { 
                 "name": "Dumdum",
                 "cost": 25,
-                "description": "These modified bullets expand and shatter on impact, causing severe bleeding, but at the expense of penetration power and muzzle velocity. However, this additional stopping power has little effect on monsters and infected.",
                 "icon": "img/specials_ammo/medium_dumdum.png"
             }
         ],
@@ -3512,13 +3315,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 60,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -3554,13 +3355,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 60,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -3596,13 +3395,11 @@
             { 
                 "name": "Incendiary",
                 "cost": 70,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/long_incendiary.png"
             }, 
             { 
                 "name": "Full Metal Jacket",
                 "cost": 60,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/long_fullmetaljacket.png"
             }
         ],
@@ -3638,19 +3435,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
             "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/medium_highvelocity.png"
             }
         ],
@@ -3686,19 +3480,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
             "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/medium_highvelocity.png"
             }
         ],
@@ -3734,19 +3525,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
             "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/medium_highvelocity.png"
             }
         ],
@@ -3782,19 +3570,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
             "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/medium_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/medium_highvelocity.png"
             }
         ],
@@ -3833,25 +3618,21 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Dragon Breath",
                 "cost": 20,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
         ],
@@ -3890,25 +3671,21 @@
             { 
                 "name": "Flechette",
                 "cost": 40,
-                "description": "This shell contains a number of smaller dart-like projectiles which fan out in a tight spread. Cannot pierce most surfaces, but can saturate an area and cause bleeding damage.",
                 "icon": "img/specials_ammo/shell_flechette.png"
             }, 
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Dragon Breath",
                 "cost": 20,
-                "description": "This shell creates a several-meter-long jet of flame that ignites anything in its path. Reduced range over buckshot.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
             { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
         ],
@@ -3944,13 +3721,11 @@
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
                { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
         ],
@@ -3986,13 +3761,11 @@
             { 
                 "name": "Penny Shot",
                 "cost": 10,
-                "description": "Coins replace shot pellets in this shell for a more powerful, if erratic, barrage. Shreds skin and flesh, but cannot penetrate harder obstacles. Unreliable at a distance.",
                 "icon":"img/specials_ammo/shell_pennyshot.png"
             },
                { 
                 "name": "Slug",
                 "cost": 130,
-                "description": "Single solid projectile that can be used in shotguns to provide an advantage in rage and penetration over buckshot. Reduced ammunition. Not effective at long distance.",
                 "icon":"img/specials_ammo/shell_slug.png"
             }
         ],
@@ -4028,19 +3801,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4076,19 +3846,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4124,19 +3891,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4172,19 +3936,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4220,19 +3981,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4268,19 +4026,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4316,19 +4071,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4364,19 +4116,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4412,19 +4161,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4460,19 +4206,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4508,19 +4251,16 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/compact_fullmetaljacket.png"
             },
             { 
                 "name": "Incendiary",
                 "cost": 40,
-                "description": "This bullet contains a small phosphorous charge that ignites when fired and sets flammable targets alight. A visible traver can give the shooter's position away.",
                 "icon": "img/specials_ammo/compact_incendiary.png"
             }, 
             { 
                 "name": "High Velocity",
                 "cost": 60,
-                "description": "A hot-loaded bullet with a strong powder charge combined with a lighter projectile tip significantly boosts the muzzle velocity, but increases recoil slightly. Great for ranged combat.",
                 "icon":"img/specials_ammo/compact_highvelocity.png"
             }
         ],
@@ -4556,13 +4296,11 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }
         ],
@@ -4598,13 +4336,11 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }
         ],
@@ -4640,13 +4376,11 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }
         ],
@@ -4682,13 +4416,11 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }
         ],
@@ -4724,13 +4456,11 @@
             { 
                 "name": "Full Metal Jacket",
                 "cost": 50,
-                "description": "A hardened casing increases this bullet's penetration power, though additional weight reduces muzzle speed. Better retains damage over distance.",
                 "icon":"img/specials_ammo/medium_fullmetaljacket.png"
             },
             { 
                 "name": "Poison",
                 "cost": 50,
-                "description": "This bullet shatters on impact, releasing a toxic agent fatal in high doses. But the cost is reduced stopping power and penetration.",
                 "icon": "img/specials_ammo/medium_poison.png"
             }
         ],

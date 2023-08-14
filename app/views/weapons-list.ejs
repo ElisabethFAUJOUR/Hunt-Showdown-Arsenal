@@ -2,8 +2,8 @@
 
     <main class="main">
         <div class="main-container">
-            <h1 class="main-title">Filter</h1>
-            <div class="sort-container">
+            <h1 class="main-title fade-in">Filter</h1>
+            <div class="sort-container fade-in">
                 <h3 class="sort-title">Weapon Slot</h3>
                 <div class="sort-weapons">
                     <button class="sort-weapons-btn">All</button>
@@ -28,7 +28,7 @@
             </div>
 
             <% weapons.forEach(weapon=> { %>
-                <div class="weapon-card" id="<%= weapon.id %>">
+                <div class="weapon-card fade-in" id="<%= weapon.id %>">
                     <div class="weapon-header">
                         <div class="header-title">
                             <h1 class="name"><%= weapon.name %></h1>
@@ -273,5 +273,10 @@
 
     <%- include('partials/footer') %>
 
-        <!-- Specific Css file for page Home -->
-        <link rel="stylesheet" href="../css/weapons.css">
+    <!-- Specific Css file for page Weapons -->
+    <link rel="stylesheet" href="../css/weapons.css">
+    <!-- Specific Js file for page Weapons -->
+    <script src="../js/weapon.js"></script>
+
+    </body>
+    </html>
