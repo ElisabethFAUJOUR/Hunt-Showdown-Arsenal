@@ -22,14 +22,14 @@
                     <button class="sort-weapons-btn">Arrow</button>
                     <button class="sort-weapons-btn">Specials</button>
                 </div>
-                <div class="search-weapons">
+                <div class="search search-weapons">
                     <input type="text" class="search-bar" placeholder="SEARCH">
                 </div>
             </div>
 
             <% weapons.forEach(weapon=> { %>
-                <div class="weapon-card fade-in" id="<%= weapon.id %>">
-                    <div class="weapon-header">
+                <div class="card weapon-card fade-in" id="<%= weapon.id %>">
+                    <div class="card-header">
                         <div class="header-title">
                             <h1 class="name"><%= weapon.name %></h1>
                             <h3 class="type"><%= weapon.type %></h3>
@@ -40,13 +40,13 @@
                         </div>
                     </div>
 
-                    <div class="weapon-body">
-                        <div class="weapon-info">
+                    <div class="card-body">
+                        <div class="body-info">
                             <p><%= weapon.description %></p>
                             <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
                         </div>
 
-                        <div class="weapon-ammo">
+                        <div class="body-ammo">
                             <% if (weapon.ammo) { %>
                                 <% if (Array.isArray(weapon.ammo)) { %>
                                     <% weapon.ammo.forEach(ammoType => { %>
@@ -81,7 +81,7 @@
                             <% } %>
                         </div>
 
-                        <div class="weapon-stats">
+                        <div class="body-stats">
                             <% if (weapon.stats.damage) { %>
                                 <div class="stat-row">
                                     <div class="stat-info">
@@ -273,9 +273,11 @@
 
     <%- include('partials/footer') %>
 
-    <!-- Specific Css file for page Weapons -->
+    <!-- Common Css file for Weapons/Tools/Consumables pages -->
+    <link rel="stylesheet" href="../css/list-card.css">
+    <!-- Specific Css file for Weapons page -->
     <link rel="stylesheet" href="../css/weapons.css">
-    <!-- Specific Js file for page Weapons -->
+    <!-- Specific Js file for Weapons page -->
     <script src="../js/weapon.js"></script>
 
     </body>

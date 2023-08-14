@@ -27,7 +27,7 @@ body {
 }
 
 /******************/
-/****Sort Tools****/
+/****Search Bar****/
 /******************/
 
 .sort-container {
@@ -45,15 +45,15 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.search-tools input:focus {
+.search input:focus {
     border: 1px solid var(--red-dark);
 }
 
-/*****************/
-/****Tool Card****/
-/*****************/
+/************/
+/****Card****/
+/************/
 
-.tool-card {
+.card {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -67,11 +67,19 @@ body {
 
 /****Card-Header****/
 
-.tool-header {
+.card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.card-header .type {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1rem;
+    color: var(--grey);
+    padding-top: 0.2rem;
 }
 
 .header-cost {
@@ -85,25 +93,9 @@ body {
     width: 30px;
 }
 
-/****Tool-Body****/
-
-.tool-body {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    gap:5rem;
-}
-
-/****INFOS****/
-
-.img-tool {
-    width: 100px;
-    height: auto;
-    margin-top: 0.5rem;
-}
-
 /****STATS****/
 
-.tool-stats {
+.body-stats {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     justify-content: space-between;
@@ -138,5 +130,4 @@ body {
     height: 4px;
     background: var(--red-dark);
     display: block;
-    width: 72%;
 }

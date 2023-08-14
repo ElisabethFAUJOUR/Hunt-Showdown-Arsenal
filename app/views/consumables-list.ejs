@@ -4,272 +4,272 @@
         <div class="main-container">
             <h1 class="main-title fade-in">Filter</h1>
             <div class="sort-container fade-in">
-                <div class="search-consummables">
+                <div class="search search-consumables">
                     <input type="text" class="search-bar" placeholder="SEARCH">
                 </div>
             </div>
 
-            <% consummables.forEach(consummable => { %>
-                <div class="consummable-card fade-in" id="<%= consummable.id %>">
-                    <div class="consummable-header">
-                        <h1 class="name"><%= consummable.name %></h1>
+            <% consumables.forEach(consumable => { %>
+                <div class="card consumable-card fade-in" id="<%= consumable.id %>">
+                    <div class="card-header">
+                        <h1 class="name"><%= consumable.name %></h1>
                         <div class="header-cost">
-                            <h2 class="cost"><%= consummable.cost %></h2>
+                            <h2 class="cost"><%= consumable.cost %></h2>
                             <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                         </div>
                     </div>
     
-                    <div class="consummable-body">
-                        <div class="consummable-info">
-                            <p><%= consummable.description %></p>
-                            <img class="img-consummable" src="../<%= consummable.image %>" alt="<%= consummable.name %>">
+                    <div class="card-body">
+                        <div class="body-info">
+                            <p><%= consumable.description %></p>
+                            <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
                         </div>
     
-                        <% if (consummable.stats) { %>
-                            <div class="consummable-stats">
-                                <% if (consummable.stats.damage) { %>
+                        <% if (consumable.stats) { %>
+                            <div class="body-stats">
+                                <% if (consumable.stats.damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Damage</p>
-                                            <p><%= consummable.stats.damage %></p>
+                                            <p><%= consumable.stats.damage %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.damage/162)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.damage/162)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
 
-                                <% if (consummable.stats.damage_thrown) { %>
+                                <% if (consumable.stats.damage_thrown) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Damage Thrown</p>
-                                            <p><%= consummable.stats.damage_thrown %></p>
+                                            <p><%= consumable.stats.damage_thrown %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.damage_thrown/1)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.damage_thrown/1)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.damage_per_tick) { %>
+                                <% if (consumable.stats.damage_per_tick) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Damage Per Tick</p>
-                                            <p><%= consummable.stats.damage_per_tick %></p>
+                                            <p><%= consumable.stats.damage_per_tick %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.damage_per_tick/32)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.damage_per_tick/32)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.effect_radius) { %>
+                                <% if (consumable.stats.effect_radius) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Effect Radius</p>
-                                            <p><%= consummable.stats.effect_radius %>m</p>
+                                            <p><%= consumable.stats.effect_radius %>m</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.effect_radius/3.5)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.effect_radius/3.5)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.effect_duration) { %>
+                                <% if (consumable.stats.effect_duration) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Effect Duration</p>
-                                            <p><%= consummable.stats.effect_duration %>s</p>
+                                            <p><%= consumable.stats.effect_duration %>s</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.effect_duration/300)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.effect_duration/300)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.throw_range) { %>
+                                <% if (consumable.stats.throw_range) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Throw Range</p>
-                                            <p><%= consummable.stats.effect_duration %>m</p>
+                                            <p><%= consumable.stats.effect_duration %>m</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.throw_range/115)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.throw_range/115)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.fuse_timer) { %>
+                                <% if (consumable.stats.fuse_timer) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Fuse Timer</p>
-                                            <p><%= consummable.stats.fuse_timer %>s</p>
+                                            <p><%= consumable.stats.fuse_timer %>s</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.fuse_timer/6)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.fuse_timer/6)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.sighted_range) { %>
+                                <% if (consumable.stats.sighted_range) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Sighted Range</p>
-                                            <p><%= consummable.stats.sighted_range %>m</p>
+                                            <p><%= consumable.stats.sighted_range %>m</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.sighted_range/18)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.sighted_range/18)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.rate_of_fire) { %>
+                                <% if (consumable.stats.rate_of_fire) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Rate of Fire</p>
-                                            <p><%= consummable.stats.rate_of_fire %>rpm</p>
+                                            <p><%= consumable.stats.rate_of_fire %>rpm</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.rate_of_fire/48)*100 %>%"v></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.rate_of_fire/48)*100 %>%"v></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.spread) { %>
+                                <% if (consumable.stats.spread) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Spread</p>
-                                            <p><%= consummable.stats.spread %></p>
+                                            <p><%= consumable.stats.spread %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.spread/52.8)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.spread/52.8)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.sway) { %>
+                                <% if (consumable.stats.sway) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Sway</p>
-                                            <p><%= consummable.stats.sway %></p>
+                                            <p><%= consumable.stats.sway %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.sway/113)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.sway/113)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.vertical_recoil) { %>
+                                <% if (consumable.stats.vertical_recoil) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Vertical Recoil</p>
-                                            <p><%= consummable.stats.vertical_recoil %></p>
+                                            <p><%= consumable.stats.vertical_recoil %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.vertical_recoil/5)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.vertical_recoil/5)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
 
-                                <% if (consummable.stats.reload_speed) { %>
+                                <% if (consumable.stats.reload_speed) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Reload Speed</p>
-                                            <p><%= consummable.stats.reload_speed %>s</p>
+                                            <p><%= consumable.stats.reload_speed %>s</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.reload_speed/4.4)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.reload_speed/4.4)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.muzzle_velocity) { %>
+                                <% if (consumable.stats.muzzle_velocity) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Muzzle Velocity</p>
-                                            <p><%= consummable.stats.muzzle_velocity %>m/s</p>
+                                            <p><%= consumable.stats.muzzle_velocity %>m/s</p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.muzzle_velocity/130)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.muzzle_velocity/130)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.melee_damage) { %>
+                                <% if (consumable.stats.melee_damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Melee Damage</p>
-                                            <p><%= consummable.stats.melee_damage %></p>
+                                            <p><%= consumable.stats.melee_damage %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.melee_damage/75)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.melee_damage/75)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
 
-                                <% if (consummable.stats.heavy_melee_damage) { %>
+                                <% if (consumable.stats.heavy_melee_damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Heavy Melee Damage</p>
-                                            <p><%= consummable.stats.heavy_melee_damage %></p>
+                                            <p><%= consumable.stats.heavy_melee_damage %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.heavy_melee_damage/142)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.heavy_melee_damage/142)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
         
-                                <% if (consummable.stats.stamina_consumption_light) { %>
+                                <% if (consumable.stats.stamina_consumption_light) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Light Melee Stamina</p>
-                                            <p><%= consummable.stats.stamina_consumption_light %></p>
+                                            <p><%= consumable.stats.stamina_consumption_light %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.stamina_consumption_light/40)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.stamina_consumption_light/40)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
 
-                                <% if (consummable.stats.stamina_consumption_heavy) { %>
+                                <% if (consumable.stats.stamina_consumption_heavy) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Heavy Melee Stamina</p>
-                                            <p><%= consummable.stats.stamina_consumption_heavy %></p>
+                                            <p><%= consumable.stats.stamina_consumption_heavy %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.stamina_consumption_heavy/55)*100 %>%"v></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.stamina_consumption_heavy/55)*100 %>%"v></span>
                                         </div>
                                     </div>
                                 <% } %>
 
-                                <% if (consummable.stats.stamina_consumption_throw) { %>
+                                <% if (consumable.stats.stamina_consumption_throw) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Throw Stamina</p>
-                                            <p><%= consummable.stats.stamina_consumption_throw %></p>
+                                            <p><%= consumable.stats.stamina_consumption_throw %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consummable.stats.stamina_consumption_throw/25)*100 %>%"></span>
+                                            <span class="red-line" style="width:<%=(consumable.stats.stamina_consumption_throw/25)*100 %>%"></span>
                                         </div>
                                     </div>
                                 <% } %>
@@ -283,10 +283,12 @@
 
 <%- include('partials/footer') %>     
 
-<!-- Specific Css file for page Consummables -->
-<link rel="stylesheet" href="../css/consummables.css">
-<!-- Specific Js file for page Consummables -->
-<script src="../js/consummable.js"></script>
+<!-- Common Css file for Weapons/Tools/Consumables pages -->
+<link rel="stylesheet" href="../css/list-card.css">
+<!-- Specific Css file for page consumables -->
+<link rel="stylesheet" href="../css/tools-consumables.css">  
+<!-- Specific Js file for page consumables -->
+<script src="../js/consumable.js"></script>
 
 </body>
 </html>

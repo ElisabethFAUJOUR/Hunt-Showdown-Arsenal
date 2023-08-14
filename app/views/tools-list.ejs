@@ -4,14 +4,14 @@
         <div class="main-container">
             <h1 class="main-title fade-in">Filter</h1>
             <div class="sort-container fade-in">
-                <div class="search-tools">
+                <div class="search search-tools">
                     <input type="text" class="search-bar" placeholder="SEARCH">
                 </div>
             </div>
 
             <% tools.forEach(tool => { %>
-                <div class="tool-card fade-in" id="<%= tool.id %>">
-                    <div class="tool-header">
+                <div class="card tool-card fade-in" id="<%= tool.id %>">
+                    <div class="card-header">
                         <h1 class="name"><%= tool.name %></h1>
                         <div class="header-cost">
                             <h2 class="cost"><%= tool.cost %></h2>
@@ -19,14 +19,14 @@
                         </div>
                     </div>
 
-                    <div class="tool-body">
-                        <div class="tool-info">
+                    <div class="card-body">
+                        <div class="body-info">
                             <p><%= tool.description %></p>
-                            <img class="img-tool" src="../<%= tool.image %>" alt="<%= tool.name %>">
+                            <img class="body-img" src="../<%= tool.image %>" alt="<%= tool.name %>">
                         </div>
 
                         <% if (tool.stats) { %>
-                            <div class="tool-stats">
+                            <div class="body-stats">
                                 <% if (tool.stats.damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
@@ -296,9 +296,12 @@
 
 <%- include('partials/footer') %>     
 
+<!-- Common Css file for Weapons/Tools/Consumables pages -->
+<link rel="stylesheet" href="../css/list-card.css">
 <!-- Specific Css file for page Tools -->
-<link rel="stylesheet" href="../css/tools.css">  
+<link rel="stylesheet" href="../css/tools-consumables.css">  
 <!-- Specific Js file for page Tools -->
 <script src="../js/tool.js"></script>
+
 </body>
 </html>

@@ -23,6 +23,7 @@ body {
     font-family: "Crimson Text", sans-serif;
     font-size: 1.2rem;
     color:var(--text);
+    overflow:auto;
 }
 
 .container {

@@ -1,39 +1,6 @@
-body {
-    background-image: url("../img/bg/dark-smoke.png");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.header {
-    background-color: rgba(9, 9, 11, 1);
-}
-
-.main-container {
-    padding-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    width: 1500px;
-    margin: 0 auto; 
-}
-
-.main-title {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin: 1rem 0;
-}
-
 /********************/
 /****Sort Weapons****/
 /********************/
-
-.sort-container {
-    width: 60%;
-    margin-bottom: 1rem;
-}
 
 .sort-title {
     margin-bottom: 1rem;
@@ -61,80 +28,27 @@ body {
     background-color: var(--red-dark);
 }
 
-.search-bar {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    margin-bottom:3rem;
-    border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(24, 24, 27, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8); 
-    transition: all 0.3s ease-in-out;
-}
-
-.search-weapons input:focus {
-    border: 1px solid var(--red-dark);
-}
-
-/*******************/
-/****Weapon Card****/
-/*******************/
-
-.weapon-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(146, 145, 145, 0.3);
-    background-color: rgba(9, 9, 11, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);  
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-/****Card-Header****/
-
-.weapon-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.weapon-header .type {
-    font-style: italic;
-    font-weight: 100;
-    font-size: 1rem;
-    color: var(--grey);
-    padding-top: 0.2rem;
-}
-
-.header-cost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.header-cost img {
-    width: 30px;
-}
+/************/
+/****Card****/
+/************/
 
 /****Card-Body****/
 
-.weapon-body {
+.card-body {
     display: grid;
     grid-template-columns: 2fr 1fr 4fr;
 }
 
-/****INFOS****/
+/****Body-infos img****/
 
 .img-weapon {
     margin-top: 0.5rem;
     max-width: 430px;
 }
 
-/****AMMO****/
+/****Body-ammo****/
 
-.weapon-ammo {
+.body-ammo {
     margin:0 auto;
     text-align: center;
     gap:5px;
@@ -152,41 +66,4 @@ body {
     width: 30px;
 }
 
-/****STATS****/
 
-.weapon-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-between;
-    font-weight: 600;
-    gap: 1rem;
-}
-
-.stat-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.stat-bar {
-    position: relative;
-}
-
-.grey-line {
-    position: absolute;
-    z-index: 0;
-    height: 4px;
-    width: 100%;
-    background: var(--grey);
-    display: block;
-}
-
-.red-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 4px;
-    background: var(--red-dark);
-    display: block;
-}

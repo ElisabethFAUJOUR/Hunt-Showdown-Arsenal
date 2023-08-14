@@ -1,7 +1,7 @@
 const consu = {
     
     init() {
-        consu.searchConsummables();
+        consu.searchConsumables();
     },
 
     //---------------------------
@@ -11,16 +11,16 @@ const consu = {
     /**
      * Listen to the text put in the search bar and filter the weapons including the text
      */
-    searchConsummables() {
+    searchConsumables() {
         const searchInput = document.querySelector('.search-bar');
-        const consummableCards = document.querySelectorAll('.consummable-card');
+        const consumableCards = document.querySelectorAll('.consumable-card');
     
         searchInput.addEventListener('input', () => {
             const searchText = searchInput.value.toLowerCase();
     
-            consummableCards.forEach(card => {
-                const consummableName = card.querySelector('.name').textContent.toLowerCase();
-                if (consummableName.includes(searchText)) {
+            consumableCards.forEach(card => {
+                const consumableName = card.querySelector('.name').textContent.toLowerCase();
+                if (consumableName.includes(searchText)) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';

@@ -4,7 +4,7 @@
         "name": "Ammo Box",
         "cost": 65,
         "description": "This small portable ammo box refills half of your weapon's extra ammunition, including special ammunition types.",
-        "image": "img/consummables/ammo_box.png",
+        "image": "img/consumables/ammo_box.png",
         "stats": {
             "melee_damage": 31,
             "heavy_melee_damage": 90
@@ -15,7 +15,7 @@
         "name": "Medical Pack",
         "cost": 35,
         "description": "A portable medical kit that heals 100 health. Deployable in active health emergencies.",
-        "image": "img/consummables/medical_pack.png",
+        "image": "img/consumables/medical_pack.png",
         "stats": {
             "melee_damage": 13,
             "heavy_melee_damage": 31
@@ -26,7 +26,7 @@
         "name": "Tool Box",
         "cost": 70,
         "description": "A portable toolkit that refills some dwindling supplies in a tight spot.",
-        "image": "img/consummables/tool_box.png",
+        "image": "img/consumables/tool_box.png",
         "stats": {
             "melee_damage": 31,
             "heavy_melee_damage": 90
@@ -37,7 +37,7 @@
         "name": "Stalker Beetle",
         "cost": 45,
         "description": "Stalker Beetles are bred to find and track prey, giving hunters a view from above. As a last resort, they can sacrifice themselves to cause a small explosion hampering anuthing caught in the radius.",
-        "image": "img/consummables/stalker_beetle.png",
+        "image": "img/consumables/stalker_beetle.png",
         "stats": {
             "damage_thrown": 25,
             "effet_radius": 5,
@@ -52,7 +52,7 @@
         "name": "Choke Beetle",
         "cost": 22,
         "description": "Choke Beetles are bred to find and track prey, giving hunters a view from above. They have also evolved to explose into a cloud of suffocating gas, which they themselves are immune to.",
-        "image": "img/consummables/choke_beetle.png",
+        "image": "img/consumables/choke_beetle.png",
         "stats": {
             "damage_thrown": 1,
             "effet_radius": 5,
@@ -67,7 +67,7 @@
         "name": "Poison Bomb",
         "cost": 25,
         "description": "On detonation emits a persistant, deadly cloud. Anything caught in or that passes through the cloud will be poisoned.",
-        "image": "img/consummables/poison_bomb.png",
+        "image": "img/consumables/poison_bomb.png",
         "stats": {
             "damage_per_tick": 6,
             "effet_radius": 3,
@@ -82,7 +82,7 @@
         "name": "Hive Bomb",
         "cost": 40,
         "description": "Poisonous wasps emerge from this bomb to terrorize anyone unfortunate enough to be in the area. However it has no effect on monsters.",
-        "image": "img/consummables/hive_bomb.png",
+        "image": "img/consumables/hive_bomb.png",
         "stats": {
             "damage_per_tick": 4,
             "throw_range": 22,
@@ -96,7 +96,7 @@
         "name": "Flash Bomb",
         "cost": 47,
         "description": "Home made, mercury based, blinding light bomb. Capable of disorienting several targets at once.",
-        "image": "img/consummables/flash_bomb.png",
+        "image": "img/consumables/flash_bomb.png",
         "stats": {
             "damage_thrown": 1,
             "effet_radius": 8,
@@ -110,7 +110,7 @@
         "name": "Concertina Bomb",
         "cost": 48,
         "description": "Spring-loaded razorwire coil that unfolds violently when thrown. Shreds and entangles anything that tries to move through.",
-        "image": "img/consummables/concertina_bomb.png",
+        "image": "img/consumables/concertina_bomb.png",
         "stats": {
             "damage_thrown": 158,
             "effet_radius": 7,
@@ -124,7 +124,7 @@
         "name": "Chaos Bomb",
         "cost": 15,
         "description": "Set of firecrackers that can be used to temporarily distract nearby enemies. Duration of about 30 seconds.",
-        "image": "img/consummables/chaos_bomb.png",
+        "image": "img/consumables/chaos_bomb.png",
         "stats": {
             "damage": 13,
             "throw_range": 22,
@@ -138,7 +138,7 @@
         "name": "Sticky Bomb",
         "cost": 64,
         "description": "Dynamite charge in a sticky frame that can be attached to objects and enemies. Its eight-second fuse doubles the detonation time of a dynamite stick.",
-        "image": "img/consummables/sticky_bomb.png",
+        "image": "img/consumables/sticky_bomb.png",
         "stats": {
             "damage_thrown": 800,
             "effet_radius": 8,
@@ -153,7 +153,7 @@
         "name": "Frag Bomb",
         "cost": 103,
         "description": "Frag bombs send lethal shrapnel over a large area, lacerating nearby enemies. unlike dynamite however, the blast is not strong enough to destroy doors or concertina wire.",
-        "image": "img/consummables/frag_bomb.png",
+        "image": "img/consumables/frag_bomb.png",
         "stats": {
             "damage_thrown": 250,
             "effet_radius": 11,
@@ -168,7 +168,7 @@
         "name": "Fire Bomb",
         "cost": 30,
         "description": "Flammable liquid in a glass container that bursts on impact. Spreads burning liquid over a large area.",
-        "image": "img/consummables/fire_bomb.png",
+        "image": "img/consumables/fire_bomb.png",
         "stats": {
             "damage_thrown": 11,
             "effet_radius": 3,
@@ -183,7 +183,7 @@
         "name": "Liquid Fire Bomb",
         "cost": 35,
         "description": "Flammable liquid in a glass container. Burns on the surface of water. Internal steel balls cause it to burst on impact.",
-        "image": "img/consummables/liquid_fire_bomb.png",
+        "image": "img/consumables/liquid_fire_bomb.png",
         "stats": {
             "damage_thrown": 11,
             "effet_radius": 3,
@@ -198,7 +198,7 @@
         "name": "Hellfire Bomb",
         "cost": 70,
         "description": "Flammable liquid in a glass container that bursts on impact and creates a massive fireball.",
-        "image": "img/consummables/hellfire_bomb.png",
+        "image": "img/consumables/hellfire_bomb.png",
         "stats": {
             "damage_thrown": 26,
             "effet_radius": 6,
@@ -212,7 +212,7 @@
         "name": "Dynamite Stick",
         "cost": 18,
         "description": "A dynamite stick that detonates with a massive blast after four seconds.",
-        "image": "img/consummables/dynamite_stick.png",
+        "image": "img/consumables/dynamite_stick.png",
         "stats": {
             "damage_thrown": 750,
             "effet_radius": 8,
@@ -227,7 +227,7 @@
         "name": "Wawed Dynamite Stick",
         "cost": 24,
         "description": "A dynamite stick with a modified powder fuse that enables detonation under water.",
-        "image": "img/consummables/waxed_dynamite_stick.png",
+        "image": "img/consumables/waxed_dynamite_stick.png",
         "stats": {
             "damage_thrown": 750,
             "effet_radius": 8,
@@ -242,7 +242,7 @@
         "name": "Dynamite Bundle",
         "cost": 75,
         "description": "A bundle of several dynamite sticks. Why only bring one?",
-        "image": "img/consummables/dynamite_bundle.png",
+        "image": "img/consumables/dynamite_bundle.png",
         "stats": {
             "damage_thrown": 1500,
             "effet_radius": 10,
@@ -257,7 +257,7 @@
         "name": "Big Bundle Dynamite",
         "cost": 110,
         "description": "A bundle of many dynamite sticks. When something really needs to be blown up.",
-        "image": "img/consummables/big_dynamite_bundle.png",
+        "image": "img/consumables/big_dynamite_bundle.png",
         "stats": {
             "damage_thrown": 3000,
             "effet_radius": 11,
@@ -272,7 +272,7 @@
         "name": "Antidote Shot (weak)",
         "cost": 30,
         "description": "Instantly cures and prevents all poison effects. Physical damage associated with poison attacks still applies.",
-        "image": "img/consummables/weak_antidote_shot.png",
+        "image": "img/consumables/weak_antidote_shot.png",
         "stats": {
             "effect_duration": 600,
             "melee_damage": 13,
@@ -284,7 +284,7 @@
         "name": "Vitality Shot (weak)",
         "cost": 20,
         "description": "A shot which immediately restores 75 health.",
-        "image": "img/consummables/weak_vitality_shot.png",
+        "image": "img/consumables/weak_vitality_shot.png",
         "stats": {
             "melee_damage": 13,
             "heavy_melee_damage": 27
@@ -295,7 +295,7 @@
         "name": "Regeneration Shot (weak)",
         "cost": 20,
         "description": "A shot that continually restores health over a short duration. However, health regenerates at a reduced rate.",
-        "image": "img/consummables/weak_regeneration_shot.png",
+        "image": "img/consumables/weak_regeneration_shot.png",
         "stats": {
             "effect_duration": 300,
             "melee_damage": 13,
@@ -307,7 +307,7 @@
         "name": "Stamina Shot (weak)",
         "cost": 60,
         "description": "A shot which immediately restores all stamina and stops further depletion for 5 minutes.",
-        "image": "img/consummables/weak_stamina_shot.png",
+        "image": "img/consumables/weak_stamina_shot.png",
         "stats": {
             "effect_duration": 300,
             "melee_damage": 13,
@@ -319,7 +319,7 @@
         "name": "Antiote Shot",
         "cost": 55,
         "description": "Instantly cures and prevents all poison effects. Physical damage associated with poison attacks still applies.",
-        "image": "img/consummables/antidote_shot.png",
+        "image": "img/consumables/antidote_shot.png",
         "stats": {
             "effect_duration": 1200,
             "melee_damage": 13,
@@ -331,7 +331,7 @@
         "name": "Vitality Shot",
         "cost": 55,
         "description": "A shot which immediately restores all health.",
-        "image": "img/consummables/vitality_shot.png",
+        "image": "img/consumables/vitality_shot.png",
         "stats": {
             "melee_damage": 13,
             "heavy_melee_damage": 27
@@ -342,7 +342,7 @@
         "name": "Regeneration Shot",
         "cost": 55,
         "description": "A shot that continuously restores health until fully healed. It also makes health regeneration start instantly when you receive damage. However, health regenerates at a reduced rate.",
-        "image": "img/consummables/regeneration_shot.png",
+        "image": "img/consumables/regeneration_shot.png",
         "stats": {
             "effect_duration": 600,
             "melee_damage": 13,
@@ -354,7 +354,7 @@
         "name": "Stamina Shot",
         "cost": 55,
         "description": "A shot which immediately restores all stamina and stops further depletion for 10 minutes.",
-        "image": "img/consummables/stamina_shot.png",
+        "image": "img/consumables/stamina_shot.png",
         "stats": {
             "effect_duration": 600,
             "melee_damage": 13,

@@ -1,6 +1,6 @@
 const weapons = require("../../data/weapons.json");
 const tools = require("../../data/tools.json");
-const consummables = require("../../data/consummables.json");
+const consumables = require("../../data/consumables.json");
 
 const mainController = {
       renderHomePage(req, res) {
@@ -15,8 +15,8 @@ const mainController = {
       res.render("tools-list", { pageTitle: "Hunt Loadout - Tools", tools });
     },
     
-    renderConsummablesPage(req, res) {
-      res.render("consummables-list", { pageTitle: "Hunt Loadout - Consummables", consummables });
+    renderConsumablesPage(req, res) {
+      res.render("consumables-list", { pageTitle: "Hunt Loadout - Consumables", consumables });
     },
 
 };
