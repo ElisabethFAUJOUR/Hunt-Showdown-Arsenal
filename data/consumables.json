@@ -40,7 +40,7 @@
         "image": "img/consumables/stalker_beetle.png",
         "stats": {
             "damage_thrown": 25,
-            "effet_radius": 5,
+            "effect_radius": 5,
             "throw_range": 15,
             "control_range": 150,
             "melee_damage": 13,
@@ -55,7 +55,7 @@
         "image": "img/consumables/choke_beetle.png",
         "stats": {
             "damage_thrown": 1,
-            "effet_radius": 5,
+            "effect_radius": 5,
             "throw_range": 15,
             "control_range": 150,
             "melee_damage": 13,
@@ -70,7 +70,7 @@
         "image": "img/consumables/poison_bomb.png",
         "stats": {
             "damage_per_tick": 6,
-            "effet_radius": 3,
+            "effect_radius": 3,
             "throw_range": 22,
             "effect_duration": 300,
             "melee_damage": 13,
@@ -99,7 +99,7 @@
         "image": "img/consumables/flash_bomb.png",
         "stats": {
             "damage_thrown": 1,
-            "effet_radius": 8,
+            "effect_radius": 8,
             "throw_range": 22,
             "melee_damage": 13,
             "heavy_melee_damage": 27
@@ -113,7 +113,7 @@
         "image": "img/consumables/concertina_bomb.png",
         "stats": {
             "damage_thrown": 158,
-            "effet_radius": 7,
+            "effect_radius": 7,
             "throw_range": 15,
             "melee_damage": 52,
             "heavy_melee_damage": 112
@@ -141,7 +141,7 @@
         "image": "img/consumables/sticky_bomb.png",
         "stats": {
             "damage_thrown": 800,
-            "effet_radius": 8,
+            "effect_radius": 8,
             "throw_range": 22,
             "fuse_timer": 8,
             "melee_damage": 13,
@@ -156,7 +156,7 @@
         "image": "img/consumables/frag_bomb.png",
         "stats": {
             "damage_thrown": 250,
-            "effet_radius": 11,
+            "effect_radius": 11,
             "throw_range": 22,
             "fuse_timer": 4,
             "melee_damage": 13,
@@ -171,7 +171,7 @@
         "image": "img/consumables/fire_bomb.png",
         "stats": {
             "damage_thrown": 11,
-            "effet_radius": 3,
+            "effect_radius": 3,
             "throw_range": 22,
             "effect_duration": 120,
             "melee_damage": 13,
@@ -186,7 +186,7 @@
         "image": "img/consumables/liquid_fire_bomb.png",
         "stats": {
             "damage_thrown": 11,
-            "effet_radius": 3,
+            "effect_radius": 3,
             "throw_range": 22,
             "effect_duration": 120,
             "melee_damage": 13,
@@ -201,7 +201,7 @@
         "image": "img/consumables/hellfire_bomb.png",
         "stats": {
             "damage_thrown": 26,
-            "effet_radius": 6,
+            "effect_radius": 6,
             "throw_range": 22,
             "melee_damage": 13,
             "heavy_melee_damage": 27
@@ -215,7 +215,7 @@
         "image": "img/consumables/dynamite_stick.png",
         "stats": {
             "damage_thrown": 750,
-            "effet_radius": 8,
+            "effect_radius": 8,
             "throw_range": 22,
             "fuse_timer": 4,
             "melee_damage": 13,
@@ -230,7 +230,7 @@
         "image": "img/consumables/waxed_dynamite_stick.png",
         "stats": {
             "damage_thrown": 750,
-            "effet_radius": 8,
+            "effect_radius": 8,
             "throw_range": 22,
             "fuse_timer": 4,
             "melee_damage": 13,
@@ -245,7 +245,7 @@
         "image": "img/consumables/dynamite_bundle.png",
         "stats": {
             "damage_thrown": 1500,
-            "effet_radius": 10,
+            "effect_radius": 10,
             "throw_range": 22,
             "fuse_timer": 4,
             "melee_damage": 13,
@@ -260,7 +260,7 @@
         "image": "img/consumables/big_dynamite_bundle.png",
         "stats": {
             "damage_thrown": 3000,
-            "effet_radius": 11,
+            "effect_radius": 11,
             "throw_range": 15,
             "fuse_timer": 4,
             "melee_damage": 13,
