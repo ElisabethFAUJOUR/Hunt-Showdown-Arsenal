@@ -30,15 +30,18 @@ body {
 /****Search Bar****/
 /******************/
 
-.sort-container {
+.filter-container {
     width: 60%;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+}
+
+.search {
+    width: 80%;
 }
 
 .search-bar {
     width: 100%;
     padding: 0.5rem 1rem;
-    margin-bottom:3rem;
     border: 1px solid rgba(146, 145, 145, 0.5);
     background-color: rgba(24, 24, 27, 0.5);
     box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8); 
@@ -46,8 +49,52 @@ body {
 }
 
 .search input:focus {
-    border: 1px solid var(--red-dark);
+    border: 1px solid rgb(146, 145, 145);
 }
+
+.search input:hover {
+    border: 1px solid rgb(146, 145, 145);
+}
+
+
+/******************/
+/****Sort by****/
+/******************/
+
+.sort-by-btn {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgba(24, 24, 27, 0.5);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-by-btn:hover {
+    border: 1px solid rgb(146, 145, 145);
+}
+
+.btn-open {
+    border: 1px solid rgb(146, 145, 145);
+}
+
+.sort-options {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    top: 269px;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgb(24, 24, 27);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+}
+
 
 /************/
 /****Card****/
@@ -131,4 +178,10 @@ body {
     height: 4px;
     background: var(--red-dark);
     display: block;
+}
+
+/****Hidden class****/
+
+.hidden {
+    display: none;
 }

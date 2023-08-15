@@ -1,19 +1,23 @@
 /********************/
-/****Sort Weapons****/
+/****Filter Weapons****/
 /********************/
 
-.sort-title {
+.filter-container {
+    position: relative;
+}
+
+.filter-title {
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
-.sort-weapons {
+.filter-weapons {
     display: flex;
     justify-content: space-between;
     gap:6px;
 }
 
-.sort-weapons-btn {
+.filter-category-btn, .filter-ammo-btn {
     width: calc(40% - 6px);
     padding: 0.5rem 1rem;
     margin-bottom:2rem;
@@ -24,9 +28,15 @@
     transition: all 0.3s ease-in-out;
 }
 
-.sort-weapons-btn:hover {
+.filter-category-btn:hover, .filter-ammo-btn:hover {
+    background-color: var(--red-dark);
+    border: 1px solid rgb(146, 145, 145);
+}
+
+.selected {
     background-color: var(--red-dark);
 }
+
 
 /************/
 /****Card****/
@@ -36,7 +46,7 @@
 
 .card-body {
     display: grid;
-    grid-template-columns: 2fr 1fr 4fr;
+    grid-template-columns: 3fr 1fr 6fr;
 }
 
 /****Body-infos img****/
@@ -67,3 +77,8 @@
 }
 
 
+/****Hidden class****/
+ 
+.hidden {
+    display: none;
+}

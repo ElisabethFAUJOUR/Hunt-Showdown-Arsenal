@@ -210,7 +210,7 @@
         "name": "Bornheim No. 3 Match",
         "cost": 180,
         "description": "This early German semi-automatic pistol can reliably put down targets at a distance, making use of its low recoil and fast reload.",
-        "category": "Medium",
+        "category": "Small",
         "type" : "Pistol",
         "image": "img/weapons/small/bornheim_no_3_match.png",
         "ammo": {
@@ -250,7 +250,7 @@
         "name": "Bornheim No. 3 Extended",
         "cost": 203,
         "description": "This early German semi-automatic pistol can realease a hail of accurate fire by virtue of its low recoil. Modified to increase capacity by removing the option to reload via magazine. Can be used for dual wielding.",
-        "category": "Small",
+        "category": "Medium",
         "type" : "Pistol",
         "image": "img/weapons/medium/bornheim_no_3_extended.png",
         "ammo": {
@@ -683,6 +683,7 @@
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/cavalry_saber.png",
+        "ammo": "", 
         "stats": {
             "melee_damage": 82,
             "heavy_melee_damage": 168,
@@ -698,6 +699,7 @@
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/combat_axe.png",
+        "ammo": "", 
         "stats": {
             "melee_damage": 165,
             "heavy_melee_damage": 330,
@@ -1360,6 +1362,7 @@
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/machete.png",
+        "ammo": "", 
         "stats": {
             "melee_damage": 90,
             "heavy_melee_damage": 150,
@@ -2240,6 +2243,7 @@
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/railroad_hammer.png",
+        "ammo": "", 
         "stats": {
             "melee_damage": 104,
             "heavy_melee_damage": 209,

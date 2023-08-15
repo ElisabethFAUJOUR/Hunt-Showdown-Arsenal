@@ -26,10 +26,6 @@ body {
     overflow:auto;
 }
 
-.container {
-    position: relative;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }

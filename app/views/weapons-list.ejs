@@ -3,35 +3,48 @@
     <main class="main">
         <div class="main-container">
             <h1 class="main-title fade-in">Filter</h1>
-            <div class="sort-container fade-in">
-                <h3 class="sort-title">Weapon Slot</h3>
-                <div class="sort-weapons">
-                    <button class="sort-weapons-btn">All</button>
-                    <button class="sort-weapons-btn">Large</button>
-                    <button class="sort-weapons-btn">Medium</button>
-                    <button class="sort-weapons-btn">Small</button>
+            <div class="filter-container fade-in">
+                <h3 class="filter-title">Weapon Slot</h3>
+                <div class="filter-weapons">
+                    <button class="filter-category-btn">All</button>
+                    <button class="filter-category-btn">Large</button>
+                    <button class="filter-category-btn">Medium</button>
+                    <button class="filter-category-btn">Small</button>
                 </div>
-                <h3 class="sort-title">Ammo type</h3>
-                <div class="sort-weapons">
-                    <button class="sort-weapons-btn">All</button>
-                    <button class="sort-weapons-btn">Long</button>
-                    <button class="sort-weapons-btn">Medium</button>
-                    <button class="sort-weapons-btn">Compact</button>
-                    <button class="sort-weapons-btn">Shotgun</button>
-                    <button class="sort-weapons-btn">Bolt</button>
-                    <button class="sort-weapons-btn">Arrow</button>
-                    <button class="sort-weapons-btn">Specials</button>
+                <h3 class="filter-title">Ammo type</h3>
+                <div class="filter-weapons">
+                    <button class="filter-ammo-btn">All</button>
+                    <button class="filter-ammo-btn">Long</button>
+                    <button class="filter-ammo-btn">Medium</button>
+                    <button class="filter-ammo-btn">Compact</button>
+                    <button class="filter-ammo-btn">Shell</button>
+                    <button class="filter-ammo-btn">Special</button>
                 </div>
-                <div class="search search-weapons">
-                    <input type="text" class="search-bar" placeholder="SEARCH">
+                <div class="filter-weapons">
+                    <div class="search">
+                        <input type="text" class="search-bar" placeholder="Search by name or type">
+                    </div>
+                    <button class="sort-by-btn">
+                        <div class="sort-by-label">Sort by</div>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="sort-options hidden">
+                        <button class="sort-option-btn">-</button>
+                        <button class="sort-option-btn">Cost</button>
+                        <button class="sort-option-btn">Damage</button>
+                        <button class="sort-option-btn">Melee Damage</button>
+                        <button class="sort-option-btn">Muzzle Velocity</button>
+                        <button class="sort-option-btn">Effective Range</button>
+                        <button class="sort-option-btn">Vertical Recoil</button>
+                    </div>
+                    </div>
                 </div>
-            </div>
 
             <% weapons.forEach(weapon=> { %>
-                <div class="card weapon-card fade-in" id="<%= weapon.id %>">
+                <div class="card weapon-card fade-in" id="<%= weapon.id %>" data-category="<%= weapon.category %>" data-ammo="<%= weapon.ammo.name %>">
                     <div class="card-header">
                         <div class="header-title">
-                            <h1 class="name"><%= weapon.name %></h1>
+                            <h1 class="name"><%= weapon.name%></h1>
                             <h3 class="type"><%= weapon.type %></h3>
                         </div>
                         <div class="header-cost">
