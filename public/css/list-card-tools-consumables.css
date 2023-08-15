@@ -1,3 +1,11 @@
+/****Search Bar****/
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    gap:6px;
+}
+
 /****Card-Body****/
 
 .card-body {

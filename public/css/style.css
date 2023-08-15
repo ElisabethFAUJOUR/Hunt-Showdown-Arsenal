@@ -24,6 +24,7 @@ body {
     font-size: 1.2rem;
     color:var(--text);
     overflow:auto;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar {

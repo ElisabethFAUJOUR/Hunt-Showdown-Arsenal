@@ -5,14 +5,14 @@
             <h1 class="main-title fade-in">Filter</h1>
             <div class="filter-container fade-in">
                 <h3 class="filter-title">Weapon Slot</h3>
-                <div class="filter-weapons">
+                <div class="filter-row">
                     <button class="filter-category-btn">All</button>
                     <button class="filter-category-btn">Large</button>
                     <button class="filter-category-btn">Medium</button>
                     <button class="filter-category-btn">Small</button>
                 </div>
                 <h3 class="filter-title">Ammo type</h3>
-                <div class="filter-weapons">
+                <div class="filter-row">
                     <button class="filter-ammo-btn">All</button>
                     <button class="filter-ammo-btn">Long</button>
                     <button class="filter-ammo-btn">Medium</button>
@@ -20,14 +20,14 @@
                     <button class="filter-ammo-btn">Shell</button>
                     <button class="filter-ammo-btn">Special</button>
                 </div>
-                <div class="filter-weapons">
+                <div class="filter-row">
                     <div class="search">
                         <input type="text" class="search-bar" placeholder="Search by name or type">
                     </div>
                     <button class="sort-by-btn">
                         <div class="sort-by-label">Sort by</div>
                         <i class="bi bi-chevron-down"></i>
-                    </div>
+                    </button>
                     <div class="sort-options hidden">
                         <button class="sort-option-btn">-</button>
                         <button class="sort-option-btn">Cost</button>
@@ -37,8 +37,8 @@
                         <button class="sort-option-btn">Effective Range</button>
                         <button class="sort-option-btn">Vertical Recoil</button>
                     </div>
-                    </div>
                 </div>
+            </div>
 
             <% weapons.forEach(weapon=> { %>
                 <div class="card weapon-card fade-in" id="<%= weapon.id %>" data-category="<%= weapon.category %>" data-ammo="<%= weapon.ammo.name %>">

@@ -60,19 +60,21 @@ const weapon = {
         const selectedCategories = [];
         const selectedAmmoTypes = [];
     
-        categoryButtons.forEach(btn => {
-            if (btn.classList.contains('selected')) {
-                selectedCategories.push(btn.textContent.toLowerCase());
-            }
-        });
-    
-        ammoButtons.forEach(btn => {
-            if (btn.classList.contains('selected')) {
-                selectedAmmoTypes.push(btn.textContent.toLowerCase());
-            }
-        });
-    
         weapon.weaponCards.forEach(card => {
+            let resultFound = false;
+
+            categoryButtons.forEach(btn => {
+                if (btn.classList.contains('selected')) {
+                    selectedCategories.push(btn.textContent.toLowerCase());
+                }
+            });
+        
+            ammoButtons.forEach(btn => {
+                if (btn.classList.contains('selected')) {
+                    selectedAmmoTypes.push(btn.textContent.toLowerCase());
+                }
+            });
+            
             const weaponCategory = card.getAttribute('data-category').toLowerCase();
             const weaponAmmoType = card.getAttribute('data-ammo').toLowerCase();
             
@@ -81,31 +83,75 @@ const weapon = {
             
             if ((selectedCategories.length === 0 || categoryMatch) && (selectedAmmoTypes.length === 0 || ammoTypeMatch)) {
                 card.classList.remove('hidden');
+                resultFound = true;
             } else {
                 card.classList.add('hidden');
+            }
+
+            if(!resultFound) {
+                weapon.createNoResultsFoundMessage(); 
+            } else {
+                weapon.hideNoResultsFoundMessage();
             }
         });
     },
 
     /**
-     * Listen to the text put in the search bar and filter the weapons including the text
+     * Listen to the text put in the search bar and filter weapons including the search text
      */
     searchWeapons() {
         const searchInput = document.querySelector('.search-bar');
         searchInput.addEventListener('input', () => {
             const searchText = searchInput.value.toLowerCase();
+            let resultFound = false;
     
             weapon.weaponCards.forEach(card => {
                 const weaponName = card.querySelector('.name').textContent.toLowerCase();
                 const weaponType = card.querySelector('.type').textContent.toLowerCase();
                 if (weaponName.includes(searchText) || weaponType.includes(searchText)) {
-                    card.style.display = 'block';
+                    card.classList.remove('hidden');
+                    resultFound = true;
                 } else {
-                    card.style.display = 'none';
+                    card.classList.add('hidden');
                 }
             });
+
+            if(!resultFound) {
+                weapon.createNoResultsFoundMessage(); 
+            } else {
+                weapon.hideNoResultsFoundMessage();
+            }
         });
-    }
+    },
+
+    /**
+     * Creates the "No results found" message if it doesn't exist
+     */
+    createNoResultsFoundMessage() {
+        const noResultsMessage = document.querySelector('.no-results-message');
+        if (!noResultsMessage) {
+            const mainContainer = document.querySelector('.main-container');
+            const noResultsMessage = document.createElement('div');
+            noResultsMessage.className = 'no-results-message';
+            noResultsMessage.textContent = 'Whooops, no weapons found.';
+            mainContainer.appendChild(noResultsMessage);
+        } else {
+            noResultsMessage.style.display = 'block';
+        }
+    },
+
+    /**
+     * Hides the "No results found" message
+     */
+    hideNoResultsFoundMessage() {
+        const noResultsMessage = document.querySelector('.no-results-message');
+        noResultsMessage.style.display = 'none';
+    },
+
+    //----------------------------
+    //---- FUNCTIONS SORT BY -----
+    //----------------------------
+
 };
 
 document.addEventListener('DOMContentLoaded', weapon.init);

@@ -11,12 +11,6 @@
     font-weight: bold;
 }
 
-.filter-weapons {
-    display: flex;
-    justify-content: space-between;
-    gap:6px;
-}
-
 .filter-category-btn, .filter-ammo-btn {
     width: calc(40% - 6px);
     padding: 0.5rem 1rem;
@@ -74,11 +68,4 @@
 
 .special_ammo img {
     width: 30px;
-}
-
-
-/****Hidden class****/
- 
-.hidden {
-    display: none;
 }
