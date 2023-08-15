@@ -5,6 +5,7 @@ const weapon = {
     init() {
         weapon.filterWeapons();
         weapon.searchWeapons();
+        weapon.listenToClickOnSortButton();
     },
 
     //---------------------------
@@ -151,6 +152,16 @@ const weapon = {
     //----------------------------
     //---- FUNCTIONS SORT BY -----
     //----------------------------
+
+    listenToClickOnSortButton(){
+        const sortButton = document.querySelector('.sort-by-btn');
+        const sortOptionsElem = document.querySelector('.sort-options');
+
+        sortButton.addEventListener('click', () => {
+            sortButton.classList.toggle('is-clicked'); 
+            sortOptionsElem.classList.toggle('hidden');
+        });
+    }
 
 };
 
