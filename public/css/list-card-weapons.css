@@ -2,10 +2,6 @@
 /****Filter Weapons****/
 /********************/
 
-.filter-container {
-    position: relative;
-}
-
 .filter-title {
     margin-bottom: 1rem;
     font-weight: bold;
@@ -30,7 +26,6 @@
 .selected {
     background-color: var(--red-dark);
 }
-
 
 /************/
 /****Card****/
@@ -69,3 +64,5 @@
 .special_ammo img {
     width: 30px;
 }
+
+

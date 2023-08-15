@@ -30,7 +30,6 @@ body {
 /****Filters****/
 /***************/
 
-
 .filter-container {
     width: 60%;
     margin-bottom: 4rem;
@@ -41,6 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap:6px;
+    position: relative;
 }
 
 /****Search Bar****/
@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 25%;
-    top: 269px;
+    top: 50px;
     right:0;
     border: 1px solid rgb(146, 145, 145);
     background-color: rgb(24, 24, 27);
