@@ -2,6 +2,7 @@ const app = {
     
     init() {
         app.observeElements();
+        app.listenToClickOnSortButton();
         console.log("Hello");
     },
 

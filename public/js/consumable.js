@@ -2,6 +2,8 @@ const consu = {
     
     init() {
         consu.searchConsumables();
+        tool.listenToClickOnSortButton();
+        tool.closeSortOptions();
     },
 
     //---------------------------

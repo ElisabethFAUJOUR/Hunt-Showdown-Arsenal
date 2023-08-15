@@ -6,6 +6,7 @@ const weapon = {
         weapon.filterWeapons();
         weapon.searchWeapons();
         weapon.listenToClickOnSortButton();
+        weapon.closeSortOptions();
     },
 
     //---------------------------
@@ -39,15 +40,15 @@ const weapon = {
     /**
      * Toggle classList 'selected' if clicked button
      * 
-     * @param {HTMLElement} button - Clicked button
+     * @param {HTMLElement} selectedButton - Clicked button
      * @param {HTMLElements} buttons - Buttons list
      */
-    toggleSelection(button, buttons) {
-        buttons.forEach(btn => {
-            if (btn === button) {
-                btn.classList.add('selected');
+    toggleSelection(selectedButton, buttons) {
+        buttons.forEach(button => {
+            if (button === selectedButton) {
+                button.classList.add('selected');
             } else {
-                btn.classList.remove('selected');
+                button.classList.remove('selected');
             }
         });
     },
@@ -153,16 +154,24 @@ const weapon = {
     //---- FUNCTIONS SORT BY -----
     //----------------------------
 
-    listenToClickOnSortButton(){
+    /**
+     * Listen to the click on the sort-by button to display the options
+     */
+    listenToClickOnSortButton() {
         const sortButton = document.querySelector('.sort-by-btn');
         const sortOptionsElem = document.querySelector('.sort-options');
-
-        sortButton.addEventListener('click', () => {
-            sortButton.classList.toggle('is-clicked'); 
+    
+        sortButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            sortButton.classList.toggle('is-clicked');
             sortOptionsElem.classList.toggle('hidden');
         });
+    
+        document.addEventListener('click', () => {
+            sortButton.classList.remove('is-clicked');
+            sortOptionsElem.classList.add('hidden');
+        });
     }
-
 };
 
 document.addEventListener('DOMContentLoaded', weapon.init);
