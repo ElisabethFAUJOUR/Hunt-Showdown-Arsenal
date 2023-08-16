@@ -25,6 +25,7 @@
 
 .selected {
     background-color: var(--red-dark);
+    border: 1px solid rgb(146, 145, 145);
 }
 
 /************/

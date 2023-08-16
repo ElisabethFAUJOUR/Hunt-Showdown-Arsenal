@@ -22,8 +22,7 @@ const weapon = {
     
         categoryButtons.forEach(button => {
             button.addEventListener('click', () => {
-                button.classList.toggle('selected');
-                weapon.toggleSelection(button, categoryButtons);
+                button.classList.toggle('selected');  
                 weapon.applyFilters(categoryButtons, ammoButtons);
             });
         });
@@ -31,25 +30,8 @@ const weapon = {
         ammoButtons.forEach(button => {
             button.addEventListener('click', () => {
                 button.classList.toggle('selected');
-                weapon.toggleSelection(button, ammoButtons);
                 weapon.applyFilters(categoryButtons, ammoButtons);
             });
-        });
-    },
-
-    /**
-     * Toggle classList 'selected' if clicked button
-     * 
-     * @param {HTMLElement} selectedButton - Clicked button
-     * @param {HTMLElements} buttons - Buttons list
-     */
-    toggleSelection(selectedButton, buttons) {
-        buttons.forEach(button => {
-            if (button === selectedButton) {
-                button.classList.add('selected');
-            } else {
-                button.classList.remove('selected');
-            }
         });
     },
 
@@ -171,7 +153,13 @@ const weapon = {
             sortButton.classList.remove('is-clicked');
             sortOptionsElem.classList.add('hidden');
         });
-    }
+    },
+
+    /**
+     * Listen to the click on the sort-by options to sort weapons
+     */
+
+
 };
 
 document.addEventListener('DOMContentLoaded', weapon.init);
