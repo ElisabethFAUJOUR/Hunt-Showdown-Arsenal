@@ -54,7 +54,7 @@ body {
 }
     
 .filter-group.col input:focus {
-    border: 1px solid var(--red-dark);
+    border: 1px solid rgb(146, 145, 145);
 }
 
 .filter-group.row {
@@ -103,20 +103,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(20px);
-}
-
-.generator-btn {
-    margin: 3rem 0;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(77, 15, 16, 1);
-    box-shadow: 5px 5px 6px rgba(33, 35, 37, 0.8);
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-}
-
-.generator-btn:hover {
-    background-color: var(--red);
 }
 
 /****Generator Template****/

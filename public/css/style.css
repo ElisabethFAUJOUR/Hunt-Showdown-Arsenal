@@ -11,19 +11,19 @@
 }
 
 :root {
-    --text:rgb(171, 172, 174);
-    --gold:rgb(226, 194, 125);
-    --red:rgb(100, 26, 26);
-    --red-dark:rgb(77, 15, 16);
-    --grey-dark:rgb(9, 9, 11);
-    --grey:rgb(146, 145, 145);
+    --text: rgb(171, 172, 174);
+    --gold: rgb(226, 194, 125);
+    --red: rgb(100, 26, 26);
+    --red-dark: rgb(77, 15, 16);
+    --grey-dark: rgb(9, 9, 11);
+    --grey: rgb(146, 145, 145);
 }
 
 body {
     font-family: "Crimson Text", sans-serif;
     font-size: 1.2rem;
-    color:var(--text);
-    overflow:auto;
+    color: var(--text);
+    overflow: auto;
     height: 100vh;
 }
 
@@ -39,7 +39,7 @@ body {
     background-color: var(--red-dark);
 }
 
-/****HEADER****/
+/**** Header ****/
 
 .header {
     display: flex;
@@ -65,7 +65,7 @@ body {
 }
 
 .nav-link {
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -73,21 +73,38 @@ body {
     background-color: var(--red-dark);
 }
 
-/****Footer****/
+/**** Footer ****/
 .footer {
     text-align: center;
     width: 100%;
     padding: 1rem 0;
     font-size: 1rem;
-    color:var(--grey);
- }
+    color: var(--grey);
+}
 
- .footer p {
+.footer p {
     padding: 0.2rem;
- }
+}
 
+/**** Red Button ****/
 
-/* Fade-in Animation */
+.red-button {
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(146, 145, 145, 0.5);
+    background-color: rgba(77, 15, 16, 1);
+    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    color:var(--text);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.red-button:hover {
+    background-color: var(--red);
+    border: 1px solid rgb(146, 145, 145);
+}
+
+/**** Fade-in Animation ****/
 
 .fade-in {
     opacity: 0;

@@ -43,7 +43,7 @@ body {
     position: relative;
 }
 
-/****Search Bar****/
+/**** Search Bar ****/
 
 .search {
     width: 75%;
@@ -66,7 +66,7 @@ body {
     border: 1px solid rgb(146, 145, 145);
 }
 
-/****Sort by****/
+/**** Sort by ****/
 
 .sort-by-btn {
     width: 25%;
@@ -131,7 +131,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/****Card-Header****/
+/**** Card-Header ****/
 
 .card-header {
     display: flex;
@@ -159,7 +159,7 @@ body {
     width: 30px;
 }
 
-/****STATS****/
+/**** Stats ****/
 
 .body-stats {
     display: grid;
@@ -203,8 +203,15 @@ body {
     display: block;
 }
 
-/****Hidden class****/
+/**** Hidden class ****/
 
 .hidden {
     display: none;
+}
+
+/**** Selected class ****/
+
+.selected {
+    background-color: var(--red-dark);
+    border: 1px solid rgb(146, 145, 145);
 }
