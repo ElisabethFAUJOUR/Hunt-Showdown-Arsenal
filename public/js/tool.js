@@ -5,7 +5,6 @@ const tool = {
     init() {
         tool.searchTools();
         tool.listenToClickOnSortButton();
-        tool.closeSortOptions();
     },
 
     //---------------------------

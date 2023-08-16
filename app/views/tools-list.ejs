@@ -12,9 +12,9 @@
                     <i class="bi bi-chevron-down"></i>
                 </button>
                 <div class="sort-options hidden">
-                    <button class="sort-option-btn">-</button>
-                    <button class="sort-option-btn">Cost</button>
-                    <button class="sort-option-btn">Damage</button>
+                    <button class="sort-option-btn" data-action="reset">-</button>
+                    <button class="sort-option-btn" data-sort="cost">Cost</button>
+                    <button class="sort-option-btn" data-sort="damage">Damage</button>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@
                     <div class="card-header">
                         <h1 class="name"><%= tool.name %></h1>
                         <div class="header-cost">
-                            <h2 class="cost"><%= tool.cost %></h2>
+                            <h2 class="cost" data-value="cost"><%= tool.cost %></h2>
                             <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                                     <div class="stat-row">
                                         <div class="stat-info">
                                             <p>Damage</p>
-                                            <p><%= tool.stats.damage %></p>
+                                            <p data-value="damage"><%= tool.stats.damage %></p>
                                         </div>
                                         <div class="stat-bar">
                                             <span class="grey-line"></span>

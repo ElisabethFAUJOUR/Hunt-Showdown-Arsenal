@@ -5,7 +5,6 @@ const consu = {
     init() {
         consu.searchConsumables();
         consu.listenToClickOnSortButton();
-        consu.closeSortOptions();
     },
 
     //---------------------------

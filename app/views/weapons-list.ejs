@@ -29,258 +29,277 @@
                         <i class="bi bi-chevron-down"></i>
                     </button>
                     <div class="sort-options hidden">
-                        <button class="sort-option-btn">-</button>
-                        <button class="sort-option-btn">Cost</button>
-                        <button class="sort-option-btn">Damage</button>
-                        <button class="sort-option-btn">Melee Damage</button>
-                        <button class="sort-option-btn">Muzzle Velocity</button>
-                        <button class="sort-option-btn">Effective Range</button>
-                        <button class="sort-option-btn">Vertical Recoil</button>
+                        <button class="sort-option-btn" data-sort="reset">-</button>
+                        <button class="sort-option-btn" data-sort="cost">Cost</button>
+                        <button class="sort-option-btn" data-sort="damage">Damage</button>
+                        <button class="sort-option-btn" data-sort="melee_damage">Melee Damage</button>
+                        <button class="sort-option-btn" data-sort="muzzle_velocity">Muzzle Velocity</button>
+                        <button class="sort-option-btn" data-sort="effective_range">Effective Range</button>
                     </div>
                 </div>
             </div>
 
-            <% weapons.forEach(weapon=> { %>
-                <div class="card weapon-card fade-in" id="<%= weapon.id %>" data-category="<%= weapon.category %>" data-ammo="<%= weapon.ammo.name %>">
-                    <div class="card-header">
-                        <div class="header-title">
-                            <h1 class="name"><%= weapon.name%></h1>
-                            <h3 class="type"><%= weapon.type %></h3>
-                        </div>
-                        <div class="header-cost">
-                            <h2 class="cost"><%= weapon.cost %></h2>
-                            <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        <div class="body-info">
-                            <p><%= weapon.description %></p>
-                            <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
+            <div class="card-container">
+                <% weapons.forEach(weapon=> { %>
+                    <div class="card weapon-card fade-in" id="<%= weapon.id %>" data-category="<%= weapon.category %>" data-ammo="<%= weapon.ammo.name %>">
+                        <div class="card-header">
+                            <div class="header-title">
+                                <h1 class="name"><%= weapon.name%></h1>
+                                <h3 class="type"><%= weapon.type %></h3>
+                            </div>
+                            <div class="header-cost">
+                                <h2 class="cost" data-value="cost"><%= weapon.cost %></h2>
+                                <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
+                            </div>
                         </div>
 
-                        <div class="body-ammo">
-                            <% if (weapon.ammo) { %>
-                                <% if (Array.isArray(weapon.ammo)) { %>
-                                    <% weapon.ammo.forEach(ammoType => { %>
+                        <div class="card-body">
+                            <div class="body-info">
+                                <p><%= weapon.description %></p>
+                                <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
+                            </div>
+
+                            <div class="body-ammo">
+                                <% if (weapon.ammo) { %>
+                                    <% if (Array.isArray(weapon.ammo)) { %>
+                                        <% weapon.ammo.forEach(ammoType => { %>
+                                            <div class="ammo-type">
+                                                <img src="../<%= ammoType.icon %>" alt="<%= ammoType.name %>">
+                                                <p class="ammo-capacity"><%= ammoType.capacity_ammo %></p>
+                                            </div>
+                    
+                                            <% if (ammoType.special_ammo) { %>
+                                                <div class="special_ammo">
+                                                    <% ammoType.special_ammo.forEach(special_ammo => { %>
+                                                        <img src="../<%= special_ammo.icon %>" alt="<%= special_ammo.name %>">
+                                                    <% }) %>
+                                                </div>
+                                            <% } %>
+                                        <% }) %>
+
+                                    <% } else { %>
                                         <div class="ammo-type">
-                                            <img src="../<%= ammoType.icon %>" alt="<%= ammoType.name %>">
-                                            <p class="ammo-capacity"><%= ammoType.capacity_ammo %></p>
+                                            <img src="../<%= weapon.ammo.icon %>" alt="<%= weapon.ammo.name %>">
+                                            <p class="ammo-capacity"><%= weapon.ammo.capacity_ammo %></p>
                                         </div>
-                
-                                        <% if (ammoType.special_ammo) { %>
+
+                                        <% if (weapon.special_ammo) { %>
                                             <div class="special_ammo">
-                                                <% ammoType.special_ammo.forEach(special_ammo => { %>
+                                                <% weapon.special_ammo.forEach(special_ammo=> { %>
                                                     <img src="../<%= special_ammo.icon %>" alt="<%= special_ammo.name %>">
-                                                <% }) %>
+                                                    <% }) %>
                                             </div>
                                         <% } %>
-                                    <% }) %>
-
-                                <% } else { %>
-                                    <div class="ammo-type">
-                                        <img src="../<%= weapon.ammo.icon %>" alt="<%= weapon.ammo.name %>">
-                                        <p class="ammo-capacity"><%= weapon.ammo.capacity_ammo %></p>
-                                    </div>
-
-                                    <% if (weapon.special_ammo) { %>
-                                        <div class="special_ammo">
-                                            <% weapon.special_ammo.forEach(special_ammo=> { %>
-                                                <img src="../<%= special_ammo.icon %>" alt="<%= special_ammo.name %>">
-                                                <% }) %>
-                                        </div>
                                     <% } %>
                                 <% } %>
-                            <% } %>
-                        </div>
+                            </div>
 
-                        <div class="body-stats">
-                            <% if (weapon.stats.damage) { %>
+                            <div class="body-stats">
+                                <% if (weapon.stats.damage) { %>
+                                    <div class="stat-row">
+                                        <div class="stat-info">
+                                            <p>Damage</p>
+                                            <p data-value="damage"><%= weapon.stats.damage %></p>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span class="grey-line"></span>
+                                            <span class="red-line" style="width:<%=(weapon.stats.damage/364)*100 %>%"></span>
+                                        </div>
+                                    </div>
+                                <% } %>
+                                    
+                                <% if (weapon.stats.effective_range) { %>
+                                    <div class="stat-row">
+                                        <div class="stat-info">
+                                            <p>Effective Range</p>
+                                            <div class="stat-value">
+                                                <p data-value="effective_range"><%= weapon.stats.effective_range %></p>
+                                                <p>m</p>
+                                            </div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span class="grey-line"></span>
+                                            <span class="red-line" style="width:<%=(weapon.stats.effective_range/347)*100 %>%"></span>
+                                        </div>
+                                    </div>
+                                <% } %>
+
+                                <% if (weapon.stats.sighted_range) { %>
+                                    <div class="stat-row">
+                                        <div class="stat-info">
+                                            <p>Sighted Range</p>
+                                            <div class="stat-value">
+                                                <p data-value="effective_range"><%= weapon.stats.sighted_range %></p>
+                                                <p>m</p>
+                                            </div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span class="grey-line"></span>
+                                            <span class="red-line" style="width:<%=(weapon.stats.effective_range/20)*100 %>%"></span>
+                                        </div>
+                                    </div>
+                                <% } %>
+                                    
+                                <% if (weapon.stats.rate_of_fire) { %>
                                 <div class="stat-row">
                                     <div class="stat-info">
-                                        <p>Damage</p>
-                                        <p><%= weapon.stats.damage %></p>
+                                        <p>Rate of Fire</p>
+                                        <div class="stat-value">
+                                            <p><%= weapon.stats.rate_of_fire %></p>
+                                            <p>rpm</p>
+                                        </div>
                                     </div>
                                     <div class="stat-bar">
                                         <span class="grey-line"></span>
-                                        <span class="red-line" style="width:<%=(weapon.stats.damage/364)*100 %>%"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.rate_of_fire/100)*100 %>%"></span>
                                     </div>
                                 </div>
-                            <% } %>
-                                
-                            <% if (weapon.stats.effective_range) { %>
+                                <% } %>
+
+                                <% if (weapon.stats.cycle_time) { %>
                                 <div class="stat-row">
                                     <div class="stat-info">
-                                        <p>Effective Range</p>
-                                        <p><%= weapon.stats.effective_range %>m</p>
+                                        <p>Cycle Time</p>
+                                        <div class="stat-value">
+                                            <p><%= weapon.stats.cycle_time %></p>
+                                            <p>s</p>
+                                        </div>
+                                        
                                     </div>
                                     <div class="stat-bar">
                                         <span class="grey-line"></span>
-                                        <span class="red-line" style="width:<%=(weapon.stats.effective_range/347)*100 %>%"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.cycle_time/7.8)*100 %>%"></span>
                                     </div>
                                 </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.sighted_range) { %>
+                                <% if (weapon.stats.spread) { %>
                                 <div class="stat-row">
                                     <div class="stat-info">
-                                        <p>Sighted Range</p>
-                                        <p><%= weapon.stats.sighted_range %>m</p>
+                                        <p>Spread</p>
+                                        <p><%= weapon.stats.spread %></p>
                                     </div>
                                     <div class="stat-bar">
                                         <span class="grey-line"></span>
-                                        <span class="red-line" style="width:<%=(weapon.stats.effective_range/20)*100 %>%"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.spread/85)*100 %>%"></span>
                                     </div>
                                 </div>
-                            <% } %>
-                                
-                            <% if (weapon.stats.rate_of_fire) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Rate of Fire</p>
-                                    <p><%= weapon.stats.rate_of_fire %>rpm</p>
-                                </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.rate_of_fire/100)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.cycle_time) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Cycle Time</p>
-                                    <p><%= weapon.stats.cycle_time %>s</p>
+                                <% if (weapon.stats.sway) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Sway</p>
+                                        <p><%= weapon.stats.sway %></p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.sway/133)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.cycle_time/7.8)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.spread) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Spread</p>
-                                    <p><%= weapon.stats.spread %></p>
+                                <% if (weapon.stats.vertical_recoil) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Vertical Recoil</p>
+                                        <p><%= weapon.stats.vertical_recoil %></p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.vertical_recoil/50)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.spread/85)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.sway) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Sway</p>
-                                    <p><%= weapon.stats.sway %></p>
+                                <% if (weapon.stats.reload_speed) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Reload Speed</p>
+                                        <div class="stat-value">
+                                            <p><%= weapon.stats.reload_speed %></p>
+                                            <p>s</p>
+                                        </div>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.reload_speed/28.7)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.sway/133)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.vertical_recoil) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Vertical Recoil</p>
-                                    <p><%= weapon.stats.vertical_recoil %></p>
+                                <% if (weapon.stats.muzzle_velocity) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Muzzle Velocity</p>
+                                        <div class="stat-value">
+                                            <p data-value="muzzle_velocity"><%= weapon.stats.muzzle_velocity %></p>
+                                            <p>m/s</p>
+                                        </div>    
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.muzzle_velocity/630)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.vertical_recoil/50)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.reload_speed) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Reload Speed</p>
-                                    <p><%= weapon.stats.reload_speed %>s</p>
+                                <% if (weapon.stats.melee_damage) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Melee Damage</p>
+                                        <p data-value="melee_damage"><%= weapon.stats.melee_damage %></p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.melee_damage/180)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.reload_speed/28.7)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.muzzle_velocity) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Muzzle Velocity</p>
-                                    <p><%= weapon.stats.muzzle_velocity %>m/s</p>
+                                <% if (weapon.stats.heavy_melee_damage) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Heavy Melee Damage</p>
+                                        <p><%= weapon.stats.heavy_melee_damage %></p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.heavy_melee_damage/360)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.muzzle_velocity/630)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.melee_damage) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Melee Damage</p>
-                                    <p><%= weapon.stats.melee_damage %></p>
+                                <% if (weapon.stats.stamina_consumption_light) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Light Stamina</p>
+                                        <p><%= weapon.stats.stamina_consumption_light %></p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.stamina_consumption_light/360)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.melee_damage/180)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
+                                <% } %>
 
-                            <% if (weapon.stats.heavy_melee_damage) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Heavy Melee Damage</p>
-                                    <p><%= weapon.stats.heavy_melee_damage %></p>
+                                <% if (weapon.stats.stamina_consumption_heavy) { %>
+                                <div class="stat-row">
+                                    <div class="stat-info">
+                                        <p>Heavy Stamina</p>
+                                        <p><%= weapon.stats.stamina_consumption_heavy %></p>
+                                    </div>
+                                    <div class="stat-bar">
+                                        <span class="grey-line"></span>
+                                        <span class="red-line" style="width:<%=(weapon.stats.stamina_consumption_heavy/50)*100 %>%"></span>
+                                    </div>
                                 </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.heavy_melee_damage/360)*100 %>%"></span>
-                                </div>
+                                <% } %>
                             </div>
-                            <% } %>
-
-                            <% if (weapon.stats.stamina_consumption_light) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Light Stamina</p>
-                                    <p><%= weapon.stats.stamina_consumption_light %></p>
-                                </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.stamina_consumption_light/360)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
-
-                            <% if (weapon.stats.stamina_consumption_heavy) { %>
-                            <div class="stat-row">
-                                <div class="stat-info">
-                                    <p>Heavy Stamina</p>
-                                    <p><%= weapon.stats.stamina_consumption_heavy %></p>
-                                </div>
-                                <div class="stat-bar">
-                                    <span class="grey-line"></span>
-                                    <span class="red-line" style="width:<%=(weapon.stats.stamina_consumption_heavy/50)*100 %>%"></span>
-                                </div>
-                            </div>
-                            <% } %>
                         </div>
                     </div>
-                </div>
-            <% }) %>
-
+                <% }) %>
+            </div>
         </div>
     </main>
 

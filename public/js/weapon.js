@@ -1,12 +1,17 @@
 const weapon = {
 
+    /* Weapon card  element */
     weaponCards: document.querySelectorAll('.weapon-card'),
 
+    /* Array for all weapon cards */
+    weaponCardsArray: [],
+
     init() {
+        weapon.weaponCardsArray = Array.from(document.querySelectorAll('.weapon-card'));
         weapon.filterWeapons();
         weapon.searchWeapons();
-        weapon.listenToClickOnSortButton();
-        weapon.closeSortOptions();
+        weapon.toggleSortButton();
+        weapon.sortWeapon();
     },
 
     //---------------------------
@@ -38,32 +43,31 @@ const weapon = {
      * @param {HTMLElement} ammoButtons 
      */
     applyFilters(categoryButtons, ammoButtons) {
-        const selectedCategories = [];
-        const selectedAmmoTypes = [];
+        const selectedCategories = []; // Stock selected category buttons
+        const selectedAmmoTypes = []; // Stock selected ammo buttons
 
         weapon.weaponCards.forEach(card => {
             let resultFound = false;
 
             categoryButtons.forEach(button => {
                 if (button.classList.contains('selected')) {
-                    console.log(button)
-                    selectedCategories.push(button.textContent.toLowerCase());
+                    selectedCategories.push(button.textContent.toLowerCase()); // If category button has 'selected' class, push the category name in the array
                 }
             });
 
             ammoButtons.forEach(button => {
                 if (button.classList.contains('selected')) {
-                    selectedAmmoTypes.push(button.textContent.toLowerCase());
+                    selectedAmmoTypes.push(button.textContent.toLowerCase()); // If category button has 'selected' class, push the ammo name in the array
                 }
             });
 
-            const weaponCategory = card.getAttribute('data-category').toLowerCase();
-            const weaponAmmoType = card.getAttribute('data-ammo').toLowerCase();
+            const weaponCategory = card.getAttribute('data-category').toLowerCase(); // Get the data-attributes value for category
+            const weaponAmmoType = card.getAttribute('data-ammo').toLowerCase(); // Get the data-attributes value for ammo
 
-            const categoryMatch = selectedCategories.includes('all') || selectedCategories.includes(weaponCategory);
-            const ammoTypeMatch = selectedAmmoTypes.includes('all') || selectedAmmoTypes.includes(weaponAmmoType);
+            const categoryMatch = selectedCategories.includes('all') || selectedCategories.includes(weaponCategory); // Check if category Array includes the selected category name OR 'All'
+            const ammoTypeMatch = selectedAmmoTypes.includes('all') || selectedAmmoTypes.includes(weaponAmmoType); // Check if ammo Array includes the selected ammo name OR 'All'
 
-            if ((selectedCategories.length === 0 || categoryMatch) && (selectedAmmoTypes.length === 0 || ammoTypeMatch)) {
+            if ((selectedCategories.length === 0 || categoryMatch) && (selectedAmmoTypes.length === 0 || ammoTypeMatch)) { // If no filter button is selected OR if the selected button matches the category name && ammo name, then display all corresponding cards.
                 card.classList.remove('hidden');
                 resultFound = true;
             } else {
@@ -80,9 +84,9 @@ const weapon = {
 
     /**
      * Listen to click on filter buttons
-     * @param {HTMLElement} button clicked button
-     * @param {NodeList} buttons all buttons in the same group (category or ammo)
-     * @param {HTMLElement} allButton button 'All'
+     * @param {HTMLElement} button - clicked button
+     * @param {NodeList} buttons - all buttons in the same group (category or ammo)
+     * @param {HTMLElement} allButton - button 'All'
      */
     listenToClickOnFilterButton(button, buttons, allButton) {
         const categoryButtons = document.querySelectorAll('.filter-category-btn');
@@ -98,7 +102,7 @@ const weapon = {
                 });
             } else {
                 button.classList.toggle('selected');
-                if (Array.from(buttons).some(btn => btn.classList.contains('selected'))) {
+                if ([...buttons].some(btn => btn.classList.contains('selected'))) { // Check if at least one element in the array (buttons) has the CSS class 'selected'.
                     allButton.classList.remove('selected');
                 }
             }
@@ -140,12 +144,69 @@ const weapon = {
 
     //----------------------------
     //---- FUNCTIONS SORT BY -----
-    //----------------------------
+    //----------------------------          
+    
+    /**
+     * Sort weapons by sorting option
+     */
+    sortWeapon() {
+        const sortOptions = document.querySelectorAll('.sort-option-btn');
+    
+        sortOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const sortType = option.getAttribute('data-sort');
+                weapon.toggleSortDirection();
+                if (sortType === "reset") {
+                    const weaponContainer = document.querySelector('.card-container');
+                    weaponContainer.innerHTML = ''; 
+                    weapon.weaponCardsArray.forEach(card => {
+                        weaponContainer.appendChild(card);
+                    });
+                } else {
+                    weapon.sortWeaponsBy(sortType);
+                }
+            });
+        });
+    },
+    
+    /**
+     * Toggles the sorting direction between ascending and descending.
+     */
+    toggleSortDirection() {
+        weapon.sortDirection = weapon.sortDirection === 'desc' ? 'asc' : 'desc'; 
+    },
+    
+    /**
+     * Filter, sort weapons by value ASC or DESC and display the sorted weapons
+     * @param {string} sortData - Sorting option name
+     */
+    sortWeaponsBy(sortData) {
+        const weaponContainer = document.querySelector('.card-container');
+    
+        const weaponsWithSortData = weapon.weaponCardsArray.filter(card => card.querySelector(`[data-value="${sortData}"]`));
+    
+        const sortedWeapons = weaponsWithSortData.sort((a, b) => {
+            const valueA = parseFloat(a.querySelector(`[data-value="${sortData}"]`).textContent);
+            const valueB = parseFloat(b.querySelector(`[data-value="${sortData}"]`).textContent);
+    
+            if (weapon.sortDirection === 'asc') {
+                return valueA - valueB;
+            } else {
+                return valueB - valueA;
+            }
+        });
+    
+        weaponContainer.innerHTML = '';
+    
+        sortedWeapons.forEach(card => {
+            weaponContainer.appendChild(card);
+        });
+    },
 
     /**
      * Listen to the click on the sort-by button to display the options
      */
-    listenToClickOnSortButton() {
+    toggleSortButton() {
         const sortButton = document.querySelector('.sort-by-btn');
         const sortOptionsElem = document.querySelector('.sort-options');
 

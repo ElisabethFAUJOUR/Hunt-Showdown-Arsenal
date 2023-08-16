@@ -176,6 +176,10 @@ body {
     padding-bottom: 1px;
 }
 
+.stat-value {
+    display: flex;
+}
+
 .stat-bar {
     position: relative;
 }
