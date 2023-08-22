@@ -9,18 +9,18 @@
 
 .filter-category-btn, .filter-ammo-btn {
     width: calc(40% - 6px);
-    padding: 0.5rem 1rem;
     margin-bottom:2rem;
-    border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(9, 9, 11, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-grey-dark-transparent);
+    box-shadow: 5px 5px 6px var(--color-shadow);    
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
 
 .filter-category-btn:hover, .filter-ammo-btn:hover {
-    background-color: var(--red-dark);
-    border: 1px solid rgb(146, 145, 145);
+    background-color: var(--color-red-dark);
+    border: 1px solid var(--color-border-hover);
 }
 
 /************/
@@ -34,19 +34,26 @@
     grid-template-columns: 3fr 1fr 6fr;
 }
 
+.header-type {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 0.3rem;
+}
+
 /****Body-infos img****/
 
 .img-weapon {
-    margin-top: 0.5rem;
     max-width: 430px;
+    margin-top: 0.5rem;
 }
 
 /****Body-ammo****/
 
-.body-ammo {
+.card-body-ammo {
+    gap:5px;
     margin:0 auto;
     text-align: center;
-    gap:5px;
 }
 
 .ammo-type {
@@ -61,4 +68,9 @@
     width: 30px;
 }
 
+/**** Selected class ****/
 
+.selected {
+    border: 1px solid var(--color-border-hover);
+    background-color: var(--color-red-dark);
+}

@@ -6,24 +6,25 @@ body {
 }
 
 .header {
-    background-color: rgba(9, 9, 11, 1);
+    background-color: var(--color-grey-dark);
 }
 
 .main-container {
-    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    width: 1500px;
+    max-width: 1500px;
+    width:90%;
     margin: 0 auto; 
+    padding-top: 8rem;
+    font-size: 1.2rem;
 }
 
 .main-title {
+    margin: 1rem 0;
     font-size: 1.6rem;
     text-transform: uppercase;
-    margin: 1rem 0;
 }
 
 /***************/
@@ -31,16 +32,16 @@ body {
 /***************/
 
 .filter-container {
+    position: relative;
     width: 60%;
     margin-bottom: 4rem;
-    position: relative;
 }
 
 .filter-row {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap:6px;
-    position: relative;
 }
 
 /**** Search Bar ****/
@@ -52,63 +53,66 @@ body {
 .search-bar {
     width: 100%;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(24, 24, 27, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8); 
+    border: 1px solid var(--color-border);
+    background-color: var(--color-grey-light-transparent);
+    box-shadow: 5px 5px 6px var(--color-shadow); 
     transition: all 0.3s ease-in-out;
 }
 
 .search input:focus {
-    border: 1px solid rgb(146, 145, 145);
+    border: 1px solid var(--color-border-hover);
 }
 
 .search input:hover {
-    border: 1px solid rgb(146, 145, 145);
+    border: 1px solid var(--color-border-hover);
 }
 
 /**** Sort by ****/
 
-.sort-by-btn {
-    width: 25%;
+.sort-button {
     display: flex;
     justify-content: space-between;
+    width: 25%;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(146, 145, 145, 0.5);
-    background-color: rgba(24, 24, 27, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    border: 1px solid var(--color-border);
+    background-color: var(--color-grey-light-transparent);
+    box-shadow: 5px 5px 6px var(--color-shadow);    
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
 
-.sort-by-btn:hover {
-    border: 1px solid rgb(146, 145, 145);
+.sort-button:hover {
+    border: 1px solid var(--color-border-hover);
 }
 
 .is-clicked {
-    border: 1px solid rgb(146, 145, 145);
+    border: 1px solid var(--color-border-hover);
 }
 
 .sort-options {
     position: absolute;
     z-index: 1;
+    top: 50px;
+    right:0;
     display: flex;
     flex-direction: column;
     width: 25%;
-    top: 50px;
-    right:0;
-    border: 1px solid rgb(146, 145, 145);
+    border: 1px solid var(--color-border-hover);
     background-color: rgb(24, 24, 27);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);    
+    box-shadow: 5px 5px 6px var(--color-shadow);    
 }
 
 .sort-option-btn {
-    text-transform: uppercase;
-    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0.5rem 1rem;
+    text-align: start;  
+    text-transform: uppercase;
 }
 
 .sort-option-btn:hover {
-    background-color: var(--red-dark);
+    background-color: var(--color-red-dark);
 }
 
 .no-results-message {
@@ -120,16 +124,17 @@ body {
 /************/
 
 .card {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(146, 145, 145, 0.3);
-    background-color: rgba(9, 9, 11, 0.5);
-    box-shadow: 5px 5px 6px rgba(9, 9, 11, 0.8);  
-    backdrop-filter: blur(10px);
-    padding: 1rem;
+    width: 100%;
     margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(146, 145, 145, 0.3);
+    background-color: var(--color-grey-dark-transparent);
+    box-shadow: 5px 5px 6px var(--color-shadow);  
+    backdrop-filter: blur(10px);
 }
+
 
 /**** Card-Header ****/
 
@@ -140,12 +145,12 @@ body {
     margin-bottom: 1rem;
 }
 
-.card-header .type {
-    font-style: italic;
-    font-weight: 100;
-    font-size: 1rem;
-    color: var(--grey);
+.card-header .card-type {
     padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--color-grey);
 }
 
 .header-cost {
@@ -161,12 +166,12 @@ body {
 
 /**** Stats ****/
 
-.body-stats {
+.card-body-stats {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     justify-content: space-between;
-    font-weight: 600;
     gap: 1rem;
+    font-weight: 600;
 }
 
 .stat-info {
@@ -188,9 +193,10 @@ body {
     position: absolute;
     z-index: 0;
     height: 4px;
-    width: 100%;
-    background: var(--grey);
     display: block;
+    width: 100%;
+    background: var(--color-grey);
+
 }
 
 .red-line {
@@ -198,9 +204,10 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    height: 4px;
-    background: var(--red-dark);
     display: block;
+    height: 4px;
+    background: var(--color-red-dark);
+
 }
 
 /**** Hidden class ****/
@@ -212,6 +219,6 @@ body {
 /**** Selected class ****/
 
 .selected {
-    background-color: var(--red-dark);
-    border: 1px solid rgb(146, 145, 145);
+    border: 1px solid var(--color-border-hover);
+    background-color: var(--color-red-dark);
 }

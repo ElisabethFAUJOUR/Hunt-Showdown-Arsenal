@@ -7,8 +7,8 @@
                 <div class="search">
                     <input type="text" class="search-bar" placeholder="SEARCH">
                 </div>
-                <button class="sort-by-btn">
-                    <div class="sort-by-label">Sort by</div>
+                <button class="sort-button">
+                    <div class="sort-button-label">Sort by</div>
                     <i class="bi bi-chevron-down"></i>
                 </button>
                 <div class="sort-options hidden">
@@ -21,7 +21,7 @@
             <% consumables.forEach(consumable => { %>
                 <div class="card consumable-card fade-in" id="<%= consumable.id %>">
                     <div class="card-header">
-                        <h1 class="name"><%= consumable.name %></h1>
+                        <h1 class="header-name"><%= consumable.name %></h1>
                         <div class="header-cost">
                             <h2 class="cost" data-value="cost"><%= consumable.cost %></h2>
                             <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
@@ -29,13 +29,13 @@
                     </div>
     
                     <div class="card-body">
-                        <div class="body-info">
+                        <div class="card-body-info">
                             <p><%= consumable.description %></p>
                             <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
                         </div>
     
                         <% if (consumable.stats) { %>
-                            <div class="body-stats">
+                            <div class="card-body-stats">
                                 <% if (consumable.stats.damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">

@@ -45,10 +45,9 @@ const weapon = {
     applyFilters(categoryButtons, ammoButtons) {
         const selectedCategories = []; // Stock selected category buttons
         const selectedAmmoTypes = []; // Stock selected ammo buttons
+        let resultFound = false;
 
         weapon.weaponCards.forEach(card => {
-            let resultFound = false;
-
             categoryButtons.forEach(button => {
                 if (button.classList.contains('selected')) {
                     selectedCategories.push(button.textContent.toLowerCase()); // If category button has 'selected' class, push the category name in the array
@@ -124,8 +123,8 @@ const weapon = {
             let resultFound = false;
 
             weapon.weaponCards.forEach(card => {
-                const weaponName = card.querySelector('.name').textContent.toLowerCase();
-                const weaponType = card.querySelector('.type').textContent.toLowerCase();
+                const weaponName = card.querySelector('.header-name').textContent.toLowerCase();
+                const weaponType = card.querySelector('.header-type').textContent.toLowerCase();
                 if (weaponName.includes(searchText) || weaponType.includes(searchText)) {
                     card.classList.remove('hidden');
                     resultFound = true;
@@ -155,7 +154,8 @@ const weapon = {
         sortOptions.forEach(option => {
             option.addEventListener('click', () => {
                 const sortType = option.getAttribute('data-sort');
-                weapon.toggleSortDirection();
+                weapon.toggleSortDirection()
+
                 if (sortType === "reset") {
                     const weaponContainer = document.querySelector('.card-container');
                     weaponContainer.innerHTML = ''; 
@@ -207,7 +207,7 @@ const weapon = {
      * Listen to the click on the sort-by button to display the options
      */
     toggleSortButton() {
-        const sortButton = document.querySelector('.sort-by-btn');
+        const sortButton = document.querySelector('.sort-button');
         const sortOptionsElem = document.querySelector('.sort-options');
 
         sortButton.addEventListener('click', (event) => {

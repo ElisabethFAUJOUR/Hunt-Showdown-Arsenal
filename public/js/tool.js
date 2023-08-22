@@ -21,7 +21,7 @@ const tool = {
             let resultFound = false;
     
             tool.toolCards.forEach(card => {
-                const toolName = card.querySelector('.name').textContent.toLowerCase();
+                const toolName = card.querySelector('.header-name').textContent.toLowerCase();
                 if (toolName.includes(searchText)) {
                     card.classList.remove('hidden');
                     resultFound = true;
@@ -70,7 +70,7 @@ const tool = {
      * Listen to the click on the sort-by button to display the options
      */
     listenToClickOnSortButton() {
-        const sortButton = document.querySelector('.sort-by-btn');
+        const sortButton = document.querySelector('.sort-button');
         const sortOptionsElem = document.querySelector('.sort-options');
     
         sortButton.addEventListener('click', (event) => {

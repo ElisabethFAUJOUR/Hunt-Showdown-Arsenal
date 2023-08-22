@@ -24,13 +24,13 @@
                     <div class="search">
                         <input type="text" class="search-bar" placeholder="Search by name or type">
                     </div>
-                    <button class="sort-by-btn">
-                        <div class="sort-by-label">Sort by</div>
+                    <button class="sort-button">
+                        <div class="sort-button-label">Sort by</div>
                         <i class="bi bi-chevron-down"></i>
                     </button>
                     <div class="sort-options hidden">
                         <button class="sort-option-btn" data-sort="reset">-</button>
-                        <button class="sort-option-btn" data-sort="cost">Cost</button>
+                        <button class="sort-option-btn" data-sort="cost">Cost</i></button>
                         <button class="sort-option-btn" data-sort="damage">Damage</button>
                         <button class="sort-option-btn" data-sort="melee_damage">Melee Damage</button>
                         <button class="sort-option-btn" data-sort="muzzle_velocity">Muzzle Velocity</button>
@@ -44,8 +44,8 @@
                     <div class="card weapon-card fade-in" id="<%= weapon.id %>" data-category="<%= weapon.category %>" data-ammo="<%= weapon.ammo.name %>">
                         <div class="card-header">
                             <div class="header-title">
-                                <h1 class="name"><%= weapon.name%></h1>
-                                <h3 class="type"><%= weapon.type %></h3>
+                                <h1 class="header-name"><%= weapon.name%></h1>
+                                <h3 class="header-type"><%= weapon.type %></h3>
                             </div>
                             <div class="header-cost">
                                 <h2 class="cost" data-value="cost"><%= weapon.cost %></h2>
@@ -54,12 +54,12 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="body-info">
+                            <div class="card-body-info">
                                 <p><%= weapon.description %></p>
                                 <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
                             </div>
 
-                            <div class="body-ammo">
+                            <div class="card-body-ammo">
                                 <% if (weapon.ammo) { %>
                                     <% if (Array.isArray(weapon.ammo)) { %>
                                         <% weapon.ammo.forEach(ammoType => { %>
@@ -94,7 +94,7 @@
                                 <% } %>
                             </div>
 
-                            <div class="body-stats">
+                            <div class="card-body-stats">
                                 <% if (weapon.stats.damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">

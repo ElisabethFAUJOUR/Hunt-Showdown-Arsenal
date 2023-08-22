@@ -21,7 +21,7 @@ const consu = {
             let resultFound = false;
     
             consu.consumableCards.forEach(card => {
-                const consumableName = card.querySelector('.name').textContent.toLowerCase();
+                const consumableName = card.querySelector('.header-name').textContent.toLowerCase();
                 if (consumableName.includes(searchText)) {
                     card.classList.remove('hidden');
                     resultFound = true;
@@ -70,7 +70,7 @@ const consu = {
      * Listen to the click on the sort-by button to display the options
      */
     listenToClickOnSortButton() {
-        const sortButton = document.querySelector('.sort-by-btn');
+        const sortButton = document.querySelector('.sort-button');
         const sortOptionsElem = document.querySelector('.sort-options');
     
         sortButton.addEventListener('click', (event) => {
