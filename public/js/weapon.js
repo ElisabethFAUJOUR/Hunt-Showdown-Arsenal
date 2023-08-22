@@ -1,6 +1,5 @@
 import app from './app.js';
 
-
 const weapon = {
 
     /* Weapon card element */
@@ -14,7 +13,7 @@ const weapon = {
         weapon.filterWeapons();
         app.searchCards(weapon.weaponCards);
         app.toggleSortButton();
-        weapon.sortWeapons();
+        app.sortCards('weapons', weapon.weaponCardsArray);
     },
 
     //---------------------------
@@ -109,34 +108,6 @@ const weapon = {
                 }
             }
             weapon.applyFilters(categoryButtons, ammoButtons);
-        });
-    },
-
-    //----------------------------
-    //---- FUNCTIONS SORT BY -----
-    //----------------------------          
-    
-    /**
-     * Sort weapons by sorting option
-     */
-    sortWeapons() {
-        const sortOptions = document.querySelectorAll('.sort-option-btn');
-    
-        sortOptions.forEach(option => {
-            option.addEventListener('click', () => {
-                const sortType = option.getAttribute('data-sort');
-                app.sortDirection = app.toggleSortDirection(app.sortDirection);
-                const newSortDirection = app.sortDirection;
-                if (sortType === "reset") {
-                    const weaponsContainer = document.querySelector('.weapons-container');
-                    weaponsContainer.innerHTML = ''; 
-                    weapon.weaponCardsArray.forEach(card => {
-                        weaponsContainer.appendChild(card);
-                    });
-                } else {
-                    app.sortCards('weapons', weapon.weaponCardsArray, newSortDirection, sortType);
-                }
-            });
         });
     }
 };

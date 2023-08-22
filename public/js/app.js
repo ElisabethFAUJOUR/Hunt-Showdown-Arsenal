@@ -5,9 +5,12 @@ const app = {
     },
 
     //---------------------------
-    //---- FUNCTIONS SCROLL -----
+    //---- FUNCTION FADE IN -----
     //---------------------------
 
+     /**
+     * Observe elements with the "fade-in" class and apply fade-in effect
+     */
     observeElements() {
         const fadeInElements = document.querySelectorAll(".fade-in");
 
@@ -37,7 +40,8 @@ const app = {
 
     /**
      * Listen to the text put in the search bar and filter cards including the search text
-     * @param {NodeList} cards 
+     * @param {NodeList} cards - List of cards
+
      */
     searchCards(cards) {
         const searchInput = document.querySelector('.search-bar');
@@ -87,18 +91,23 @@ const app = {
     },
 
     /**
-     * Toggles the sorting direction between ascending and descending.
+     * Toggles the sorting direction between ascending and descending
+     * @param {string} sortDirection - Current sorting direction 
+     * @returns {string} - New sorting direction ('asc' or 'desc')
      */
-     toggleSortDirection(sortDirection) {
+    toggleSortDirection(sortDirection) {
         return sortDirection === 'desc' ? 'asc' : 'desc';
     },   
 
     /**
-     * Filter, sort consumables by value ASC or DESC and display the sorted consumables
-     * @param {string} sortData - Sorting option name
+     * Filter, sort items by a specific data attribute and display the sorted items
+     * @param {string} itemType - Type of items ('weapons', 'consumables', 'tools')
+     * @param {Array} cardsArray - Array of item card elements
+     * @param {string} sortDirection - Sorting direction ('asc' or 'desc')
+     * @param {string} sortData - Data attribute name for sorting
      */
-    sortCards(data, cardsArray, sortDirection, sortData) {
-        const itemsContainer = document.querySelector(`.${data}-container`);
+    sortCardsByData(itemType, cardsArray, sortDirection, sortData) {
+        const itemsContainer = document.querySelector(`.${itemType}-container`);
 
         const itemsWithSortData = cardsArray.filter(card => card.querySelector(`[data-value="${sortData}"]`));
 
@@ -117,6 +126,33 @@ const app = {
 
         sortedItems.forEach(card => {
             itemsContainer.appendChild(card);
+        });
+    },
+    
+    /**
+     * Sort and update cards based on selected sorting option
+     * @param {string} itemType - Type of items ('weapons', 'consumables', 'tools')
+     * @param {Array} cardsArray - Array of item card elements
+     */
+    sortCards(itemType, cardsArray) {
+        const sortOptions = document.querySelectorAll('.sort-option-btn');
+    
+        sortOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const sortType = option.getAttribute('data-sort');
+                app.sortDirection = app.toggleSortDirection(app.sortDirection);
+                const newSortDirection = app.sortDirection;
+                const container = document.querySelector(`.${itemType}-container`);
+    
+                if (sortType === 'reset') {
+                    container.innerHTML = '';
+                    cardsArray.forEach(card => {
+                        container.appendChild(card);
+                    });
+                } else {
+                    app.sortCardsByData(itemType, cardsArray, newSortDirection, sortType);
+                }
+            });
         });
     },
     
@@ -147,7 +183,6 @@ const app = {
         const noResultsMessage = document.querySelector('.no-results-message');
         noResultsMessage.style.display = 'none';
     }
-
 };
 
 document.addEventListener('DOMContentLoaded', app.init);
