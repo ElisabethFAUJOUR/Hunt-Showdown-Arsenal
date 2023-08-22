@@ -1,3 +1,6 @@
+import app from './app.js';
+
+
 const weapon = {
 
     /* Weapon card element */
@@ -9,8 +12,8 @@ const weapon = {
     init() {
         weapon.weaponCardsArray = Array.from(document.querySelectorAll('.weapon-card'));
         weapon.filterWeapons();
-        weapon.searchWeapons();
-        weapon.toggleSortButton();
+        app.searchCards(weapon.weaponCards);
+        app.toggleSortButton();
         weapon.sortWeapons();
     },
 
@@ -74,9 +77,9 @@ const weapon = {
             }
 
             if (!resultFound) {
-                weapon.createNoResultsFoundMessage();
+                app.createNoResultsFoundMessage();
             } else {
-                weapon.hideNoResultsFoundMessage();
+                app.hideNoResultsFoundMessage();
             }
         });
     },
@@ -109,38 +112,6 @@ const weapon = {
         });
     },
 
-    //---------------------------
-    //---- FUNCTIONS SEARCH -----
-    //---------------------------
-
-    /**
-     * Listen to the text put in the search bar and filter weapons including the search text
-     */
-    searchWeapons() {
-        const searchInput = document.querySelector('.search-bar');
-        searchInput.addEventListener('input', () => {
-            const searchText = searchInput.value.toLowerCase();
-            let resultFound = false;
-
-            weapon.weaponCards.forEach(card => {
-                const weaponName = card.querySelector('.header-name').textContent.toLowerCase();
-                const weaponType = card.querySelector('.header-type').textContent.toLowerCase();
-                if (weaponName.includes(searchText) || weaponType.includes(searchText)) {
-                    card.classList.remove('hidden');
-                    resultFound = true;
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-
-            if (!resultFound) {
-                weapon.createNoResultsFoundMessage();
-            } else {
-                weapon.hideNoResultsFoundMessage();
-            }
-        });
-    },
-
     //----------------------------
     //---- FUNCTIONS SORT BY -----
     //----------------------------          
@@ -154,8 +125,8 @@ const weapon = {
         sortOptions.forEach(option => {
             option.addEventListener('click', () => {
                 const sortType = option.getAttribute('data-sort');
-                weapon.toggleSortDirection()
-
+                app.sortDirection = app.toggleSortDirection(app.sortDirection);
+                const newSortDirection = app.sortDirection;
                 if (sortType === "reset") {
                     const weaponsContainer = document.querySelector('.cards-container');
                     weaponsContainer.innerHTML = ''; 
@@ -163,97 +134,11 @@ const weapon = {
                         weaponsContainer.appendChild(card);
                     });
                 } else {
-                    weapon.sortWeaponsBy(sortType);
+                    app.sortCards(weapon.weaponCardsArray, newSortDirection, sortType);
                 }
             });
         });
-    },
-    
-    /**
-     * Toggles the sorting direction between ascending and descending.
-     */
-    toggleSortDirection() {
-        weapon.sortDirection = weapon.sortDirection === 'desc' ? 'asc' : 'desc'; 
-    },
-    
-    /**
-     * Filter, sort weapons by value ASC or DESC and display the sorted weapons
-     * @param {string} sortData - Sorting option name
-     */
-    sortWeaponsBy(sortData) {
-        const weaponsContainer = document.querySelector('.cards-container');
-    
-        const weaponsWithSortData = weapon.weaponCardsArray.filter(card => card.querySelector(`[data-value="${sortData}"]`));
-    
-        const sortedWeapons = weaponsWithSortData.sort((a, b) => {
-            const valueA = parseFloat(a.querySelector(`[data-value="${sortData}"]`).textContent);
-            const valueB = parseFloat(b.querySelector(`[data-value="${sortData}"]`).textContent);
-    
-            if (weapon.sortDirection === 'asc') {
-                return valueA - valueB;
-            } else {
-                return valueB - valueA;
-            }
-        });
-    
-        weaponsContainer.innerHTML = '';
-    
-        sortedWeapons.forEach(card => {
-            weaponsContainer.appendChild(card);
-        });
-    },
-
-    /**
-     * Listen to the click on the sort-by button to display the options
-     */
-    toggleSortButton() {
-        const sortButton = document.querySelector('.sort-button');
-        const sortOptionsElem = document.querySelector('.sort-options');
-
-        sortButton.addEventListener('click', (event) => {
-            event.stopPropagation();
-            sortButton.classList.toggle('is-clicked');
-            sortOptionsElem.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', () => {
-            sortButton.classList.remove('is-clicked');
-            sortOptionsElem.classList.add('hidden');
-        });
-    },
-
-    /**
-     * Listen to the click on the sort-by options to sort weapons
-     */
-
-    //--------------------------------------
-    //---- FUNCTIONS MESSAGE NO RESULT -----
-    //--------------------------------------
-
-    /**
-     * Creates the "No results found" message if it doesn't exist
-     */
-    createNoResultsFoundMessage() {
-        const noResultsMessage = document.querySelector('.no-results-message');
-        if (!noResultsMessage) {
-            const mainContainer = document.querySelector('.main-container');
-            const noResultsMessage = document.createElement('div');
-            noResultsMessage.className = 'no-results-message';
-            noResultsMessage.textContent = 'Whooops, no weapons found.';
-            mainContainer.appendChild(noResultsMessage);
-        } else {
-            noResultsMessage.style.display = 'block';
-        }
-    },
-
-    /**
-     * Hides the "No results found" message
-     */
-    hideNoResultsFoundMessage() {
-        const noResultsMessage = document.querySelector('.no-results-message');
-        noResultsMessage.style.display = 'none';
     }
-
 };
 
 document.addEventListener('DOMContentLoaded', weapon.init);
