@@ -8,6 +8,10 @@
 
 /****Sort-by****/
 
+.no-results-message {
+    margin-bottom: 35%;
+}
+
 /****Card-Body****/
 
 .card-body {

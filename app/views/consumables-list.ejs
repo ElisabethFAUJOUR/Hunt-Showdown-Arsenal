@@ -14,163 +14,165 @@
                 <div class="sort-options hidden">
                     <button class="sort-option-btn" data-sort="reset">-</button>
                     <button class="sort-option-btn" data-sort="cost">Cost</button>
-                    <button class="sort-option-btn" data-sort="damage">Damage</button>
+                    <button class="sort-option-btn" data-sort="damage-thrown">Damage Thrown</button>
                 </div>
             </div>
 
-            <% consumables.forEach(consumable => { %>
-                <div class="card consumable-card fade-in" id="<%= consumable.id %>">
-                    <div class="card-header">
-                        <h1 class="header-name"><%= consumable.name %></h1>
-                        <div class="header-cost">
-                            <h2 class="cost" data-value="cost"><%= consumable.cost %></h2>
-                            <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
-                        </div>
-                    </div>
-    
-                    <div class="card-body">
-                        <div class="card-body-info">
-                            <p><%= consumable.description %></p>
-                            <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
-                        </div>
-    
-                        <% if (consumable.stats) { %>
-                            <div class="card-body-stats">
-                                <% if (consumable.stats.damage) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Damage</p>
-                                            <p data-value="damage"><%= consumable.stats.damage %></p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.damage/13)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-
-                                <% if (consumable.stats.damage_thrown) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Damage Thrown</p>
-                                            <p><%= consumable.stats.damage_thrown %></p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.damage_thrown/3000)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-        
-                                <% if (consumable.stats.damage_per_tick) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Damage Per Tick</p>
-                                            <p><%= consumable.stats.damage_per_tick %></p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.damage_per_tick/6)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-        
-                                <% if (consumable.stats.effect_radius) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Effect Radius</p>
-                                            <p><%= consumable.stats.effect_radius %>m</p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.effect_radius/11)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-        
-                                <% if (consumable.stats.effect_duration) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Effect Duration</p>
-                                            <p><%= consumable.stats.effect_duration %>s</p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.effect_duration/1200)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-        
-                                <% if (consumable.stats.throw_range) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Throw Range</p>
-                                            <p><%= consumable.stats.throw_range %>m</p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.throw_range/22)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-
-                                <% if (consumable.stats.control_range) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Control Range</p>
-                                            <p><%= consumable.stats.control_range %>m</p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.control_range/150)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-        
-                                <% if (consumable.stats.fuse_timer) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Fuse Timer</p>
-                                            <p><%= consumable.stats.fuse_timer %>s</p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.fuse_timer/8)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-        
-                                <% if (consumable.stats.melee_damage) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Melee Damage</p>
-                                            <p><%= consumable.stats.melee_damage %></p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.melee_damage/52)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-
-                                <% if (consumable.stats.heavy_melee_damage) { %>
-                                    <div class="stat-row">
-                                        <div class="stat-info">
-                                            <p>Heavy Melee Damage</p>
-                                            <p><%= consumable.stats.heavy_melee_damage %></p>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <span class="grey-line"></span>
-                                            <span class="red-line" style="width:<%=(consumable.stats.heavy_melee_damage/112)*100 %>%"></span>
-                                        </div>
-                                    </div>
-                                <% } %>
-
+            <div class="cards-container">
+                <% consumables.forEach(consumable => { %>
+                    <div class="card consumable-card fade-in" id="<%= consumable.id %>">
+                        <div class="card-header">
+                            <h1 class="header-name"><%= consumable.name %></h1>
+                            <div class="header-cost">
+                                <h2 class="cost" data-value="cost"><%= consumable.cost %></h2>
+                                <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                             </div>
-                        <% } %>  
+                        </div>
+        
+                        <div class="card-body">
+                            <div class="card-body-info">
+                                <p><%= consumable.description %></p>
+                                <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
+                            </div>
+        
+                            <% if (consumable.stats) { %>
+                                <div class="card-body-stats">
+                                    <% if (consumable.stats.damage) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Damage</p>
+                                                <p><%= consumable.stats.damage %></p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.damage/13)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+
+                                    <% if (consumable.stats.damage_thrown) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Damage Thrown</p>
+                                                <p data-value="damage-thrown"><%= consumable.stats.damage_thrown %></p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.damage_thrown/3000)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+            
+                                    <% if (consumable.stats.damage_per_tick) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Damage Per Tick</p>
+                                                <p><%= consumable.stats.damage_per_tick %></p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.damage_per_tick/6)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+            
+                                    <% if (consumable.stats.effect_radius) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Effect Radius</p>
+                                                <p><%= consumable.stats.effect_radius %>m</p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.effect_radius/11)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+            
+                                    <% if (consumable.stats.effect_duration) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Effect Duration</p>
+                                                <p><%= consumable.stats.effect_duration %>s</p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.effect_duration/1200)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+            
+                                    <% if (consumable.stats.throw_range) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Throw Range</p>
+                                                <p><%= consumable.stats.throw_range %>m</p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.throw_range/22)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+
+                                    <% if (consumable.stats.control_range) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Control Range</p>
+                                                <p><%= consumable.stats.control_range %>m</p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.control_range/150)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+            
+                                    <% if (consumable.stats.fuse_timer) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Fuse Timer</p>
+                                                <p><%= consumable.stats.fuse_timer %>s</p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.fuse_timer/8)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+            
+                                    <% if (consumable.stats.melee_damage) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Melee Damage</p>
+                                                <p><%= consumable.stats.melee_damage %></p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.melee_damage/52)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+
+                                    <% if (consumable.stats.heavy_melee_damage) { %>
+                                        <div class="stat-row">
+                                            <div class="stat-info">
+                                                <p>Heavy Melee Damage</p>
+                                                <p><%= consumable.stats.heavy_melee_damage %></p>
+                                            </div>
+                                            <div class="stat-bar">
+                                                <span class="grey-line"></span>
+                                                <span class="red-line" style="width:<%=(consumable.stats.heavy_melee_damage/112)*100 %>%"></span>
+                                            </div>
+                                        </div>
+                                    <% } %>
+
+                                </div>
+                            <% } %>  
+                        </div>
                     </div>
-                </div>
-            <% }) %>
+                <% }) %>
+            </div>
         </div>
     </main>
 
@@ -181,7 +183,7 @@
 <!-- Specific Css file for page consumables -->
 <link rel="stylesheet" href="../css/list-card-tools-consumables.css">  
 <!-- Specific Js file for page consumables -->
-<script src="../js/consumable.js"></script>
+<script src="../js/consumable.js" type="module"></script>
 
 </body>
 </html>

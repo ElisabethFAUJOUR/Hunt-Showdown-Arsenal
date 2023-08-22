@@ -1,6 +1,6 @@
 const weapon = {
 
-    /* Weapon card  element */
+    /* Weapon card element */
     weaponCards: document.querySelectorAll('.weapon-card'),
 
     /* Array for all weapon cards */
@@ -11,7 +11,7 @@ const weapon = {
         weapon.filterWeapons();
         weapon.searchWeapons();
         weapon.toggleSortButton();
-        weapon.sortWeapon();
+        weapon.sortWeapons();
     },
 
     //---------------------------
@@ -148,7 +148,7 @@ const weapon = {
     /**
      * Sort weapons by sorting option
      */
-    sortWeapon() {
+    sortWeapons() {
         const sortOptions = document.querySelectorAll('.sort-option-btn');
     
         sortOptions.forEach(option => {
@@ -157,10 +157,10 @@ const weapon = {
                 weapon.toggleSortDirection()
 
                 if (sortType === "reset") {
-                    const weaponContainer = document.querySelector('.card-container');
-                    weaponContainer.innerHTML = ''; 
+                    const weaponsContainer = document.querySelector('.cards-container');
+                    weaponsContainer.innerHTML = ''; 
                     weapon.weaponCardsArray.forEach(card => {
-                        weaponContainer.appendChild(card);
+                        weaponsContainer.appendChild(card);
                     });
                 } else {
                     weapon.sortWeaponsBy(sortType);
@@ -181,7 +181,7 @@ const weapon = {
      * @param {string} sortData - Sorting option name
      */
     sortWeaponsBy(sortData) {
-        const weaponContainer = document.querySelector('.card-container');
+        const weaponsContainer = document.querySelector('.cards-container');
     
         const weaponsWithSortData = weapon.weaponCardsArray.filter(card => card.querySelector(`[data-value="${sortData}"]`));
     
@@ -196,10 +196,10 @@ const weapon = {
             }
         });
     
-        weaponContainer.innerHTML = '';
+        weaponsContainer.innerHTML = '';
     
         sortedWeapons.forEach(card => {
-            weaponContainer.appendChild(card);
+            weaponsContainer.appendChild(card);
         });
     },
 
