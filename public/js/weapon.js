@@ -128,13 +128,13 @@ const weapon = {
                 app.sortDirection = app.toggleSortDirection(app.sortDirection);
                 const newSortDirection = app.sortDirection;
                 if (sortType === "reset") {
-                    const weaponsContainer = document.querySelector('.cards-container');
+                    const weaponsContainer = document.querySelector('.weapons-container');
                     weaponsContainer.innerHTML = ''; 
                     weapon.weaponCardsArray.forEach(card => {
                         weaponsContainer.appendChild(card);
                     });
                 } else {
-                    app.sortCards(weapon.weaponCardsArray, newSortDirection, sortType);
+                    app.sortCards('weapons', weapon.weaponCardsArray, newSortDirection, sortType);
                 }
             });
         });

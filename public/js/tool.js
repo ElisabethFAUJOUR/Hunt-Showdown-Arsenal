@@ -31,17 +31,17 @@ const tool = {
                 app.sortDirection = app.toggleSortDirection(app.sortDirection);
                 const newSortDirection = app.sortDirection;
                 if (sortType === "reset") {
-                    const toolsContainer = document.querySelector('.cards-container');
+                    const toolsContainer = document.querySelector('.tools-container');
                     toolsContainer.innerHTML = ''; 
                     tool.toolCardsArray.forEach(card => {
                         toolsContainer.appendChild(card);
                     });
                 } else {
-                    app.sortCards(tool.toolCardsArray, newSortDirection, sortType);
+                    app.sortCards('tools', tool.toolCardsArray, newSortDirection, sortType);
                 }
             });
         });
-    },
+    }
 };
 
 document.addEventListener('DOMContentLoaded', tool.init);

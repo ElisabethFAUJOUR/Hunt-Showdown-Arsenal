@@ -31,19 +31,17 @@ const consu = {
                 app.sortDirection = app.toggleSortDirection(app.sortDirection);
                 const newSortDirection = app.sortDirection;
                 if (sortType === "reset") {
-                    const consumablesContainer = document.querySelector('.cards-container');
+                    const consumablesContainer = document.querySelector('.consumables-container');
                     consumablesContainer.innerHTML = ''; 
                     consu.consumableCardsArray.forEach(card => {
                         consumablesContainer.appendChild(card);
                     });
                 } else {
-                    app.sortCards(consu.consumableCardsArray, newSortDirection, sortType);
+                    app.sortCards('consumables', consu.consumableCardsArray, newSortDirection, sortType);
                 }
             });
         });
-    },
-    
-    
+    }
 };
 
 document.addEventListener('DOMContentLoaded', consu.init);

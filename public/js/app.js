@@ -66,8 +66,27 @@ const app = {
     //----------------------------
     //---- FUNCTIONS SORT BY -----
     //----------------------------
+    
+    /**
+     * Listen to the click on the sort-by button to display the options
+     */
+    toggleSortButton() {
+        const sortButton = document.querySelector('.sort-button');
+        const sortOptionsElem = document.querySelector('.sort-options');
 
-     /**
+        sortButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            sortButton.classList.toggle('is-clicked');
+            sortOptionsElem.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', () => {
+            sortButton.classList.remove('is-clicked');
+            sortOptionsElem.classList.add('hidden');
+        });
+    },
+
+    /**
      * Toggles the sorting direction between ascending and descending.
      */
      toggleSortDirection(sortDirection) {
@@ -78,8 +97,8 @@ const app = {
      * Filter, sort consumables by value ASC or DESC and display the sorted consumables
      * @param {string} sortData - Sorting option name
      */
-    sortCards(cardsArray, sortDirection, sortData) {
-        const itemsContainer = document.querySelector('.cards-container');
+    sortCards(data, cardsArray, sortDirection, sortData) {
+        const itemsContainer = document.querySelector(`.${data}-container`);
 
         const itemsWithSortData = cardsArray.filter(card => card.querySelector(`[data-value="${sortData}"]`));
 
@@ -98,25 +117,6 @@ const app = {
 
         sortedItems.forEach(card => {
             itemsContainer.appendChild(card);
-        });
-    },
-
-    /**
-     * Listen to the click on the sort-by button to display the options
-     */
-    toggleSortButton() {
-        const sortButton = document.querySelector('.sort-button');
-        const sortOptionsElem = document.querySelector('.sort-options');
-
-        sortButton.addEventListener('click', (event) => {
-            event.stopPropagation();
-            sortButton.classList.toggle('is-clicked');
-            sortOptionsElem.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', () => {
-            sortButton.classList.remove('is-clicked');
-            sortOptionsElem.classList.add('hidden');
         });
     },
     
