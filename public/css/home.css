@@ -48,26 +48,3 @@ body {
     background-size: cover;
     height: 100vh;
 }
-
-/****MAIN****/
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px; 
-    min-height: calc(100vh - 5rem);
-    margin: 0 auto; 
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.main-logo {
-    padding-bottom: 2rem;
-}
-
-.main-text {
-    padding-bottom: 1rem;
-    line-height: 1.3;
-}

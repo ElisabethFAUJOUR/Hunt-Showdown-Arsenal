@@ -1,8 +1,7 @@
-# Hunt-Showdown-Loadout-Generator
+# Hunt-Showdown-Arsenal
 
 ## Description
-Welcome to the **Hunt Showdown Loadout Generator**, a personal projet made with love ! This tool generates random loadouts for the video game Hunt Showdown, adding an extra layer of difficulty to your game sessions. 
-You can also find an arsenal featuring all the weapons, tools, and consumables available in the game. 
+Welcome to the **Hunt Showdown Arsenal**, a personal projet made with love ! You can find an arsenal featuring all the weapons, tools, and consumables available in the game. 
 This project is currently under development. 
 
 ## Technos 

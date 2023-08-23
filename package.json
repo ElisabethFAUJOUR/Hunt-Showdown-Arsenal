@@ -1,7 +1,7 @@
 {
-  "name": "hunt-showdown-loadout-generator",
+  "name": "hunt-showdown-showcase",
   "version": "1.0.0",
-  "description": "Loadout Generator For Hunt Showdown",
+  "description": "Hunt Showdown Showcase",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
