@@ -23,7 +23,7 @@ body {
 /****Filters****/
 
 .filters {
-    padding: 1rem;
+    padding: 2rem 1.5rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-grey-dark-transparent);
 }
@@ -105,7 +105,7 @@ input:checked + .slider:before {
     transform: translateX(20px);
 }
 
-/****Generator Template****/
+/****Generator****/
 
 .generator-container {
     padding-top:4rem;
@@ -124,20 +124,39 @@ input:checked + .slider:before {
 }
 
 .large-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 386px;
-    height: 101px;
+    height: 110px;
     background-color: var(--color-border);
     box-shadow: 5px 5px 6px var(--color-shadow);
+}
+
+.weapon-img {
+    max-width: 360px;
+    max-height: 85%;
 }
 
 .small-slot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
     width: 386px;
-    height: 101px;
+    height: 110px;
     background-color: var(--color-border);
     box-shadow: 5px 5px 6px var(--color-shadow);
 }
 
+.small-slot img {
+    max-width: 240px;
+    max-height: 85%;
+}
+
 .ammo {
+    display: flex;
+    align-items: center;
     width: 30px;
     height: 60px;
     background-color: var(--color-border);
@@ -152,18 +171,29 @@ input:checked + .slider:before {
 }
 
 .tool-slot {
-    width: 101px;
-    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
     background-color: var(--color-border);
     box-shadow: 5px 5px 6px var(--color-shadow);
 }
 
 .consumable-slot {
-    width: 101px;
-    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
     background-color: var(--color-border);
     box-shadow: 5px 5px 6px var(--color-shadow);
 }
+
+.tool-slot img, .consumable-slot img {
+    max-width: 80%;
+}
+
 
 /****Total cost****/
 
