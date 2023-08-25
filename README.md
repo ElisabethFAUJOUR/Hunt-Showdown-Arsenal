@@ -19,4 +19,4 @@ Follow these steps to set up and use the Hunt Showdown Arsenal :
 4. Environment Variables: create a `.env` file in the root directory based on the `.env.example`
 5. Start the Server: `npm run start`
 6. Access the Application: open your web browser and navigate to http://localhost:3000 
-7. Enjoy the Ghibliotheque Librairy !
+7. Explore the Hunt Showdown Arsenal !
