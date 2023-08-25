@@ -19,12 +19,14 @@ body {
     text-align: center;
 }
 
-.main-logo {
-    padding-bottom: 2rem;
+.main-title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .main-text {
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 1.3;
 }
 
