@@ -24,7 +24,7 @@ app.use(router);
 app.use(render404Page);
 
 // ---- LISTEN server ----
-const port = process.env.PORT || 3000;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
 });
