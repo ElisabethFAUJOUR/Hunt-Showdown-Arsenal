@@ -1,7 +1,7 @@
 # Hunt-Showdown-Arsenal
 
 ## Description
-Welcome to the **Hunt Showdown Arsenal**, a personal projet made with love ! You can find an arsenal featuring all the weapons, tools, and consumables available in the game. 
+Welcome to the **Hunt Showdown Arsenal**, a personal projet made with love ! Here, you'll discover an arsenal featuring all the weapons, tools, and consumables available in the game. 
 
 ## Technos 
 - HTML/CSS
