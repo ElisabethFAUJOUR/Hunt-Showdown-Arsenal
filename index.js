@@ -1,7 +1,3 @@
-// ---- IMPORT variables environnements ----
-const dotenv = require("dotenv");
-dotenv.config();
-
 // ---- IMPORT express & INIT app express ----
 const express = require("express");
 const app = express();
