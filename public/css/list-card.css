@@ -48,7 +48,7 @@ body {
 /**** Search Bar ****/
 
 .search {
-    width: 60%;
+    width: 75%;
 }
 
 .search-bar {
@@ -95,7 +95,7 @@ body {
     position: absolute;
     z-index: 1;
     top: 50px;
-    right:137px;
+    right:0;
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -119,24 +119,6 @@ body {
 
 .no-results-message {
     margin-bottom: 20%;
-}
-
-/**** Clear Button ****/
-
-.clear-button {
-    width: 15%;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-red-dark);
-    box-shadow: 5px 5px 6px var(--color-shadow);
-    color: var(--color-text);
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-}
-
-.clear-button:hover {
-    background-color: var(--color-red);
-    border: 1px solid var(--color-border-hover);
 }
 
 /************/
