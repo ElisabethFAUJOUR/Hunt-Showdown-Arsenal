@@ -13,7 +13,7 @@
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-grey-dark-transparent);
-    box-shadow: 5px 5px 6px var(--color-shadow);    
+    box-shadow: 5px 5px 6px var(--color-shadow);
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
@@ -31,7 +31,7 @@
 
 .card-body {
     display: grid;
-    grid-template-columns: 3fr 1fr 6fr;
+    grid-template-columns: 4fr 1fr 6fr;
 }
 
 .header-type {
@@ -46,7 +46,9 @@
 /****Body-infos img****/
 
 .img-weapon {
-    max-width: 430px;
+    max-width: 410px;
+    max-height: 100px;
+    width: auto;
     margin-top: 0.5rem;
 }
 
@@ -75,4 +77,47 @@
 .selected {
     border: 1px solid var(--color-border-hover);
     background-color: var(--color-red-dark);
+}
+
+/******************/
+/****Responsive****/
+/******************/
+
+@media (max-width: 1399px) {
+    .card-body {
+        display: grid;
+        grid-template-columns: 4fr 1fr 5fr;
+    }
+
+    .ammo-type img {
+        width:35px;
+    }
+
+    .special_ammo img {
+        width: 25px;
+    }
+
+}
+
+@media (max-width: 1149px) {
+    .card-body {
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+    }
+
+    .img-weapon {
+        max-width: 400px;
+    }
+
+    .card-body-stats.row {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 699px) {
+
+}
+
+@media (max-width: 400px) {
+
 }

@@ -156,7 +156,7 @@ body {
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-red-dark);
-    box-shadow: 5px 5px 6px var(--color-shadow);    
+    box-shadow: 5px 5px 6px var(--color-shadow);
     color:var(--color-text);
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;

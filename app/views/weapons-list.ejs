@@ -22,7 +22,7 @@
                 </div>
                 <div class="filter-row">
                     <div class="search">
-                        <input type="text" class="search-bar" placeholder="Search by name or type">
+                        <input type="text" class="search-bar" placeholder="Search...">
                     </div>
                     <button class="sort-button">
                         <div class="sort-button-label">Sort by</div>
@@ -54,12 +54,12 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="card-body-info">
+                            <div class="card-body-info col">
                                 <p><%= weapon.description %></p>
                                 <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
                             </div>
 
-                            <div class="card-body-ammo">
+                            <div class="card-body-ammo col">
                                 <% if (weapon.ammo) { %>
                                     <% if (Array.isArray(weapon.ammo)) { %>
                                         <% weapon.ammo.forEach(ammoType => { %>
@@ -67,7 +67,7 @@
                                                 <img src="../<%= ammoType.icon %>" alt="<%= ammoType.name %>">
                                                 <p class="ammo-capacity"><%= ammoType.capacity_ammo %></p>
                                             </div>
-                    
+
                                             <% if (ammoType.special_ammo) { %>
                                                 <div class="special_ammo">
                                                     <% ammoType.special_ammo.forEach(special_ammo => { %>
@@ -94,7 +94,7 @@
                                 <% } %>
                             </div>
 
-                            <div class="card-body-stats">
+                            <div class="card-body-stats row">
                                 <% if (weapon.stats.damage) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
@@ -107,7 +107,7 @@
                                         </div>
                                     </div>
                                 <% } %>
-                                    
+
                                 <% if (weapon.stats.effective_range) { %>
                                     <div class="stat-row">
                                         <div class="stat-info">
