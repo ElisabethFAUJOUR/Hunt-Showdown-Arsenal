@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/header') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loadout Generator for Hunt Showdown">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/error.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Hunt Arsenal - 404</title>
-</head>
-<body>
-    <div class="container">
-        <main class="main-container">
-            <p class="text">Whooops, there is nothing here.</p>
-            <button class="red-button">
-                <a href="/">BACK TO HOME</a>
-            </button>
-        </main> 
-    </div>
+        <main class="error-container">
+                <p class="text">Whooops, there is nothing here.</p>
+                <button class="red-button">
+                    <a href="/">BACK TO HOME</a>
+                </button>
+        </main>
+
+
+<%- include('partials/footer') %>
+
+<!-- Specific Css file for page Home -->
+<link rel="stylesheet" href="../css/error.css">
+
+</div>
 </body>
 </html>

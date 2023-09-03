@@ -2,31 +2,37 @@ body {
     background-image: url("../img/bg/bg-flou.png");
     background-position: center;
     background-size: cover;
-    height: 100vh;
 }
 
 /****MAIN****/
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
 }
 
-.main-container {
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
     max-width: 400px;
     width:90%;
     margin: 0 auto;
     padding:2rem;
     padding-bottom: 2rem;
-    background-color: var(--color-grey-dark-transparent);
-    backdrop-filter: blur(10px);
     font-size: 1.2rem;
     text-align: center;
 }
 
+
 .text {
-    padding-bottom: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-grey-dark-transparent);
+    backdrop-filter: blur(10px);
     line-height: 1.3;
 }
