@@ -8,12 +8,15 @@ body {
 /****MAIN****/
 
 .container {
-    padding-top:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .main-container {
-    max-width: 400px; 
+    max-width: 400px;
+    width:90%;
     margin: 0 auto;
     padding:2rem;
     padding-bottom: 2rem;
