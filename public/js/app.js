@@ -1,7 +1,7 @@
 const app = {
     
     init() {
-        app.observeElements();
+        app.observeElements();s
     },
 
     //---------------------------
