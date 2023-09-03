@@ -39,15 +39,20 @@ body {
 
 .filter-row {
     position: relative;
-    display: flex;
+    width: 100%;
+    display: grid;
     justify-content: space-between;
     gap:6px;
 }
 
+.filter-row.row-search {
+    grid-template-columns: 3fr 1fr;
+}
+
 /**** Search Bar ****/
 
-.search {
-    width: 75%;
+.search, .sort-button {
+    margin-top:2rem;
 }
 
 .search-bar {
@@ -72,7 +77,6 @@ body {
 .sort-button {
     display: flex;
     justify-content: space-between;
-    width: 25%;
     height: fit-content;
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-border);
@@ -234,6 +238,18 @@ body {
 }
 
 @media (max-width: 699px) {
+    .filter-row.row-search {
+        grid-template-columns: 1fr;
+    }
+
+    .search {
+        margin-top:2rem;
+    }
+
+    .sort-button {
+        margin-top:1rem;
+    }
+
     .card-body-stats {
         grid-template-columns: 1fr;
     }

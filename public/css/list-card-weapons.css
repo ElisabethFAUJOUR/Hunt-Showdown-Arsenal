@@ -3,13 +3,21 @@
 /**********************/
 
 .filter-title {
+    margin-top:2rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
+.filter-row.row-slot {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.filter-row.row-ammo {
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .filter-category-btn, .filter-ammo-btn {
-    width: calc(40% - 6px);
-    margin-bottom:2rem;
+
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-grey-dark-transparent);
@@ -115,6 +123,13 @@
 }
 
 @media (max-width: 699px) {
+    .filter-row.row-slot {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-row.row-ammo {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 }
 

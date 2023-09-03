@@ -1,20 +1,22 @@
 <%- include('partials/header') %>
-        
+
     <main class="main">
         <div class="main-container">
             <h1 class="main-title fade-in">Filter</h1>
             <div class="filter-container fade-in">
-                <div class="search">
-                    <input type="text" class="search-bar" placeholder="SEARCH">
-                </div>
-                <button class="sort-button">
-                    <div class="sort-button-label">Sort by</div>
-                    <i class="bi bi-chevron-down"></i>
-                </button>
-                <div class="sort-options hidden">
-                    <button class="sort-option-btn" data-sort="reset">-</button>
-                    <button class="sort-option-btn" data-sort="cost">Cost</button>
-                    <button class="sort-option-btn" data-sort="damage-thrown">Damage Thrown</button>
+                <div class="filter-row row-search">
+                    <div class="search">
+                        <input type="text" class="search-bar" placeholder="SEARCH">
+                    </div>
+                    <button class="sort-button">
+                        <div class="sort-button-label">Sort by</div>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="sort-options hidden">
+                        <button class="sort-option-btn" data-sort="reset">-</button>
+                        <button class="sort-option-btn" data-sort="cost">Cost</button>
+                        <button class="sort-option-btn" data-sort="damage-thrown">Damage Thrown</button>
+                    </div>
                 </div>
             </div>
 
@@ -28,13 +30,13 @@
                                 <img src="../img/logo/hunt-dollars.png" alt="Hunt Dollars">
                             </div>
                         </div>
-        
+
                         <div class="card-body">
                             <div class="card-body-info">
                                 <p><%= consumable.description %></p>
                                 <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
                             </div>
-        
+
                             <% if (consumable.stats) { %>
                                 <div class="card-body-stats">
                                     <% if (consumable.stats.damage) { %>
