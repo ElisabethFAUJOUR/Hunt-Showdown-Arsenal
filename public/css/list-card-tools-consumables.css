@@ -14,10 +14,12 @@
 
 /****Card-Body****/
 
-.card-body {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    gap:5rem;
+.card-body-description {
+    width: 35%;
+}
+
+.card-body-stats {
+    width: 65%
 }
 
 /**** Img****/

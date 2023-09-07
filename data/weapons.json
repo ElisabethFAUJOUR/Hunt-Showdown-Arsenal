@@ -13,12 +13,12 @@
             "capacity_ammo": "3/6"
         },
         "special_ammo": [
-            { 
+            {
                 "name": "Incendiary",
                 "cost": 35,
                 "icon": "img/specials_ammo/long_incendiary.png"
-            }, 
-            { 
+            },
+            {
                 "name": "Spitzer",
                 "cost": 75,
                 "icon":"img/specials_ammo/long_spitzer.png"
@@ -674,23 +674,23 @@
             "heavy_melee_damage": 31,
             "stamina_consumption_heavy": 20
         }
-    }, 
+    },
     {
         "id": 17,
         "name": "Cavalry Saber",
         "cost": 60,
         "description": "Regulation cavalry saber in use since the Civil War. Lightweight with good reach.",
-        "category": "Medium",
+        "category": "Small",
         "type" : "Melee Weapon",
-        "image": "img/weapons/medium/cavalry_saber.png",
-        "ammo": "", 
+        "image": "img/weapons/small/cavalry_saber.png",
+        "ammo": "",
         "stats": {
             "melee_damage": 82,
             "heavy_melee_damage": 168,
             "stamina_consumption_light": 10,
             "stamina_consumption_heavy": 17
         }
-    }, 
+    },
     {
         "id": 18,
         "name": "Combat Axe",
@@ -699,7 +699,7 @@
         "category": "Medium",
         "type" : "Melee Weapon",
         "image": "img/weapons/medium/combat_axe.png",
-        "ammo": "", 
+        "ammo": "",
         "stats": {
             "melee_damage": 165,
             "heavy_melee_damage": 330,
@@ -1359,17 +1359,17 @@
         "name": "Machete",
         "cost": 18,
         "description": "Used both for cutting through undergrowth and limbs, a machete is a reliable weapon to forge a path.",
-        "category": "Medium",
+        "category": "Small",
         "type" : "Melee Weapon",
-        "image": "img/weapons/medium/machete.png",
-        "ammo": "", 
+        "image": "img/weapons/small/machete.png",
+        "ammo": "",
         "stats": {
             "melee_damage": 90,
             "heavy_melee_damage": 150,
             "stamina_consumption_light": 10,
             "stamina_consumption_heavy": 20
         }
-    }, 
+    },
     {
         "id": 34,
         "name": "Martini-Henry IC1",
@@ -1474,17 +1474,17 @@
             "capacity_ammo": "1/10"
         },
         "special_ammo": [
-            { 
+            {
                 "name": "Full Metal Jacket",
                 "cost": 30,
                 "icon": "img/specials_ammo/long_fullmetaljacket.png"
-            }, 
-            { 
+            },
+            {
                 "name": "Incendiary",
                 "cost": 35,
                 "icon": "img/specials_ammo/long_incendiary.png"
-            }, 
-            { 
+            },
+            {
                 "name": "Explosive",
                 "cost": 50,
                 "icon":"img/specials_ammo/long_explosive.png"

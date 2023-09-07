@@ -8,16 +8,15 @@
     font-weight: bold;
 }
 
-.filter-row.row-slot {
-    grid-template-columns: repeat(4, 1fr);
+.filter-category-btn {
+    width: calc(100%/4 - 6px)
 }
 
-.filter-row.row-ammo {
-    grid-template-columns: repeat(6, 1fr);
+.filter-ammo-btn {
+    width: calc(100%/6 - 6px)
 }
 
 .filter-category-btn, .filter-ammo-btn {
-
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-grey-dark-transparent);
@@ -48,7 +47,19 @@
 
 /****Card-Body****/
 
+.card-body-description {
+    width: 40%;
+}
+
+.card-body-stats {
+    width: 60%;
+}
+
 /*Description - Infos*/
+
+.description-infos {
+    width: 75%;
+}
 
 .img-weapon {
     max-width: 410px;
@@ -60,13 +71,12 @@
 /*Description - Ammo*/
 
 .description-ammo {
-    gap:5px;
-    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
-}
-
-.ammo-type {
-    gap:0.5rem;
+    width: 25%;
+    margin:0 auto;
 }
 
 .ammo-type img {
@@ -74,7 +84,7 @@
 }
 
 .special_ammo img {
-    width: 30px;
+    width: 25px;
 }
 
 /**** Selected class ****/
@@ -109,9 +119,8 @@
         max-width: 400px;
     }
 
-    .card-body-stats.row {
-        grid-column: span 2;
-
+    .ammo-type img {
+        width:35px;
     }
 }
 
@@ -124,9 +133,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .filter-row.row-search {
-        grid-template-columns: 1fr;
-    }
 
     .search {
         margin-top:2rem;
@@ -136,9 +142,26 @@
         margin-top:1rem;
     }
 
+    .card-body-description {
+        gap:1rem;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 549px) {
 
+    .img-weapon {
+        max-width: 300px;
+    }
 
+    .ammo-type img {
+        width:30px;
+    }
+
+    .special_ammo img {
+        width: 20px;
+    }
+
+    .card-body-stats {
+        grid-template-columns: 1fr;
+    }
 }
