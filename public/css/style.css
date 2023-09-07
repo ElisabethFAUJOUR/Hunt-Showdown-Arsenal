@@ -110,9 +110,7 @@ body {
         width: 100%;
         height: calc(100vh - 4rem);
         padding: 1.2rem 0;
-        background-image: url("../img/bg/dark-smoke.png");
-        background-position: center;
-        background-size: cover;
+        background-color: var(--color-grey-dark);
         transition: all 0.3s ease-in-out;
         opacity: 0;
     }
