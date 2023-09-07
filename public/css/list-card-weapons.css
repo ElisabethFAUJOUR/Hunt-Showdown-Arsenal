@@ -62,7 +62,7 @@
 }
 
 .img-weapon {
-    max-width: 410px;
+    max-width: 400px;
     max-height: 100px;
     width: auto;
     margin-top: 0.5rem;
@@ -99,28 +99,31 @@
 /******************/
 
 @media (max-width: 1399px) {
-    .card-body-stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 1149px) {
     .card-body {
-        display: flex;
         flex-direction: column;
     }
 
+    .card-body-description, .card-body-stats {
+        width: 100%;
+    }
+
     .card-body-description {
-        grid-template-columns: 5fr 1fr;
-        gap:2rem;
+        justify-content: space-between;
     }
 
-    .img-weapon {
-        max-width: 400px;
+    .description-infos {
+        width: 90%;
     }
 
-    .ammo-type img {
-        width:35px;
+    .description-ammo {
+        width: 10%;
+    }
+}
+
+
+@media (max-width: 1149px) {
+    .card-body-stats {
+        grid-template-columns: repeat(2, 1fr);;
     }
 }
 
@@ -132,23 +135,11 @@
     .filter-ammo-btn {
         width: calc(100%/3 - 6px)
     }
+        .card-body-stats {  /*BUG dépacement barre scroll largeur*/
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 549px) {
 
-    .img-weapon {
-        max-width: 300px;
-    }
-
-    .ammo-type img {
-        width:30px;
-    }
-
-    .special_ammo img {
-        width: 20px;
-    }
-
-    .card-body-stats {
-        grid-template-columns: 1fr;
-    }
 }
