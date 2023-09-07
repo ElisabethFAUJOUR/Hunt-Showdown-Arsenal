@@ -22,7 +22,7 @@
 
             <div class="consumables-container">
                 <% consumables.forEach(consumable => { %>
-                    <div class="card consumable-card fade-in" id="<%= consumable.id %>">
+                    <article class="card consumable-card fade-in" id="<%= consumable.id %>">
                         <div class="card-header">
                             <h1 class="header-name"><%= consumable.name %></h1>
                             <div class="header-cost">
@@ -32,11 +32,12 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="card-body-info">
-                                <p><%= consumable.description %></p>
-                                <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
+                            <div class="card-body-description">
+                                <div class="description-infos">
+                                    <p><%= consumable.description %></p>
+                                    <img class="body-img" src="../<%= consumable.image %>" alt="<%= consumable.name %>">
+                                </div>
                             </div>
-
                             <% if (consumable.stats) { %>
                                 <div class="card-body-stats">
                                     <% if (consumable.stats.damage) { %>
@@ -170,15 +171,15 @@
                                     <% } %>
 
                                 </div>
-                            <% } %>  
+                            <% } %>
                         </div>
-                    </div>
+                    </article>
                 <% }) %>
             </div>
         </div>
     </main>
 
-<%- include('partials/footer') %>     
+<%- include('partials/footer') %>
 
 <!-- Common Css file for Weapons/Tools/Consumables pages -->
 <link rel="stylesheet" href="../css/list-card.css">

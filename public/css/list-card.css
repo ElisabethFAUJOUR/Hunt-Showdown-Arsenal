@@ -169,11 +169,26 @@ body {
     width: 30px;
 }
 
-/**** Stats ****/
+/**** Card-Body ****/
+
+.card-body {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap:2rem;
+}
+
+/* Description */
+
+.card-body-description {
+    display: flex;
+    gap:2rem;
+}
+
+/* Stats*/
 
 .card-body-stats {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: 1rem;
     font-weight: 600;
@@ -231,26 +246,3 @@ body {
 /******************/
 /****Responsive****/
 /******************/
-@media (max-width: 1399px) {
-    .card-body-stats {
-        grid-template-columns: repeat(2, 48%);
-    }
-}
-
-@media (max-width: 699px) {
-    .filter-row.row-search {
-        grid-template-columns: 1fr;
-    }
-
-    .search {
-        margin-top:2rem;
-    }
-
-    .sort-button {
-        margin-top:1rem;
-    }
-
-    .card-body-stats {
-        grid-template-columns: 1fr;
-    }
-}

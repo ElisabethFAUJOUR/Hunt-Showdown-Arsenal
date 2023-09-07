@@ -22,7 +22,7 @@
 
             <div class="tools-container">
                 <% tools.forEach(tool => { %>
-                    <div class="card tool-card fade-in" id="<%= tool.id %>">
+                    <article class="card tool-card fade-in" id="<%= tool.id %>">
                         <div class="card-header">
                             <h1 class="header-name"><%= tool.name %></h1>
                             <div class="header-cost">
@@ -32,9 +32,11 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="card-body-info">
-                                <p><%= tool.description %></p>
-                                <img class="body-img" src="../<%= tool.image %>" alt="<%= tool.name %>">
+                            <div class="card-body-description">
+                                <div class="description-infos">
+                                    <p><%= tool.description %></p>
+                                    <img class="body-img" src="../<%= tool.image %>" alt="<%= tool.name %>">
+                                </div>
                             </div>
 
                             <% if (tool.stats) { %>
@@ -299,15 +301,15 @@
                                         </div>
                                     <% } %>
                                 </div>
-                            <% } %>  
+                            <% } %>
                         </div>
-                    </div>
-                <% }) %>  
-            </div>   
+                    </article>
+                <% }) %>
+            </div>
         </div>
     </main>
 
-<%- include('partials/footer') %>     
+<%- include('partials/footer') %>
 
 <!-- Common Css file for Weapons/Tools/Consumables pages -->
 <link rel="stylesheet" href="../css/list-card.css">
