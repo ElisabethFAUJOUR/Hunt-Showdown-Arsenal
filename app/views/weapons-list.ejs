@@ -56,8 +56,11 @@
                         <div class="card-body">
                             <div class="card-body-description">
                                 <div class="description-infos">
-                                    <p><%= weapon.description %></p>
-                                    <img class="img-weapon" src="../<%= weapon.image %>" alt="<%= weapon.name %>">
+                                    <p class="infos-desc"><%= weapon.description %></p>
+                                    <div class="infos-image" data-img=<%= weapon.category %>>
+                                        <img src="../<%= weapon.image %>" alt="<%= weapon.name %>">
+                                    </div>
+
                                 </div>
                                 <div class="description-ammo">
                                     <% if (weapon.ammo) { %>
