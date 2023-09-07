@@ -45,14 +45,17 @@
     color: var(--color-border);
 }
 
-/****Card-Body****/
+/**** Card-Body (global) ****/
+
+.card-body {
+    display: flex;
+    gap:2rem;
+}
+
+/* Description */
 
 .card-body-description {
     width: 40%;
-}
-
-.card-body-stats {
-    width: 60%;
 }
 
 /*Description - Infos*/
@@ -87,59 +90,40 @@
     width: 25px;
 }
 
-/**** Selected class ****/
 
-.selected {
-    border: 1px solid var(--color-border-hover);
-    background-color: var(--color-red-dark);
+/* Stats*/
+
+.card-body-stats {
+    width: 60%;
 }
+
 
 /******************/
 /****Responsive****/
 /******************/
 
+/*** < 1399px screens ****/
+
 @media (max-width: 1399px) {
-    .card-body {
-        flex-direction: column;
-    }
-
+    /* Ajust width description & stats */
     .card-body-description, .card-body-stats {
-        width: 100%;
+        width: auto;
     }
-
-    .card-body-description {
-        justify-content: space-between;
-    }
-
     .description-infos {
         width: 90%;
     }
-
     .description-ammo {
         width: 10%;
     }
 }
 
-
-@media (max-width: 1149px) {
-    .card-body-stats {
-        grid-template-columns: repeat(2, 1fr);;
-    }
-}
-
+/*** < 699px screens ****/
 @media (max-width: 699px) {
+    /* Width filter buttons */
     .filter-category-btn {
         width: calc(100%/2 - 6px)
     }
-
     .filter-ammo-btn {
         width: calc(100%/3 - 6px)
     }
-        .card-body-stats {  /*BUG dépacement barre scroll largeur*/
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 549px) {
-
 }
