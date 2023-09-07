@@ -17,7 +17,7 @@
 }
 
 .filter-category-btn, .filter-ammo-btn {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     border: 1px solid var(--color-border);
     background-color: var(--color-grey-dark-transparent);
     box-shadow: 5px 5px 6px var(--color-shadow);
@@ -125,25 +125,12 @@
 }
 
 @media (max-width: 699px) {
-    .filter-row.row-slot {
-        grid-template-columns: 1fr 1fr;
+    .filter-category-btn {
+        width: calc(100%/2 - 6px)
     }
 
-    .filter-row.row-ammo {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-
-    .search {
-        margin-top:2rem;
-    }
-
-    .sort-button {
-        margin-top:1rem;
-    }
-
-    .card-body-description {
-        gap:1rem;
+    .filter-ammo-btn {
+        width: calc(100%/3 - 6px)
     }
 }
 

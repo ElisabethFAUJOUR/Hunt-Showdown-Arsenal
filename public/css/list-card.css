@@ -246,3 +246,18 @@ body {
 /******************/
 /****Responsive****/
 /******************/
+
+/**** Filter Search Bar & Sort-by ****/
+@media (max-width: 699px) {
+    .filter-row {
+        flex-wrap: wrap;
+    }
+
+    .row-search {
+        flex-direction: column;
+    }
+
+    .search, .sort-button {
+        width: 100%;
+    }
+}
