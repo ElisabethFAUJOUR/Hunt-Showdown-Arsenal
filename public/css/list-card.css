@@ -173,7 +173,7 @@ body {
 
 .card-body {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 2fr;
     gap:2rem;
 }
 
@@ -181,7 +181,7 @@ body {
 
 .card-body-description {
     display: flex;
-    gap:2rem;
+    gap:1.5rem;
 }
 
 /* Stats*/

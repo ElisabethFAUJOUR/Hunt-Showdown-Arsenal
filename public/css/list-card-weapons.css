@@ -89,33 +89,24 @@
 /******************/
 
 @media (max-width: 1399px) {
-    .card-body {
-        display: grid;
-        grid-template-columns: 4fr 1fr 5fr;
+    .card-body-stats {
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .ammo-type img {
-        width:35px;
-    }
-
-    .special_ammo img {
-        width: 25px;
-    }
-
 }
 
 @media (max-width: 1149px) {
     .card-body {
-        display: grid;
-        grid-template-columns: 8fr 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body-description {
+        grid-template-columns: 5fr 1fr;
+        gap:2rem;
     }
 
     .img-weapon {
         max-width: 400px;
-    }
-
-    .card-body-stats {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .card-body-stats.row {
@@ -145,16 +136,9 @@
         margin-top:1rem;
     }
 
-    .card-body-stats {
-        grid-template-columns: 1fr;
-    }
-
 }
 
 @media (max-width: 400px) {
 
-    .img-weapon {
-        max-width: 400px;
-    }
 
 }
