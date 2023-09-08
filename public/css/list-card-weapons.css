@@ -45,12 +45,7 @@
     color: var(--color-border);
 }
 
-/**** Card-Body (global) ****/
-
-.card-body {
-    display: flex;
-    gap:2rem;
-}
+/**** Card-Body ****/
 
 /* Description */
 
@@ -61,24 +56,28 @@
 /*Description - Infos*/
 
 .description-infos {
-    width: 75%;
+    width: 80%;
 }
 
-.img-weapon {
-    max-width: 400px;
-    max-height: 100px;
-    width: auto;
+.infos-image {
     margin-top: 0.5rem;
+    max-width: 380px;
+    width: fit-content;
+}
+
+.infos-image img {
+    width: 100%;
+    height: auto;
 }
 
 /*Description - Ammo*/
 
 .description-ammo {
+    width: 22%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    width: 25%;
     margin:0 auto;
 }
 
