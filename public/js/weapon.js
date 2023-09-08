@@ -21,7 +21,7 @@ const weapon = {
     //---------------------------
 
     /**
-     * Filter Weapons by selecting category or ammo types 
+     * Filter Weapons by selecting category or ammo types
      */
     filterWeapons() {
         const categoryButtons = document.querySelectorAll('.filter-category-btn');
@@ -41,8 +41,8 @@ const weapon = {
 
     /**
      * Apply filters to weapons based on selected categories and/or ammo types
-     * @param {HTMLElement} categoryButtons 
-     * @param {HTMLElement} ammoButtons 
+     * @param {HTMLElement} categoryButtons
+     * @param {HTMLElement} ammoButtons
      */
     applyFilters(categoryButtons, ammoButtons) {
         const selectedCategories = []; // Stock selected category buttons

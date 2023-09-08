@@ -4,7 +4,7 @@ const tool = {
 
     /* Tool cards elements */
     toolCards: document.querySelectorAll('.tool-card'),
-    
+
     /* Array for all tools */
     toolCardsArray: [],
 

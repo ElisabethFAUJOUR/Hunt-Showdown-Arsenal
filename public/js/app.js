@@ -113,13 +113,11 @@ const app = {
       event.stopPropagation();
       sortButton.classList.toggle("is-clicked");
       sortOptionsElem.classList.toggle("hidden");
-      sortOptionsElem.classList.toggle("fade-in-visible");
     });
 
     document.addEventListener("click", () => {
       sortButton.classList.remove("is-clicked");
       sortOptionsElem.classList.add("hidden");
-      sortOptionsElem.remove("fade-in-visible");
     });
   },
 

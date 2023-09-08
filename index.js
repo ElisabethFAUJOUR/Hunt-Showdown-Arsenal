@@ -4,14 +4,14 @@ const app = express();
 
 // ---- IMPORTS  ----
 const router = require("./app/router");
-const render404Page = require('./app/middlewares/error404')
+const render404Page = require("./app/middlewares/error404");
 
 // ---- SETTING view Engine EJS ----
 app.set("view engine", "ejs");
 app.set("views", "./app/views");
 
 // ---- SETTING static folder ----
-app.use(express.static("public")); 
+app.use(express.static("public"));
 
 // ---- SETTING routes ----
 app.use(router);

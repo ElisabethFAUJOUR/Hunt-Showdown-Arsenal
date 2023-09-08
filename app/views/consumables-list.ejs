@@ -6,13 +6,13 @@
             <div class="filter-container fade-in">
                 <div class="filter-row row-search">
                     <div class="search">
-                        <input type="text" class="search-bar" placeholder="SEARCH">
+                        <input class="search-bar" type="text" placeholder="SEARCH">
                     </div>
                     <button class="sort-button">
                         <div class="sort-button-label">Sort by</div>
                         <i class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="sort-options hidden fade-in">
+                    <div class="sort-options hidden">
                         <button class="sort-option-btn" data-sort="reset">-</button>
                         <button class="sort-option-btn" data-sort="cost">Cost</button>
                         <button class="sort-option-btn" data-sort="damage-thrown">Damage Thrown</button>
@@ -65,7 +65,7 @@
                                             </div>
                                         </div>
                                     <% } %>
-            
+
                                     <% if (consumable.stats.damage_per_tick) { %>
                                         <div class="stat-row">
                                             <div class="stat-info">
@@ -78,7 +78,7 @@
                                             </div>
                                         </div>
                                     <% } %>
-            
+
                                     <% if (consumable.stats.effect_radius) { %>
                                         <div class="stat-row">
                                             <div class="stat-info">
@@ -91,7 +91,7 @@
                                             </div>
                                         </div>
                                     <% } %>
-            
+
                                     <% if (consumable.stats.effect_duration) { %>
                                         <div class="stat-row">
                                             <div class="stat-info">
@@ -104,7 +104,7 @@
                                             </div>
                                         </div>
                                     <% } %>
-            
+
                                     <% if (consumable.stats.throw_range) { %>
                                         <div class="stat-row">
                                             <div class="stat-info">
@@ -130,7 +130,7 @@
                                             </div>
                                         </div>
                                     <% } %>
-            
+
                                     <% if (consumable.stats.fuse_timer) { %>
                                         <div class="stat-row">
                                             <div class="stat-info">
@@ -143,7 +143,7 @@
                                             </div>
                                         </div>
                                     <% } %>
-            
+
                                     <% if (consumable.stats.melee_damage) { %>
                                         <div class="stat-row">
                                             <div class="stat-info">
@@ -184,7 +184,7 @@
 <!-- Common Css file for Weapons/Tools/Consumables pages -->
 <link rel="stylesheet" href="../css/list-card.css">
 <!-- Specific Css file for page consumables -->
-<link rel="stylesheet" href="../css/list-card-tools-consumables.css">  
+<link rel="stylesheet" href="../css/list-card-tools-consumables.css">
 <!-- Specific Js file for page consumables -->
 <script src="../js/consumable.js" type="module"></script>
 
