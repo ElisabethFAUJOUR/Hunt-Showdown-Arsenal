@@ -44,8 +44,8 @@ const app = {
     const toggleIcon = document.querySelector(".nav-toggle-icon");
 
     toggleIcon.addEventListener("click", () => {
-      navElem.classList.toggle("active");
-      if (navElem.classList.contains("active")) {
+      navElem.classList.toggle("open");
+      if (navElem.classList.contains("open")) {
         toggleIcon.classList.remove("bi-list");
         toggleIcon.classList.add("bi-x");
       } else {
@@ -56,7 +56,7 @@ const app = {
 
     linksElem.forEach((link) => {
       link.addEventListener("click", () => {
-        navElem.classList.remove("active");
+        navElem.classList.remove("open");
         toggleIcon.classList.remove("bi-x");
         toggleIcon.classList.add("bi-list");
       });
@@ -111,13 +111,13 @@ const app = {
 
     sortButton.addEventListener("click", (event) => {
       event.stopPropagation();
-      sortButton.classList.toggle("is-clicked");
-      sortOptionsElem.classList.toggle("hidden");
+      sortButton.classList.toggle("clicked");
+      sortOptionsElem.classList.toggle("open");
     });
 
     document.addEventListener("click", () => {
-      sortButton.classList.remove("is-clicked");
-      sortOptionsElem.classList.add("hidden");
+      sortButton.classList.remove("clicked");
+      sortOptionsElem.classList.remove("open");
     });
   },
 
